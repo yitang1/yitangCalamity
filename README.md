@@ -4,7 +4,7 @@
 (同样也适配“灾法双开”的玩法。)
 
 #### Mod下载：
-*  👉[yitangCalamity.tmod是Mod文件](https://github.com/yitang1/yitangCalamity/releases)
+*  点击这里👉 [yitangCalamity.tmod是Mod文件](https://github.com/yitang1/yitangCalamity/releases)
 
 #### Mod安装：
 因为此Mod未在创意工坊发布，所以需要玩家**手动安装**。
