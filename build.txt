@@ -1,6 +1,6 @@
 displayName = yitangCalamity
 author = yitang
-version = 0.0.0.1
+version = 0.0.0.2
 modReferences = CalamityMod
 weakReferences =
 buildIgnore = .git\*, .vs\*, bin\*, obj\*, Properties\*, .editorconfig, .gitignore, README.md, *.csproj, *.sln
