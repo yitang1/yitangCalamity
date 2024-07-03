@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("yitangCalamity")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9dc707ddc0e5ea628944d6a24e62b6e47f80f2dc")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5a396b26647d43612819c79c89ef3f965c0919f5")]
 [assembly: System.Reflection.AssemblyProductAttribute("yitangCalamity")]
 [assembly: System.Reflection.AssemblyTitleAttribute("yitangCalamity")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

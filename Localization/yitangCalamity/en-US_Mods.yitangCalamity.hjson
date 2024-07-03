@@ -1,13 +1,11 @@
-# This file will automatically update with entries for new content after a build and reload.
+Configs: {
+	yitangCConfig: {
+		DisplayName: yitang C Config
+		Headers.ytCRecipes: yt C Recipes Header
 
-Items: {
-	yt: {
-		DisplayName: "yt"
-		Tooltip:
-			'''
-			Template of an item
-			Replacing this tooltip is duty 
-			It's snowing on Mt.Fuji
-			'''
+		ytCRecipes: {
+			Label: yt C Recipes
+			Tooltip: ""
+		}
 	}
 }

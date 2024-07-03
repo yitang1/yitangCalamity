@@ -1,13 +1,22 @@
-# This file will automatically update with entries for new content after a build and reload.
+Configs: {
+	yitangCConfig: {
+		DisplayName: yitangCalamity模组配置
+		Headers.ytCRecipes: 配方相关
 
-Items: {
-	yt: {
-		DisplayName: "yt"
-		Tooltip:
-			'''
-			Template of an item
-			Replacing this tooltip is duty 
-			It's snowing on Mt.Fuji
-			'''
+		ytCRecipes: {
+			Label: 配方调整和修改
+			Tooltip:
+				'''
+				启用此选项后，会调整和修改一些Mod内的配方
+				灾厄Mod (CalamityMod)：
+				移除永夜刃合成配方内的纯净凝胶
+				移除天顶剑合成配方内的圣金源锭
+
+				更多天顶武器Mod (MoreZenithItems)：
+				移除天顶系列武器合成配方内的圣金源锭
+				移除泰拉系列武器合成配方内的生命碎片
+				移除永夜系列武器合成配方内的纯净凝胶
+				'''
+		}
 	}
 }
