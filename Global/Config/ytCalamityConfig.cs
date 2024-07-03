@@ -5,11 +5,11 @@ using Terraria.ModLoader.Config;
 
 namespace yitangCalamity.Global.Config
 {
-	public class yitangCConfig : ModConfig
+	public class ytCalamityConfig : ModConfig
 	{
 		public override ConfigScope Mode => ConfigScope.ServerSide;
 
-        public static yitangCConfig Instance;
+        public static ytCalamityConfig Instance;
 
         //[Header("FuckCalamityAll")]
         //[ReloadRequired]

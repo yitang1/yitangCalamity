@@ -74,7 +74,7 @@ namespace yitangCalamity.Global.Recipes
         public override void PostAddRecipes()
         {
             //【更多天顶武器Mod】
-            if (ModLoader.HasMod("MoreZenith") && yitangCConfig.Instance.ytCRecipes)
+            if (ModLoader.HasMod("MoreZenith") && ytCalamityConfig.Instance.ytCRecipes)
             {
                 ModLoader.TryGetMod("MoreZenith", out Mod morezenith);
                 for (int i = 0; i < Recipe.numRecipes; i++)

@@ -352,7 +352,7 @@ namespace yitangCalamity.Global.Recipes
                 {
                     recipe.AddIngredient(ItemID.HandWarmer);
                 }
-                if (yitangCConfig.Instance.ytCRecipes)
+                if (ytCalamityConfig.Instance.ytCRecipes)
                 {
                     //永夜刃
                     if (recipe.HasResult(ItemID.NightsEdge))
