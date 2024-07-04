@@ -31,7 +31,7 @@ using CalamityMod.Items.Weapons.Summon;
 using CalamityMod.Items.Weapons.Typeless;
 using CalamityMod.Items.Weapons.DraedonsArsenal;
 using CalamityMod.Tiles.Furniture.CraftingStations;
-//using yitangCalamity.Content.Items.Materials;
+using yitangCalamity.Content.Items.Materials;
 
 namespace yitangCalamity.Global.Recipes
 {
@@ -313,12 +313,12 @@ namespace yitangCalamity.Global.Recipes
 				.AddTile(TileID.Anvils)
 				.Register();
 			//阳炎战旗
-			//Recipe.Create(ItemType<WarbanneroftheSun>())
-			//	.AddIngredient<ProfanedGuardianPlush>()
-			//	.AddIngredient<CoreofSunlight>(3)
-			//	.AddIngredient(ItemID.Silk, 15)
-			//	.AddTile(TileID.LunarCraftingStation)
-			//	.Register();
+			Recipe.Create(ItemType<WarbanneroftheSun>())
+				.AddIngredient<ProfanedGuardianPlush>()
+				.AddIngredient<CoreofSunlight>(3)
+				.AddIngredient(ItemID.Silk, 15)
+				.AddTile(TileID.LunarCraftingStation)
+				.Register();
 			//极乐之庇护
 			Recipe.Create(ItemType<ElysianAegis>())
 				.AddIngredient<BlazingCore>()
@@ -836,26 +836,26 @@ namespace yitangCalamity.Global.Recipes
 				.AddTile(TileID.LunarCraftingStation)
 				.Register();
 			//渡魂圣物
-			//Recipe.Create(ItemType<RelicOfDeliverance>())
-			//	.AddIngredient<ProfanedGuardianPlush>()
-			//	.AddIngredient<CoreofSunlight>(3)
-			//	.AddIngredient<UnholyEssence>(10)
-			//	.AddTile(TileID.LunarCraftingStation)
-			//	.Register();
+			Recipe.Create(ItemType<RelicOfDeliverance>())
+				.AddIngredient<ProfanedGuardianPlush>()
+				.AddIngredient<CoreofSunlight>(3)
+				.AddIngredient<UnholyEssence>(10)
+				.AddTile(TileID.LunarCraftingStation)
+				.Register();
 			//塑魂圣物
-			//Recipe.Create(ItemType<RelicOfResilience>())
-			//	.AddIngredient<ProfanedGuardianPlush>()
-			//	.AddIngredient<CoreofSunlight>(3)
-			//	.AddIngredient<UnholyEssence>(10)
-			//	.AddTile(TileID.LunarCraftingStation)
-			//	.Register();
+			Recipe.Create(ItemType<RelicOfResilience>())
+				.AddIngredient<ProfanedGuardianPlush>()
+				.AddIngredient<CoreofSunlight>(3)
+				.AddIngredient<UnholyEssence>(10)
+				.AddTile(TileID.LunarCraftingStation)
+				.Register();
 			//聚魂圣物
-			//Recipe.Create(ItemType<RelicOfConvergence>())
-			//	.AddIngredient<ProfanedGuardianPlush>()
-			//	.AddIngredient<CoreofSunlight>(3)
-			//	.AddIngredient<UnholyEssence>(10)
-			//	.AddTile(TileID.LunarCraftingStation)
-			//	.Register();
+			Recipe.Create(ItemType<RelicOfConvergence>())
+				.AddIngredient<ProfanedGuardianPlush>()
+				.AddIngredient<CoreofSunlight>(3)
+				.AddIngredient<UnholyEssence>(10)
+				.AddTile(TileID.LunarCraftingStation)
+				.Register();
 			#endregion
 
 			#region 坐骑
