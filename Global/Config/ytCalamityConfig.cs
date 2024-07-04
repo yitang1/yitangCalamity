@@ -27,10 +27,12 @@ namespace yitangCalamity.Global.Config
         //public bool ytNPCeeeeeeeee;
 
         [DefaultValue(true)]
-        public bool ytNPCInvincible;
+		[ReloadRequired]
+		public bool ytNPCInvincible;
 
         [DefaultValue(true)]
-        public bool ytCritterInvincible;
+		[ReloadRequired]
+		public bool ytCritterInvincible;
 
         [Header("ytCRecipes")]
         [ReloadRequired]

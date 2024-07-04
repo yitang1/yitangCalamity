@@ -43,21 +43,21 @@ namespace yitangCalamity.Global.GlobalOthers
 		{
 			tag.Add("downedAstrageldon", ModConditions.downedAstrageldon);
 			tag.Add("downedEaterofWorlds", ModConditions.downedEaterofWorlds);
-			tag.Add("downedGnome", ModConditions.downedGnome);
+			tag.Add("downedBrainofCthulhu", ModConditions.downedBrainofCthulhu);
 		}
 
 		public override void LoadWorldData(TagCompound tag)
 		{
 			ModConditions.downedAstrageldon = tag.Get<bool>("downedAstrageldon");
 			ModConditions.downedEaterofWorlds = tag.Get<bool>("downedEaterofWorlds");
-			ModConditions.downedGnome = tag.Get<bool>("downedGnome");
+			ModConditions.downedBrainofCthulhu = tag.Get<bool>("downedBrainofCthulhu");
 		}
 
 		public static void Resetdowned()
 		{
 			ModConditions.downedAstrageldon = false;
 			ModConditions.downedEaterofWorlds = false;
-			ModConditions.downedGnome = false;
+			ModConditions.downedBrainofCthulhu = false;
 		}
 
 		internal static bool catalystLoaded;
@@ -66,11 +66,11 @@ namespace yitangCalamity.Global.GlobalOthers
 
 		internal static bool downedAstrageldon;
         internal static bool downedEaterofWorlds;
-        internal static bool downedGnome;
+        internal static bool downedBrainofCthulhu;
 
         public static Condition DownedAstrageldon = new Condition("ModConditions.downedAstrageldon", () => ModConditions.downedAstrageldon);
         public static Condition DownedEaterofWorlds = new Condition("ModConditions.downedEaterofWorlds", () => ModConditions.downedEaterofWorlds);
-        public static Condition DownedGnome = new Condition("ModConditions.downedGnome", () => ModConditions.downedGnome);
+        public static Condition DownedBrainofCthulhu = new Condition("ModConditions.downedBrainofCthulhu", () => ModConditions.downedBrainofCthulhu);
 	}
 
 	public class CheckIfNPCIsDead : GlobalNPC
@@ -83,13 +83,14 @@ namespace yitangCalamity.Global.GlobalOthers
             {
                 ModConditions.downedAstrageldon = true;
             }
+			//这里分别创建两个邪恶Boss击败不受世界类型为猩红/腐化所影响的条件
             if (npc.type == NPCID.EaterofWorldsHead)
             {
                 ModConditions.downedEaterofWorlds = true;
             }
-			if (npc.type == NPCID.Gnome)
+			if (npc.type == NPCID.BrainofCthulhu)
             {
-                ModConditions.downedGnome = true;
+                ModConditions.downedBrainofCthulhu = true;
             }
         }
 	}

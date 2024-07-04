@@ -3,6 +3,11 @@ Items: {
 		DisplayName: 亵渎玩偶
 		Tooltip: 亵渎守卫力量的象征
 	}
+
+	StarMerchantIcon: {
+		// DisplayName: Star Merchant Icon
+		// Tooltip: ""
+	}
 }
 
 Tips: {
@@ -35,27 +40,6 @@ NPCs: {
 }
 
 Configs: {
-	yitangCConfig: {
-		DisplayName: yitangCalamity模组配置
-		Headers.ytCRecipes: 配方相关
-
-		ytCRecipes: {
-			Label: 配方调整和修改
-			Tooltip:
-				'''
-				启用此选项后，会调整和修改一些Mod内的配方
-				灾厄Mod (CalamityMod)：
-				移除永夜刃合成配方内的纯净凝胶
-				移除天顶剑合成配方内的圣金源锭
-
-				更多天顶武器Mod (MoreZenithItems)：
-				移除天顶系列武器合成配方内的圣金源锭
-				移除泰拉系列武器合成配方内的生命碎片
-				移除永夜系列武器合成配方内的纯净凝胶
-				'''
-		}
-	}
-
 	ytCalamityConfig: {
 		DisplayName: yitangCalamity模组配置
 
@@ -65,7 +49,7 @@ Configs: {
 		}
 
 		ytNPCStarMerchant: {
-			Label: 添加NPC：星际商人
+			Label: "[i:yitangCalamity/StarMerchantIcon] 添加NPC：星际商人"
 			Tooltip:
 				'''
 				启用此选项后
@@ -78,17 +62,17 @@ Configs: {
 		}
 
 		ytNPCInvincible: {
-			Label: 所有城镇NPC无敌
+			Label: "[i:CombatBookVolumeTwo] 所有城镇NPC无敌"
 			Tooltip: 包括受缚NPC、躺着睡觉的渔夫和酒馆老板
 		}
 
 		ytCritterInvincible: {
-			Label: 所有小动物无敌
+			Label: "[i:Bunny] 所有小动物无敌"
 			Tooltip: 包括七彩草蛉
 		}
 
 		ytCRecipes: {
-			Label: 配方调整和修改
+			Label: "[i:Zenith] 配方调整和修改"
 			Tooltip:
 				'''
 				启用此选项后，会调整和修改一些Mod内的配方

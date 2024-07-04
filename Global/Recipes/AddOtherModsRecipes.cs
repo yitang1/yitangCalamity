@@ -20,12 +20,12 @@ namespace yitangCalamity.Global.Recipes
             {
                 //旧神星镰的合成配方
                 ModLoader.TryGetMod("CatalystMod", out Mod catalyst);
-                Recipe.Create(catalyst.Find<ModItem>("ScytheoftheAbandonedGod").Type, 1)
-                    .AddIngredient(catalyst.Find<ModItem>("AstralsEnd").Type, 1)
-                    .AddIngredient(catalyst.Find<ModItem>("Astragelgun").Type, 1)
-                    .AddIngredient(catalyst.Find<ModItem>("ExaltedHorizon").Type, 1)
-                    .AddIngredient(catalyst.Find<ModItem>("AstralpodStaff").Type, 1)
-                    .AddIngredient(catalyst.Find<ModItem>("InterstellarVolution").Type, 1)
+                Recipe.Create(catalyst.Find<ModItem>("ScytheoftheAbandonedGod").Type)
+                    .AddIngredient(catalyst.Find<ModItem>("AstralsEnd").Type)
+                    .AddIngredient(catalyst.Find<ModItem>("Astragelgun").Type)
+                    .AddIngredient(catalyst.Find<ModItem>("ExaltedHorizon").Type)
+                    .AddIngredient(catalyst.Find<ModItem>("AstralpodStaff").Type)
+                    .AddIngredient(catalyst.Find<ModItem>("InterstellarVolution").Type)
                     .AddIngredient<GalacticaSingularity>(5)
                     .AddTile(TileID.LunarCraftingStation)
                     .Register();
@@ -33,34 +33,34 @@ namespace yitangCalamity.Global.Recipes
                 #region 灾劫Mod 鞭子
                 //灾劫Mod 鞭子的合成配方
                 //珊瑚粉碎者
-                Recipe.Create(catalyst.Find<ModItem>("CoralCrusher").Type, 1)
+                Recipe.Create(catalyst.Find<ModItem>("CoralCrusher").Type)
                     .AddIngredient(ItemID.Coral, 5)
                     .AddIngredient(ItemID.Starfish, 2)
                     .AddIngredient<EutrophicSand>(2)
                     .AddTile(TileID.Anvils)
                     .Register();
                 //胶联双鞭
-                Recipe.Create(catalyst.Find<ModItem>("CongeledDuoWhip").Type, 1)
+                Recipe.Create(catalyst.Find<ModItem>("CongeledDuoWhip").Type)
                     .AddIngredient<PurifiedGel>(18)
                     .AddIngredient<BlightedGel>(18)
                     .AddTile<StaticRefiner>()
                     .Register();
                 //谐鸣振爆索
-                Recipe.Create(catalyst.Find<ModItem>("ResonantStriker").Type, 1)
-                    .AddIngredient(ItemID.SwordWhip, 1)
+                Recipe.Create(catalyst.Find<ModItem>("ResonantStriker").Type)
+                    .AddIngredient(ItemID.SwordWhip)
                     .AddIngredient<EffulgentFeather>(5)
                     .AddTile(TileID.LunarCraftingStation)
                     .Register();
                 //恒怨之刑
-                Recipe.Create(catalyst.Find<ModItem>("UnrelentingTorment").Type, 1)
-                    .AddIngredient(ItemID.MaceWhip, 1)
+                Recipe.Create(catalyst.Find<ModItem>("UnrelentingTorment").Type)
+                    .AddIngredient(ItemID.MaceWhip)
                     .AddIngredient<RuinousSoul>(5)
                     .AddIngredient<Necroplasm>(10)
                     .AddTile(TileID.LunarCraftingStation)
                     .Register();
                 //宣泄
-                Recipe.Create(catalyst.Find<ModItem>("Catharsis").Type, 1)
-                    .AddIngredient(ItemID.RainbowWhip, 1)
+                Recipe.Create(catalyst.Find<ModItem>("Catharsis").Type)
+                    .AddIngredient(ItemID.RainbowWhip)
                     .AddIngredient<AshesofAnnihilation>(5)
                     .AddIngredient<AshesofCalamity>(5)
                     .AddTile<DraedonsForge>()

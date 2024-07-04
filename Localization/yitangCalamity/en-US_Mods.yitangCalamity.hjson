@@ -3,6 +3,11 @@ Items: {
 		DisplayName: Profaned Guardian Plush
 		Tooltip: ""
 	}
+
+	StarMerchantIcon: {
+		DisplayName: Star Merchant Icon
+		Tooltip: ""
+	}
 }
 
 Tips: {
@@ -35,18 +40,8 @@ NPCs: {
 }
 
 Configs: {
-	yitangCConfig: {
-		DisplayName: yitang C Config
-		Headers.ytCRecipes: yt C Recipes Header
-
-		ytCRecipes: {
-			Label: yt C Recipes
-			Tooltip: ""
-		}
-	}
-
 	ytCalamityConfig: {
-		DisplayName: yt Calamity Config
+		DisplayName: yitang C Config
 
 		Headers: {
 			ytCNPCs: yt C NPCs Header
