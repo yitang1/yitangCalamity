@@ -24,6 +24,7 @@
   [i:CalamityMod/AtlasMunitionsBeacon]星流巨械掉落物品
   [i:CalamityMod/CrimsonEffigy]灾厄肉前三雕像
   [i:215][i:1304]整蛊坐垫和僵尸臂
+  [i:CalamityMod/ElysianAegis][i:CalamityMod/ElysianWings]极乐之庇护和极乐之翼
 
 [i:3458]添加的模组物品合成配方：
 稀有度高的、或无法合成的、或大部分敌怪或Boss掉落率较低的模组物品。
