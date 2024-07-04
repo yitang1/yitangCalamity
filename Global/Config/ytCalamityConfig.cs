@@ -19,6 +19,19 @@ namespace yitangCalamity.Global.Config
         //[DefaultValue(true)]
         //public bool FuckCalamityAll2;
 
+        [Header("ytCNPCs")]
+        [DefaultValue(true)]
+        public bool ytNPCStarMerchant;
+
+        //[DefaultValue(true)]
+        //public bool ytNPCeeeeeeeee;
+
+        [DefaultValue(true)]
+        public bool ytNPCInvincible;
+
+        [DefaultValue(true)]
+        public bool ytCritterInvincible;
+
         [Header("ytCRecipes")]
         [ReloadRequired]
         [DefaultValue(false)]
