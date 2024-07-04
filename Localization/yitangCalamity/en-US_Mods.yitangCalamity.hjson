@@ -1,7 +1,72 @@
+Items: {
+	ProfanedGuardianPlush: {
+		DisplayName: Profaned Guardian Plush
+		Tooltip: ""
+	}
+}
+
+Tips: {
+	SummonMinionSlot: MinionSlot: [c/22CC22:{CurrentM}/{TotalM}]
+	SummonMinionSlotFull: MinionSlot: [c/22CC22:{CurrentM}/{TotalM}]
+	SummonSentrieSlot: SentrieSlot: [c/CC2222:{CurrentS}/{TotalS}]
+	SummonSentrieSlotFull: SentrieSlot: [c/CC2222:{CurrentS}/{TotalS}]
+}
+
+NPCs: {
+	StarMerchant: {
+		DisplayName: Star Merchant
+
+		TownNPCMood: {
+			Content: 我很满足。
+			NoHome: 我讨厌没有家。
+			FarFromHome: 我离家太远了。
+			LoveSpace: 我非常喜欢有这么大的空间。
+			DislikeCrowded: 我不喜欢这么拥挤。
+			HateCrowded: 我讨厌这么拥挤。
+			LoveBiome: 我非常喜欢{BiomeName}。
+			LikeBiome: 我喜欢{BiomeName}。
+			DislikeBiome: 我不喜欢{BiomeName}。
+			LoveNPC: 我非常喜欢{NPCName}。
+			LikeNPC: 我喜欢{NPCName}。
+			LikeNPC_Princess: I like {NPCName}.
+			Princess_LovesNPC: I like {NPCName}.
+		}
+	}
+}
+
 Configs: {
 	yitangCConfig: {
 		DisplayName: yitang C Config
 		Headers.ytCRecipes: yt C Recipes Header
+
+		ytCRecipes: {
+			Label: yt C Recipes
+			Tooltip: ""
+		}
+	}
+
+	ytCalamityConfig: {
+		DisplayName: yt Calamity Config
+
+		Headers: {
+			ytCNPCs: yt C NPCs Header
+			ytCRecipes: yt C Recipes Header
+		}
+
+		ytNPCStarMerchant: {
+			Label: yt NPC Star Merchant
+			Tooltip: ""
+		}
+
+		ytNPCInvincible: {
+			Label: yt NPC Invincible
+			Tooltip: ""
+		}
+
+		ytCritterInvincible: {
+			Label: yt Critter Invincible
+			Tooltip: ""
+		}
 
 		ytCRecipes: {
 			Label: yt C Recipes

@@ -1,7 +1,91 @@
+Items: {
+	ProfanedGuardianPlush: {
+		DisplayName: 亵渎玩偶
+		Tooltip: 亵渎守卫力量的象征
+	}
+}
+
+Tips: {
+	SummonMinionSlot: 仆从栏位占用: [c/22CC22:{CurrentM}/{TotalM}]
+	SummonMinionSlotFull: 仆从栏位占用: [c/CC2222:{CurrentM}/{TotalM}]
+	SummonSentrieSlot: 哨兵栏位占用: [c/22CC22:{CurrentS}/{TotalS}]
+	SummonSentrieSlotFull: 哨兵栏位占用: [c/CC2222:{CurrentS}/{TotalS}]
+}
+
+NPCs: {
+	StarMerchant: {
+		DisplayName: 星际商人
+
+		TownNPCMood: {
+			Content: 现在我感觉不错，很放松。
+			NoHome: 我讨厌没有家的孤独的感觉，这就像一个人置身宇宙之中。
+			FarFromHome: 我离家太远了，或许是时候结束旅行，回去好好休息了。
+			LoveSpace: 我非常喜欢有这么大的空间，这样能在夜晚把星空一览无余！
+			DislikeCrowded: 为什么感觉周围的人越来越多了。
+			HateCrowded: 我讨厌这么拥挤，虽然只要我一直仰望星空就可以暂时缓解这种不适感。
+			LoveBiome: 我非常喜欢这里，有时候我会想是不是有一个星球全是这种生物群落。
+			LikeBiome: 在这个宁静的地方，可以慢悠悠地感受自然和星空。
+			DislikeBiome: 这里，唔，太冷了，让我无法去思考和感受自己喜欢的东西……
+			LoveNPC: 我有时候会很好奇，为什么{NPCName}总是有那么多的活力呢，不过我并不讨厌就是了。
+			LikeNPC: 我挺喜欢{NPCName}的认真和细心。
+			LikeNPC_Princess: 我很喜欢{NPCName}，能找到拥有共同兴趣和话题的朋友，然后互相交谈，这实在是美好至极。
+			Princess_LovesNPC: "{NPCName}的经历很像童话书里的故事，很想再去听她讲一讲。"
+		}
+	}
+}
+
 Configs: {
 	yitangCConfig: {
 		DisplayName: yitangCalamity模组配置
 		Headers.ytCRecipes: 配方相关
+
+		ytCRecipes: {
+			Label: 配方调整和修改
+			Tooltip:
+				'''
+				启用此选项后，会调整和修改一些Mod内的配方
+				灾厄Mod (CalamityMod)：
+				移除永夜刃合成配方内的纯净凝胶
+				移除天顶剑合成配方内的圣金源锭
+
+				更多天顶武器Mod (MoreZenithItems)：
+				移除天顶系列武器合成配方内的圣金源锭
+				移除泰拉系列武器合成配方内的生命碎片
+				移除永夜系列武器合成配方内的纯净凝胶
+				'''
+		}
+	}
+
+	ytCalamityConfig: {
+		DisplayName: yitangCalamity模组配置
+
+		Headers: {
+			ytCNPCs: NPC相关
+			ytCRecipes: 配方相关
+		}
+
+		ytNPCStarMerchant: {
+			Label: 添加NPC：星际商人
+			Tooltip:
+				'''
+				启用此选项后
+				会在游戏中添加一名城镇NPC
+				此NPC会售卖各种原版材料和模组材料
+				生成条件为：世界中至少有3名城镇NPC存在
+
+				如果你更喜欢自己收集材料，可以关闭此选项
+				'''
+		}
+
+		ytNPCInvincible: {
+			Label: 所有城镇NPC无敌
+			Tooltip: 包括受缚NPC、躺着睡觉的渔夫和酒馆老板
+		}
+
+		ytCritterInvincible: {
+			Label: 所有小动物无敌
+			Tooltip: 包括七彩草蛉
+		}
 
 		ytCRecipes: {
 			Label: 配方调整和修改
