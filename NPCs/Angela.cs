@@ -547,6 +547,8 @@ namespace yitangCalamity.NPCs
 			{
 				sumShop.Add(CustomPrice((WyrmTablet.Type), buyPrice(0, 7, 0, 0)), new Condition[] { DownedPolterghast });
 			}
+			//始源妖龙
+			sumShop.Add(CustomPrice(ItemType<SubnauticalPlate>(), buyPrice(0, 40, 0, 0)), new Condition[] { DownedExoAndCal });
 			#endregion
 
 			//巨型蠕虫/挖掘怪

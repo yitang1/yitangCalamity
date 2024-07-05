@@ -88,7 +88,7 @@ namespace yitangCalamity.NPCs
 
 		public override bool CanTownNPCSpawn(int numTownNPCs)
 		{
-			return numTownNPCs > 3 &&ytCalamityConfig.Instance.ytNPCBuilder;
+			return numTownNPCs > 3 && ytCalamityConfig.Instance.ytNPCBuilder;
 		}
 
 		public override string GetChat()

@@ -4,13 +4,33 @@ Items: {
 		Tooltip: ""
 	}
 
+	RedBait: {
+		DisplayName: Red Bait
+		Tooltip: ""
+	}
+
+	SubnauticalPlate: {
+		DisplayName: Subnautical Plate
+		Tooltip: ""
+	}
+
 	StarMerchantIcon: {
 		DisplayName: Star Merchant Icon
 		Tooltip: ""
 	}
 
-	RedBait: {
-		DisplayName: Red Bait
+	BuilderIcon: {
+		DisplayName: Builder Icon
+		Tooltip: ""
+	}
+
+	BrewerIcon: {
+		DisplayName: Brewer Icon
+		Tooltip: ""
+	}
+
+	AngelaIcon: {
+		DisplayName: Angela Icon
 		Tooltip: ""
 	}
 }
@@ -64,7 +84,6 @@ NPCs: {
 			Princess_LovesNPC: I like {NPCName}.
 		}
 	}
-}
 
 	Brewer: {
 		DisplayName: Brewer
@@ -104,6 +123,7 @@ NPCs: {
 			Princess_LovesNPC: I like {NPCName}.
 		}
 	}
+}
 
 Configs: {
 	ytCalamityConfig: {

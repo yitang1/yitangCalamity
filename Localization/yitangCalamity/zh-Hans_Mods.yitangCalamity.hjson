@@ -4,11 +4,6 @@ Items: {
 		Tooltip: 亵渎守卫力量的象征
 	}
 
-	StarMerchantIcon: {
-		DisplayName: 模组配置图标
-		Tooltip: ""
-	}
-
 	RedBait: {
 		DisplayName: 血寿司拼盘
 		Tooltip:
@@ -17,6 +12,38 @@ Items: {
 			建议在血月使用
 			不消耗
 			'''
+	}
+
+	SubnauticalPlate: {
+		DisplayName: 始源石板
+		Tooltip:
+			'''
+			召唤始源妖龙
+			只能在深渊使用
+			不消耗
+			“一种在巨龙黄金时代之前
+			就存在的远古深渊遗物”
+			'''
+	}
+
+	StarMerchantIcon: {
+		DisplayName: 模组配置图标
+		Tooltip: ""
+	}
+
+	BuilderIcon: {
+		DisplayName: 模组配置图标
+		Tooltip: ""
+	}
+
+	BrewerIcon: {
+		DisplayName: 模组配置图标
+		Tooltip: ""
+	}
+
+	AngelaIcon: {
+		DisplayName: 模组配置图标
+		Tooltip: ""
 	}
 }
 
@@ -69,7 +96,6 @@ NPCs: {
 			Princess_LovesNPC: "{NPCName}总是知道一些我不知道的建筑方面的知识！"
 		}
 	}
-}
 
 	Brewer: {
 		DisplayName: 药剂师
@@ -109,6 +135,7 @@ NPCs: {
 			Princess_LovesNPC: 我超喜欢和{NPCName}待在一起，感觉真的很让人平静和放松！
 		}
 	}
+}
 
 Configs: {
 	ytCalamityConfig: {
@@ -125,7 +152,7 @@ Configs: {
 				'''
 				启用此选项后
 				会在游戏中添加一名城镇NPC
-				此NPC会售卖各种[c/FFAF48:原版材料和模组材料]
+				此NPC会售卖各种[c/FFB453:原版材料和模组材料]
 				生成条件为：世界中至少有[c/F2E635:3]名城镇NPC存在
 
 				如果你更喜欢自己收集材料，可以关闭此选项
@@ -138,7 +165,7 @@ Configs: {
 				'''
 				启用此选项后
 				会在游戏中添加一名城镇NPC
-				此NPC会售卖各种[c/FFAF48:原版和模组的物块]
+				此NPC会售卖各种[c/FFB453:原版和模组的物块]
 				生成条件为：世界中至少有[c/F2E635:3]名城镇NPC存在
 
 				如果你更喜欢自己收集物块，可以关闭此选项
@@ -151,7 +178,7 @@ Configs: {
 				'''
 				启用此选项后
 				会在游戏中添加一名城镇NPC
-				此NPC会售卖各种[c/FFAF48:原版和模组的药水]
+				此NPC会售卖各种[c/FFB453:原版和模组的药水]
 				生成条件为：世界中至少有[c/F2E635:4]名城镇NPC存在
 
 				如果你更喜欢自己制作药水，可以关闭此选项
@@ -164,7 +191,7 @@ Configs: {
 				'''
 				启用此选项后
 				会在游戏中添加一名城镇NPC
-				此NPC会售卖[c/FFAF48:原版和模组的Boss宝藏袋、敌怪和Boss召唤物品]
+				此NPC会售卖[c/FFB453:原版和模组的Boss宝藏袋、敌怪和Boss召唤物品]
 				生成条件为：世界中至少有[c/F2E635:5]名城镇NPC存在
 
 				如果你更喜欢刷怪，可以关闭此选项
