@@ -43,7 +43,7 @@ namespace yitangCalamity.Content.Items.SummonItems
 			recipe.Register();
 		}
 
-		public override bool CanUseItem(Player player) => player.Calamity().ZoneAbyss && !NPC.AnyNPCs(ModContent.NPCType<PrimordialWyrmHead>());
+		public override bool CanUseItem(Player player) => !NPC.AnyNPCs(ModContent.NPCType<PrimordialWyrmHead>());
 
 		public override bool? UseItem(Player player)
 		{
