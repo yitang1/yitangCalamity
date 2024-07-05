@@ -4,7 +4,7 @@ using Terraria.ID;
 using Terraria.ModLoader;
 using yitangCalamity.Global.Config;
 
-namespace yitangCalamity.Global.InvincibleNPCs
+namespace yitangCN.Global.InvincibleNPCs
 {
     public class InvincibleNPCs : GlobalNPC
     {

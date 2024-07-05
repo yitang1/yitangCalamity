@@ -17,10 +17,10 @@ namespace yitangCalamity.Global.GlobalItems.FuckCalamity.FuckCalamityGlobalAcces
             //仆从召唤杖的工具提示中添加仆从栏位数量的占用情况
             if (item.DamageType == DamageClass.Summon && !item.sentry)
             {
-                string keyM = Language.GetTextValue("Mods.yitangCalamity.Commons.Tips.SummonMinionSlot");
+                string keyM = Language.GetTextValue("Mods.yitangCalamity.Tips.SummonMinionSlot");
                 if (Main.LocalPlayer.slotsMinions >= Main.LocalPlayer.maxMinions)
                 {
-                    keyM = Language.GetTextValue("Mods.yitangCalamity.Commons.Tips.SummonMinionSlotFull");
+                    keyM = Language.GetTextValue("Mods.yitangCalamity.Tips.SummonMinionSlotFull");
                 }
                 string textM = Language.GetTextValueWith(keyM, new
                 {
@@ -34,10 +34,10 @@ namespace yitangCalamity.Global.GlobalItems.FuckCalamity.FuckCalamityGlobalAcces
             //哨兵召唤杖的工具提示中添加哨兵栏位数量的占用情况
             if (item.DamageType == DamageClass.Summon && item.sentry)
             {
-                string keyS = Language.GetTextValue("Mods.yitangCalamity.Commons.Tips.SummonSentrieSlot");
+                string keyS = Language.GetTextValue("Mods.yitangCalamity.Tips.SummonSentrieSlot");
                 if (getNumSentries() >= Main.LocalPlayer.maxTurrets)
                 {
-                    keyS = Language.GetTextValue("Mods.yitangCalamity.Commons.Tips.SummonSentrieSlotFull");
+                    keyS = Language.GetTextValue("Mods.yitangCalamity.Tips.SummonSentrieSlotFull");
                 }
                 string textS = Language.GetTextValueWith(keyS, new
                 {

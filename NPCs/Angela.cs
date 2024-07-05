@@ -363,7 +363,7 @@ namespace yitangCalamity.NPCs
 
 			#region Boss召唤物品
 
-			#region 原版Boss
+			#region 原版Boss相关
 			//肉前
 			sumShop.Add(CustomPrice(ItemID.SlimeCrown, buyPrice(0, 2, 0, 0)), Array.Empty<Condition>());
             if (TryFind<ModItem>("FargowiltasSouls/SquirrelCoatofArms", out ModItem SquirrelCoatofArms))
