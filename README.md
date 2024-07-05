@@ -1,7 +1,7 @@
 ### yitangCalamity ❤
 这是一个tmodloader的模组（Mod）。  
 此模组开发时的定位是围绕“**灾厄Mod**”，添加一些提高游戏体验的内容和功能。  
-同样也适配“灾法双开”的玩法。
+适配灾劫Mod，同样也适配“灾法双开”的玩法。
 
 #### Mod下载：
 *  点击这里👉 [yitangCalamity.tmod是Mod文件](https://github.com/yitang1/yitangCalamity/releases)
