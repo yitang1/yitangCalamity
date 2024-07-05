@@ -23,8 +23,14 @@ namespace yitangCalamity.Global.Config
         [DefaultValue(true)]
         public bool ytNPCStarMerchant;
 
-        //[DefaultValue(true)]
-        //public bool ytNPCeeeeeeeee;
+        [DefaultValue(true)]
+        public bool ytNPCBuilder;
+
+        [DefaultValue(true)]
+        public bool ytNPCBrewer;
+
+        [DefaultValue(true)]
+        public bool ytNPCAngela;
 
         [DefaultValue(true)]
 		[ReloadRequired]

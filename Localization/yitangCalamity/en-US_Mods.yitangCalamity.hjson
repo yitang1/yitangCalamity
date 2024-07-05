@@ -53,6 +53,21 @@ Configs: {
 			Tooltip: ""
 		}
 
+		ytNPCBuilder: {
+			Label: yt NPC Builder
+			Tooltip: ""
+		}
+
+		ytNPCBrewer: {
+			Label: yt NPC Brewer
+			Tooltip: ""
+		}
+
+		ytNPCAngela: {
+			Label: yt NPC Angela
+			Tooltip: ""
+		}
+
 		ytNPCInvincible: {
 			Label: yt NPC Invincible
 			Tooltip: ""
