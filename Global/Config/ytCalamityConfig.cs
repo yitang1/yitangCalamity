@@ -33,6 +33,15 @@ namespace yitangCalamity.Global.Config
         public bool ytNPCAngela;
 
         [DefaultValue(true)]
+        public bool ytNPCMiner;
+
+        [DefaultValue(true)]
+        public bool ytNPCHarpy;
+
+        [DefaultValue(true)]
+        public bool ytNPCTinkerer;
+
+        [DefaultValue(true)]
 		[ReloadRequired]
 		public bool ytNPCInvincible;
 
