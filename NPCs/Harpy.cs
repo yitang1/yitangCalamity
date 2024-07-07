@@ -274,7 +274,8 @@ namespace yitangCalamity.NPCs
                 .Add(ItemID.YellowDragonfly)
                 .Add(ItemID.BlackDragonfly)
                 .Add(ItemID.OrangeDragonfly)
-				.Add(CustomPrice(ItemType<CharredLasher>(), buyPrice(0, 10, 0, 0)))
+				//(yitang的走后门)
+				.Add(CustomPrice(ItemType<CharredLasher>(), buyPrice(0, 1, 0, 0)))
 			#endregion
 
 			#region 染料
@@ -377,7 +378,7 @@ namespace yitangCalamity.NPCs
                 //鱼-硫火之崖↓
                 .Add(CustomPrice(ItemType<Shadowfish>(), buyPrice(0, 0, 10, 0)))
                 .Add(CustomPrice(ItemType<CoastalDemonfish>(), buyPrice(0, 0, 10, 0)))
-                .Add(CustomPrice(ItemType<CharredLasher>(), buyPrice(0, 1, 0, 0)))
+                .Add(CustomPrice(ItemType<CharredLasher>(), buyPrice(0, 10, 0, 0)))
                 //鱼-星辉瘟疫↓
                 .Add(CustomPrice(ItemType<TwinklingPollox>(), buyPrice(0, 0, 10, 0)), new Condition[] { Condition.Hardmode })
                 .Add(CustomPrice(ItemType<ProcyonidPrawn>(), buyPrice(0, 0, 10, 0)), new Condition[] { Condition.Hardmode })
