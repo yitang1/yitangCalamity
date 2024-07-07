@@ -274,7 +274,7 @@ namespace yitangCalamity.NPCs
                 .Add(ItemID.YellowDragonfly)
                 .Add(ItemID.BlackDragonfly)
                 .Add(ItemID.OrangeDragonfly)
-				//(yitang的走后门)
+				//(yitang的走后门操作)
 				.Add(CustomPrice(ItemType<CharredLasher>(), buyPrice(0, 1, 0, 0)))
 			#endregion
 

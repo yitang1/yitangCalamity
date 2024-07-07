@@ -11,8 +11,8 @@
 [i:3458]能同时对其起汉化作用的模组清单：
    [i:3457]Calamity Mod [灾厄] (当前版本尚未实现)
    [i:3457]Catalyst Mod [灾劫] (当前版本尚未实现)
-   [i:3457]BossChecklist [Boss列表]
-   [i:3456]RecipeBrowser [合成表]
+   [i:3457]Boss Checklist [Boss列表]
+   [i:3456]Recipe Browser [合成表]
    [i:3456]tmodloader的文本
 
 [i:3458]添加合成配方的原版物品：
