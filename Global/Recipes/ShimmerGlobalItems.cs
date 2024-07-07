@@ -85,6 +85,17 @@ namespace yitangCalamity.Global.Recipes
 				ItemID.Sets.ShimmerTransformToItem[ModContent.ItemType<RefractionRotor>()] = ModContent.ItemType<TheAtomSplitter>();
 				ItemID.Sets.ShimmerTransformToItem[ModContent.ItemType<TheAtomSplitter>()] = ModContent.ItemType<PhotonRipper>();
 			}
+			else if (!ModLoader.HasMod("CatalystMod"))
+			{
+				ItemID.Sets.ShimmerTransformToItem[ModContent.ItemType<PhotonRipper>()] = ModContent.ItemType<SpineOfThanatos>();
+				ItemID.Sets.ShimmerTransformToItem[ModContent.ItemType<SpineOfThanatos>()] = ModContent.ItemType<SurgeDriver>();
+				ItemID.Sets.ShimmerTransformToItem[ModContent.ItemType<SurgeDriver>()] = ModContent.ItemType<TheJailor>();
+				ItemID.Sets.ShimmerTransformToItem[ModContent.ItemType<TheJailor>()] = ModContent.ItemType<AresExoskeleton>();
+				ItemID.Sets.ShimmerTransformToItem[ModContent.ItemType<AresExoskeleton>()] = ModContent.ItemType<AtlasMunitionsBeacon>();
+				ItemID.Sets.ShimmerTransformToItem[ModContent.ItemType<AtlasMunitionsBeacon>()] = ModContent.ItemType<RefractionRotor>();
+				ItemID.Sets.ShimmerTransformToItem[ModContent.ItemType<RefractionRotor>()] = ModContent.ItemType<TheAtomSplitter>();
+				ItemID.Sets.ShimmerTransformToItem[ModContent.ItemType<TheAtomSplitter>()] = ModContent.ItemType<PhotonRipper>();
+			}
 		}
     }
 }
