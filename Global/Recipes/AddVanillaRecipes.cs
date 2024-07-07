@@ -266,7 +266,7 @@ namespace yitangCalamity.Global.Recipes
             Recipe.Create(ItemID.VampireFrogStaff)
                 .AddIngredient(ItemID.Frog)
                 .AddIngredient<BloodOrb>(10)
-                .AddIngredient(ItemID.CrimtaneBar, 5)
+                .AddIngredient(ItemID.CrimtaneBar, 10)
                 .AddTile(TileID.Anvils)
                 .Register();
             //致命球法杖

@@ -42,6 +42,9 @@ namespace yitangCalamity.Global.Config
         public bool ytNPCTinkerer;
 
         [DefaultValue(true)]
+        public bool ytNPCAngler;
+
+        [DefaultValue(true)]
 		[ReloadRequired]
 		public bool ytNPCInvincible;
 
