@@ -14,5 +14,14 @@ namespace yitangCalamity
 			item.shopCustomPrice = price;
 			return item;
 		}
+
+		public const string ShopName = "Terraria/Angler/Shop";
+
+		public const string VanityShopName = "Terraria/Angler/Decor";
+
+		public static bool ShouldEnableAnglerShop()
+		{
+			return !ModLoader.HasMod("NoFishingQuests") && !ModLoader.HasMod("AnglerShopsAlternative");
+		}
 	}
 }

@@ -60,6 +60,47 @@ Items: {
 		DisplayName: 模组配置图标
 		Tooltip: ""
 	}
+
+	AnglerHeadIcon: {
+		DisplayName: 模组配置图标
+		Tooltip: ""
+	}
+
+	MysticRedJelly: {
+		DisplayName: 神奇红果冻
+		Tooltip:
+			'''
+			召唤暴躁史莱姆
+			不消耗
+			'''
+	}
+
+	MysticYellowJelly: {
+		DisplayName: 神奇黄果冻
+		Tooltip:
+			'''
+			召唤神秘青蛙
+			不消耗
+			'''
+	}
+
+	ShinyPinkBalloon: {
+		DisplayName: 闪亮粉气球
+		Tooltip:
+			'''
+			召唤笨拙气球史莱姆
+			不消耗
+			'''
+	}
+
+	RainMagic: {
+		DisplayName: 雨云魔咒
+		Tooltip:
+			'''
+			启用或禁用下雨
+			不消耗
+			'''
+	}
 }
 
 Commons: {
@@ -158,9 +199,9 @@ NPCs: {
 			Content: 这让我回到了过去的美好时光。
 			NoHome: 所以，我该去哪里休息？
 			FarFromHome: 我好像挖得太远了……
-			LoveSpace: 这里有足够的空间来放置我的所有工具。
 			DislikeCrowded: 人有点多，我总是会撞到别人。
 			HateCrowded: 这里太拥挤了，我甚至都不能离开这里！
+			LoveSpace: 这里有足够的空间来放置我的所有工具。
 			LikeBiome: 这里有这么多的矿石可以开采。
 			DislikeBiome: 我该怎么在这里采矿？
 			LoveNPC: 和{NPCName}在一起让我玩得非常开心！
@@ -180,15 +221,14 @@ NPCs: {
 			LoveSpace: 我非常喜欢这么大的空间，如此开阔，可以让我一直翱翔。
 			DislikeCrowded: 我不喜欢这么拥挤。
 			HateCrowded: 周围有那么多人，这让我感到害怕！
-			// LoveBiome: 我非常喜欢{BiomeName}。
 			LikeBiome: 我很喜欢待在{BiomeName}。
 			DislikeBiome: 我不喜欢这里，因为没有开阔的空间可让我飞翔。
 			LoveNPC: 我非常喜欢{NPCName}，她简直就像是大自然的化身。
 			LikeNPC: 我喜欢{NPCName}，嗯，大概。
-			LikeNPC_Princess: "{NPCName}总是鼓励和支持我的一切努力。"
-			Princess_LovesNPC: 如果用喷气背包的话，我是不是就可以和{NPCName}一起飞翔了！
 			DislikeNPC: "{NPCName}总是把个人利益置于环境之上，我不喜欢他！"
 			HateNPC: 我讨厌{NPCName}，他总是会乱炸和搞破坏！
+			LikeNPC_Princess: "{NPCName}总是鼓励和支持我的一切努力。"
+			Princess_LovesNPC: 如果用喷气背包的话，我是不是就可以和{NPCName}一起飞翔了！
 		}
 	}
 
@@ -202,13 +242,13 @@ NPCs: {
 			LoveSpace: 我非常喜欢有这么大的空间，能让人感到自由自在。
 			DislikeCrowded: 周围有点拥挤，说实话，我不喜欢这样。
 			HateCrowded: 我讨厌这么拥挤，这会扰乱我的思考。
+			LoveBiome: 我和我姐姐习惯住在寒冷的地方，所以在这里我完全没问题。
 			LikeBiome: 有点黑，但我完全可以住在这里。
 			DislikeBiome: 我讨厌炎热的天气和沙子，所以No，我不会住在这里。
 			LoveNPC: "{NPCName}终于来了吗？我有很多话要说，姐姐！"
 			LikeNPC_Princess: 我很喜欢{NPCName}，她能够理解饰品这种装备的美妙之处。
-			Princess_LovesNPC: 在{NPCName}那里总是会有各种新奇有趣的配饰，真想再去看一看！
 			DislikeNPC: 别让{NPCName}在我附近，他衣服上的沙子总是堵住我制作配饰的机械装置！
-			LoveBiome: 我和我姐姐习惯住在寒冷的地方，所以在这里我完全没问题。
+			Princess_LovesNPC: 在{NPCName}那里总是会有各种新奇有趣的配饰，真想再去看一看！
 		}
 	}
 }
@@ -241,7 +281,7 @@ Configs: {
 				'''
 				启用此选项后
 				会在游戏中添加一名城镇NPC
-				此NPC会售卖各种[c/FFB453:原版和模组的物块]
+				此NPC会售卖各种[c/FFB453:原版物块和模组物块]
 				生成条件为：世界中至少有[c/F2E635:3]名城镇NPC存在
 
 				如果你更喜欢自己收集物块，可以关闭此选项
@@ -296,7 +336,7 @@ Configs: {
 				此NPC会售卖[c/FFB453:植物、小动物和渔获]
 				生成条件为：玩家的物品栏中有[i:Bass][c/F2E635:鲈鱼]
 
-				如果你更喜欢自己收集动植物、染料材料和钓鱼，可以关闭此选项
+				如果你更喜欢自己收集动植物、染料和钓鱼，可以关闭此选项
 				'''
 		}
 
@@ -310,6 +350,18 @@ Configs: {
 				生成条件为：击败[c/F2E635:哥布林入侵]后
 
 				如果你更喜欢自己制作饰品，可以关闭此选项
+				'''
+		}
+
+		ytNPCAngler: {
+			Label: "[i:yitangCalamity/AnglerHeadIcon] 添加渔夫商店"
+			Tooltip:
+				'''
+				启用此选项后
+				游戏中的城镇NPC——渔夫
+				其会售卖[c/FFB453:渔夫任务相关物品]
+
+				如果你更喜欢做渔夫任务，可以关闭此选项
 				'''
 		}
 
