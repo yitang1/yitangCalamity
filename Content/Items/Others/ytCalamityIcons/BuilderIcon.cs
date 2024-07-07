@@ -5,7 +5,7 @@ using Terraria.ModLoader;
 
 namespace yitangCalamity.Content.Items.Others.ytCalamityIcons
 {
-    public class BuilderIcon : ModItem
+	internal class BuilderIcon : ModItem
     {
         public override string Texture => "yitangCalamity/NPCs/Builder_Head";
 

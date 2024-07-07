@@ -5,7 +5,7 @@ using Terraria.ModLoader;
 
 namespace yitangCalamity.Content.Items.Others.ytCalamityIcons
 {
-	public class AngelaIcon : ModItem
+	internal class AngelaIcon : ModItem
 	{
 		public override string Texture => "yitangCalamity/NPCs/Angela_Head";
 

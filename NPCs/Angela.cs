@@ -352,7 +352,7 @@ namespace yitangCalamity.NPCs
 
 			#region 事件召唤物品
 			sumShop
-				//.Add(CustomPrice(ItemType<RainMagic>(), buyPrice(0, 1, 0, 0)), Array.Empty<Condition>())
+				.Add(CustomPrice(ItemType<RainMagic>(), buyPrice(0, 1, 0, 0)), Array.Empty<Condition>())
 				.Add(CustomPrice(ItemID.BloodMoonStarter, buyPrice(0, 2, 0, 0)), Array.Empty<Condition>())
 				.Add(CustomPrice(ItemID.GoblinBattleStandard, buyPrice(0, 2, 0, 0)), Array.Empty<Condition>())
 				.Add(CustomPrice(ItemType<CausticTear>(), buyPrice(0, 1, 50, 0)), new Condition[] { Condition.DownedEyeOfCthulhu })

@@ -5,7 +5,7 @@ using Terraria.ModLoader;
 
 namespace yitangCalamity.Content.Items.Others.ytCalamityIcons
 {
-	public class MinerIcon : ModItem
+	internal class MinerIcon : ModItem
 	{
 		public override string Texture => "yitangCalamity/NPCs/Miner_Head";
 

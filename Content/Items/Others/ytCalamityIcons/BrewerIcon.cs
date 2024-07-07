@@ -5,7 +5,7 @@ using Terraria.ModLoader;
 
 namespace yitangCalamity.Content.Items.Others.ytCalamityIcons
 {
-	public class BrewerIcon : ModItem
+	internal class BrewerIcon : ModItem
 	{
 		public override string Texture => "yitangCalamity/NPCs/Brewer_Head";
 

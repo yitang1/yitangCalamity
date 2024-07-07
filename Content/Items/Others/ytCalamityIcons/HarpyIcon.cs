@@ -5,7 +5,7 @@ using Terraria.ModLoader;
 
 namespace yitangCalamity.Content.Items.Others.ytCalamityIcons
 {
-	public class HarpyIcon : ModItem
+	internal class HarpyIcon : ModItem
 	{
 		public override string Texture => "yitangCalamity/NPCs/Harpy_Head";
 

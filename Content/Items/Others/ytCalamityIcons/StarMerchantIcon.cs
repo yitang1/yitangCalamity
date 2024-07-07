@@ -5,7 +5,7 @@ using Terraria.ModLoader;
 
 namespace yitangCalamity.Content.Items.Others.ytCalamityIcons
 {
-    public class StarMerchantIcon : ModItem
+	internal class StarMerchantIcon : ModItem
     {
         public override string Texture => "yitangCalamity/NPCs/StarMerchant_Head";
 
