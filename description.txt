@@ -22,16 +22,16 @@
 [i:1314][i:1306][i:160][i:272][i:3109]
 
 [i:3458]添加微光转化配方的物品：
-  [i:156]地牢金锁箱系列物品
-  [i:220]地狱暗影箱系列物品
-  [i:4270]肉后血月钓鱼敌怪掉落物品
-  [i:3054]哥布林术士掉落物品
-  [i:3291]花后地牢敌怪掉落物品
-  [i:3827]双足翼龙掉落物品
-  [i:CalamityMod/AtlasMunitionsBeacon]星流巨械掉落物品
-  [i:CalamityMod/CrimsonEffigy]灾厄肉前三雕像
-  [i:215][i:1304]整蛊坐垫和僵尸臂
-  [i:CalamityMod/ElysianAegis][i:CalamityMod/ElysianWings]极乐之庇护和极乐之翼
+   [i:156]地牢金锁箱系列物品
+   [i:220]地狱暗影箱系列物品
+   [i:4270]肉后血月钓鱼敌怪掉落物品
+   [i:3054]哥布林术士掉落物品
+   [i:3291]花后地牢敌怪掉落物品
+   [i:3827]双足翼龙掉落物品
+   [i:CalamityMod/AresExoskeleton]星流巨械掉落物品
+   [i:CalamityMod/CrimsonEffigy]灾厄肉前三雕像
+   [i:215][i:1304]整蛊坐垫和僵尸臂
+   [i:CalamityMod/ElysianAegis][i:CalamityMod/ElysianWings]极乐之庇护和极乐之翼
 
 [i:3458]添加合成配方的模组物品：
 稀有度高的、或无法合成的、或大部分敌怪或Boss掉落率较低的模组物品。
