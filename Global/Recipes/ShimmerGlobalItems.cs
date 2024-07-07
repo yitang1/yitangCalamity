@@ -71,6 +71,13 @@ namespace yitangCalamity.Global.Recipes
 				ItemID.Sets.ShimmerTransformToItem[ModContent.Find<ModItem>("FargowiltasSouls", "DragonBreath").Type] = ItemID.ApprenticeStaffT3;
 				ItemID.Sets.ShimmerTransformToItem[ItemID.ApprenticeStaffT3] = ItemID.DD2SquireBetsySword;
 			}
+			else if (!ModLoader.HasMod("FargowiltasSouls"))
+			{
+				ItemID.Sets.ShimmerTransformToItem[ItemID.DD2SquireBetsySword] = ItemID.MonkStaffT3;
+				ItemID.Sets.ShimmerTransformToItem[ItemID.MonkStaffT3] = ItemID.DD2BetsyBow;
+				ItemID.Sets.ShimmerTransformToItem[ItemID.DD2BetsyBow] = ItemID.ApprenticeStaffT3;
+				ItemID.Sets.ShimmerTransformToItem[ItemID.ApprenticeStaffT3] = ItemID.DD2SquireBetsySword;
+			}
 
 			//灾厄Mod和灾劫Mod星流巨械的掉落武器互相转化。
 			if (ModLoader.HasMod("CatalystMod"))
