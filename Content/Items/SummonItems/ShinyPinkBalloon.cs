@@ -27,6 +27,11 @@ namespace yitangCalamity.Content.Items.SummonItems
 				.Register();
 		}
 
+		public override bool CanUseItem(Player player)
+		{
+			return !NPC.AnyNPCs(NPCID.BoundTownSlimePurple) && !NPC.AnyNPCs(NPCID.TownSlimePurple);
+		}
+
 		public override bool? UseItem(Player player)
 		{
 			Vector2 spawnPosition = player.Center - Vector2.UnitY * 350f;

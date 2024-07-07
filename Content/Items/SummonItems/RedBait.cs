@@ -28,8 +28,9 @@ namespace yitangCalamity.Content.Items.SummonItems
         public override void AddRecipes()
         {
             CreateRecipe()
-				.AddIngredient(ItemID.Worm)
-				.AddIngredient(ModContent.ItemType<EssenceofHavoc>(), 5)
+				.AddIngredient(ItemID.Worm, 10)
+				.AddIngredient<BloodOrb>(10)
+				.AddIngredient<EssenceofHavoc>(5)
 				.AddTile(TileID.DemonAltar)
 				.Register();
         }
