@@ -7,6 +7,7 @@ using Microsoft.Xna.Framework;
 using CalamityMod;
 using CalamityMod.Rarities;
 using CalamityMod.Items.Materials;
+using CalamityMod.Items.Placeables;
 using CalamityMod.NPCs.PrimordialWyrm;
 using CalamityMod.Tiles.Furniture.CraftingStations;
 
@@ -36,6 +37,10 @@ namespace yitangCalamity.Content.Items.SummonItems
 			if (ModContent.TryFind<ModItem>("FargowiltasCrossmod/WyrmTablet", out ModItem WyrmTablet))
 			{
 				recipe.AddIngredient(WyrmTablet.Type);
+			}
+			else
+			{
+				recipe.AddIngredient<Voidstone>(30);
 			}
 			recipe.AddIngredient<ExoPrism>();
 			recipe.AddIngredient<AshesofAnnihilation>();
