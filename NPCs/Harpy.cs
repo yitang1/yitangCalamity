@@ -114,7 +114,7 @@ namespace yitangCalamity.NPCs
                     return "之前我在海里捕鱼的时候，老是会捞上来垃圾，到底是谁在往水里乱扔东西呀？";
                 }
             }
-            switch (Main.rand.Next(8))
+            switch (Main.rand.Next(7))
             {
                 case 0:
                     return "离开天空后，回归大自然，于是我开始尝试去接触植物和小动物。";
@@ -128,8 +128,6 @@ namespace yitangCalamity.NPCs
                     return "俗话说得好，授人以鱼不如授人以渔。所以我去抓了很多，要看一看嘛。";
                 case 5:
                     return "之前我在海里捕鱼的时候，老是会捞上来垃圾，到底是谁在往水里乱扔东西呀？";
-                case 6:
-                    return "如果你多出去走走，看看大自然的美景，欣赏鸟语花香的森林，你会发现——还是躺在家里玩手机比较舒服。";
                 default:
                     return "飞翔的感觉很有趣，也很棒……但有时我也会幻想拥有一双手臂。";
             }
