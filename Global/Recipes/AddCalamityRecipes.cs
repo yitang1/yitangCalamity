@@ -608,6 +608,13 @@ namespace yitangCalamity.Global.Recipes
 				.AddIngredient(ItemID.Ectoplasm, 10)
 				.AddTile(TileID.Bookcases)
 				.Register();
+			//侧翼
+			Recipe.Create(ItemType<Wingman>())
+				.AddIngredient(ItemID.LaserDrill)
+				.AddIngredient(ItemID.JimsDrone, 2)
+				.AddIngredient(ItemID.MartianConduitPlating, 20)
+				.AddTile(TileID.MythrilAnvil)
+				.Register();
 			#endregion
 
 			#region 召唤武器
