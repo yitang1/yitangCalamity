@@ -347,11 +347,14 @@ namespace yitangCalamity.Global.Recipes
             for (int i = 0; i < Recipe.numRecipes; i++)
             {
                 Recipe recipe = Main.recipe[i];
-                //十字章护身符
-                if (recipe.HasResult(ItemID.AnkhCharm))
-                {
-                    recipe.AddIngredient(ItemID.HandWarmer);
-                }
+				if (ytCalamityConfig.Instance.FuckCalamityAll1)
+				{
+					//十字章护身符
+					if (recipe.HasResult(ItemID.AnkhCharm))
+					{
+						recipe.AddIngredient(ItemID.HandWarmer);
+					}
+				}
                 if (ytCalamityConfig.Instance.ytCRecipes)
                 {
                     //永夜刃

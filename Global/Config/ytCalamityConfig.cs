@@ -11,15 +11,15 @@ namespace yitangCalamity.Global.Config
 
         public static ytCalamityConfig Instance;
 
-        //[Header("FuckCalamityAll")]
-        //[ReloadRequired]
-        //[DefaultValue(true)]
-        //public bool FuckCalamityAll1;
+		[Header("FuckCalamityAll")]
+		[ReloadRequired]
+		[DefaultValue(true)]
+		public bool FuckCalamityAll1 { get; set; }
 
-        //[DefaultValue(true)]
-        //public bool FuckCalamityAll2;
+		[DefaultValue(true)]
+		public bool FuckCalamityAll2 => FuckCalamityAll1;
 
-        [Header("ytCNPCs")]
+		[Header("ytCNPCs")]
         [DefaultValue(true)]
         public bool ytNPCStarMerchant;
 
