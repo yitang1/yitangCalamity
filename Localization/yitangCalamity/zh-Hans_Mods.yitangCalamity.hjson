@@ -1,4 +1,25 @@
+Buffs: {
+	TriumphBuff: {
+		DisplayName: 胜利之战
+		Description:
+			'''
+			敌人的接触伤害降低
+			他们的生命值越低
+			降低的幅度就越大
+			'''
+	}
+}
+
 Items: {
+	TriumphPotion: {
+		DisplayName: 胜利药水
+		Tooltip:
+			'''
+			降低敌人造成的接触伤害
+			此效果随敌人生命值降低而更加明显
+			'''
+	}
+
 	ProfanedGuardianPlush: {
 		DisplayName: 亵渎玩偶
 		Tooltip: 亵渎守卫力量的象征
@@ -258,8 +279,32 @@ Configs: {
 		DisplayName: yitangCalamity模组配置
 
 		Headers: {
+			FuckCalamityAll: 回调机制与恢复旧功能
 			ytCNPCs: NPC相关
 			ytCRecipes: 配方相关
+		}
+
+		FuckCalamityAll1: {
+			Label: 回调灾厄Mod的一些改动 I
+			Tooltip:
+				'''
+				列表清单：
+				1.加强或回调灾厄和灾劫Mod的一些武器(当前版本暂未实现)
+				2.十字章护身符的配方和效果中添加了暖手宝
+				3.灾厄Mod的放置类增益物品(雕像、蜡烛)
+				   放在物品栏、存钱罐、保险箱、护卫熔炉、虚空袋内永久生效
+				4.醉仙女蜡烛的四个增益能够同时生效
+				5. ……
+				'''
+		}
+
+		FuckCalamityAll2: {
+			Label: 回调灾厄Mod的一些改动 II
+			Tooltip:
+				'''
+				列表清单：
+				21. ……
+				'''
 		}
 
 		ytNPCStarMerchant: {

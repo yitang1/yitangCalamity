@@ -1,4 +1,16 @@
+Buffs: {
+	TriumphBuff: {
+		DisplayName: Triumph Buff
+		Description: ""
+	}
+}
+
 Items: {
+	TriumphPotion: {
+		DisplayName: Triumph Potion
+		Tooltip: ""
+	}
+
 	ProfanedGuardianPlush: {
 		DisplayName: Profaned Guardian Plush
 		Tooltip: ""
@@ -230,8 +242,19 @@ Configs: {
 		DisplayName: yitang C Config
 
 		Headers: {
+			FuckCalamityAll: Fuck Calamity All
 			ytCNPCs: yt C NPCs Header
 			ytCRecipes: yt C Recipes Header
+		}
+
+		FuckCalamityAll1: {
+			Label: Fuck Calamity All I
+			Tooltip: ""
+		}
+
+		FuckCalamityAll2: {
+			Label: Fuck Calamity All II
+			Tooltip: ""
 		}
 
 		ytNPCStarMerchant: {
