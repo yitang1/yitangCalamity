@@ -8,6 +8,11 @@ Buffs: {
 		DisplayName: Yharim Power
 		Description: ""
 	}
+
+	Cadence: {
+		DisplayName: Cadence
+		Description: ""
+	}
 }
 
 Items: {
@@ -18,6 +23,11 @@ Items: {
 
 	YharimsStimulants: {
 		DisplayName: Yharims Stimulants
+		Tooltip: ""
+	}
+
+	CadencePotion: {
+		DisplayName: Cadence Potion
 		Tooltip: ""
 	}
 

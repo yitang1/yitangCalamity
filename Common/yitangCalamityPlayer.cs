@@ -74,16 +74,6 @@ namespace yitangCalamity.Common
             //holyMinions = false;
         }
 
-        public override void UpdateLifeRegen()
-        {
-            if (cadence)
-            {
-                Player.lifeRegen += 5;
-                /*原版TR生命再生的公式里最后要除以2。每2秒增加n点生命值，
-                也就是说如果lifeRegen += 5; 那么游戏里实际显示和应用的生命再生速度为增加2.5点。*/
-            }
-        }
-
         public override void UpdateDead()
         {
             cadence = false;
@@ -101,49 +91,59 @@ namespace yitangCalamity.Common
             ninjaSkill = false;
         }
 
-        //public override void PreUpdateMovement()
-        //{
-        //    if (Player.whoAmI == Main.myPlayer && ExoChair)
-        //    {
-        //        float speed = 12f;
-        //        if (Player.controlLeft)
-        //        {
-        //            Player.velocity.X = -speed;
-        //            Player.direction = -1;
-        //        }
-        //        else if (Player.controlRight)
-        //        {
-        //            Player.velocity.X = speed;
-        //            Player.direction = 1;
-        //        }
-        //        else
-        //        {
-        //            Player.velocity.X = 0f;
-        //        }
-        //        if (Player.controlUp || Player.controlJump)
-        //        {
-        //            Player.velocity.Y = -speed;
-        //        }
-        //        else if (Player.controlDown)
-        //        {
-        //            Player.velocity.Y = speed;
-        //            if (Collision.TileCollision(Player.position, Player.velocity, Player.width, Player.height, true, false, (int)Player.gravDir).Y == 0f)
-        //            {
-        //                Player.velocity.Y = 0.5f;
-        //            }
-        //        }
-        //        else
-        //        {
-        //            Player.velocity.Y = 0f;
-        //        }
-        //        if (yitangCalamityKeybind.ExoChairSpeedupHotkey.Current)
-        //        {
-        //            Player.velocity *= 2f;
-        //        }
-        //    }
-        //}
+        public override void UpdateLifeRegen()
+        {
+            if (cadence)
+            {
+                Player.lifeRegen += 5;
+                /*原版TR生命再生的公式里最后要除以2。每2秒增加n点生命值，
+                也就是说如果lifeRegen += 5; 那么游戏里实际显示和应用的生命再生速度为增加2.5点。*/
+            }
+        }
 
-        public override void OnHurt(Player.HurtInfo info)
+		//public override void PreUpdateMovement()
+		//{
+		//    if (Player.whoAmI == Main.myPlayer && ExoChair)
+		//    {
+		//        float speed = 12f;
+		//        if (Player.controlLeft)
+		//        {
+		//            Player.velocity.X = -speed;
+		//            Player.direction = -1;
+		//        }
+		//        else if (Player.controlRight)
+		//        {
+		//            Player.velocity.X = speed;
+		//            Player.direction = 1;
+		//        }
+		//        else
+		//        {
+		//            Player.velocity.X = 0f;
+		//        }
+		//        if (Player.controlUp || Player.controlJump)
+		//        {
+		//            Player.velocity.Y = -speed;
+		//        }
+		//        else if (Player.controlDown)
+		//        {
+		//            Player.velocity.Y = speed;
+		//            if (Collision.TileCollision(Player.position, Player.velocity, Player.width, Player.height, true, false, (int)Player.gravDir).Y == 0f)
+		//            {
+		//                Player.velocity.Y = 0.5f;
+		//            }
+		//        }
+		//        else
+		//        {
+		//            Player.velocity.Y = 0f;
+		//        }
+		//        if (yitangCalamityKeybind.ExoChairSpeedupHotkey.Current)
+		//        {
+		//            Player.velocity *= 2f;
+		//        }
+		//    }
+		//}
+
+		public override void OnHurt(Player.HurtInfo info)
         {
             if (revivify)
             {
@@ -235,9 +235,13 @@ namespace yitangCalamity.Common
 
         public override void PostUpdateMiscEffects()
         {
-            CalamityPlayer calamityPlayer = Player.Calamity();
-            yitangCalamityPlayer player = Player.yitangCalamity();
-            if (tScale)
+			if (cadence)
+			{
+				//生命拾心的药水效果
+				Player.lifeMagnet = true;
+			}
+
+			if (tScale)
             {
                 Player.endurance += 0.05f;
                 Player.statDefense += 5;

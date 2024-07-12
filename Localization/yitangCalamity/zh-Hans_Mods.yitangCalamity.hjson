@@ -13,6 +13,11 @@ Buffs: {
 		DisplayName: 亚利姆之力
 		Description: 你感觉可以把世界撕成两半……空手足矣！
 	}
+
+	Cadence: {
+		DisplayName: 心律和谐
+		Description: 你心灵纯净
+	}
 }
 
 Items: {
@@ -36,6 +41,17 @@ Items: {
 			召唤击退力提高100%，移动速度提高7.5%
 			伤害减免提高4%，增加10点防御力
 			鞭子的攻击速度提高7.5%
+			'''
+	}
+
+	CadencePotion: {
+		DisplayName: 韵律药水
+		Tooltip:
+			'''
+			获得心律和谐增益：
+			增加2.5点生命再生速度
+			最大生命值提高25%
+			扩大红心的拾取范围
 			'''
 	}
 

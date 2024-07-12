@@ -4,7 +4,6 @@ using Terraria.Audio;
 using Terraria.ID;
 using Terraria.ModLoader;
 using CalamityMod.Items.Materials;
-using yitangCalamity.Content;
 using yitangCalamity.Content.Buffs.Potions;
 
 namespace yitangCalamity.Content.Items.Potions
@@ -40,6 +39,7 @@ namespace yitangCalamity.Content.Items.Potions
 				.AddIngredient(ModContent.ItemType<PearlShard>(), 3)
 				.AddTile(TileID.Bottles)
 				.Register();
+
 			CreateRecipe()
                 .AddIngredient(ItemID.BottledWater)
                 .AddIngredient(ModContent.ItemType<BloodOrb>(), 30)

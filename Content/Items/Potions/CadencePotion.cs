@@ -4,11 +4,12 @@ using Terraria;
 using Terraria.Audio;
 using Terraria.ID;
 using Terraria.ModLoader;
+using yitangCalamity.Content;
 using yitangCalamity.Content.Buffs.Potions;
 
 namespace yitangCalamity.Content.Items.Potions
 {
-	public class YharimsStimulants : ModItem
+	public class CadencePotion : ModItem
 	{
 		public override void SetStaticDefaults()
 		{
@@ -18,34 +19,33 @@ namespace yitangCalamity.Content.Items.Potions
 		public override void SetDefaults()
 		{
 			Item.width = 28;
-			Item.height = 18;
+			Item.height = 38;
 			Item.useTurn = true;
 			Item.maxStack = 9999;
-			Item.rare = ItemRarityID.Orange;
+			Item.rare = ItemRarityID.LightRed;
 			Item.useAnimation = 17;
 			Item.useTime = 17;
 			Item.useStyle = 2;
 			Item.UseSound = new SoundStyle?(SoundID.Item3);
 			Item.consumable = true;
-			Item.buffType = ModContent.BuffType<YharimPower>();
-			Item.buffTime = 18000;
+			Item.buffType = ModContent.BuffType<Cadence>();
+			Item.buffTime = 21600;
 			Item.value = Item.buyPrice(0, 2, 0, 0);
 		}
 
 		public override void AddRecipes()
 		{
 			CreateRecipe()
-				.AddRecipeGroup("AnyFood")
-				.AddIngredient(ItemID.EndurancePotion)
-				.AddIngredient(ItemID.IronskinPotion)
-				.AddIngredient(ItemID.SwiftnessPotion)
-				.AddIngredient(ItemID.TitanPotion)
+				.AddIngredient(ItemID.LovePotion)
+				.AddIngredient(ItemID.RegenerationPotion)
+				.AddIngredient(ItemID.HeartreachPotion)
+				.AddIngredient(ItemID.LifeforcePotion)
 				.AddTile(TileID.AlchemyTable)
 				.Register();
 
 			CreateRecipe()
 				.AddIngredient(ItemID.BottledWater)
-				.AddIngredient<BloodOrb>(50)
+				.AddIngredient<BloodOrb>(40)
                 .AddTile(TileID.AlchemyTable)
                 .Register();
 		}
