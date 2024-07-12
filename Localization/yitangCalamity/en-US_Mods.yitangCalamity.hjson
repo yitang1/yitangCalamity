@@ -3,11 +3,21 @@ Buffs: {
 		DisplayName: Triumph Buff
 		Description: ""
 	}
+
+	YharimPower: {
+		DisplayName: Yharim Power
+		Description: ""
+	}
 }
 
 Items: {
 	TriumphPotion: {
 		DisplayName: Triumph Potion
+		Tooltip: ""
+	}
+
+	YharimsStimulants: {
+		DisplayName: Yharims Stimulants
 		Tooltip: ""
 	}
 
