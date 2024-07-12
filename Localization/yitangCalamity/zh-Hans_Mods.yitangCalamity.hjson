@@ -139,7 +139,7 @@ Items: {
 	}
 
 	MysticRedJelly: {
-		DisplayName: 神奇红果冻
+		DisplayName: 神奇红色果冻
 		Tooltip:
 			'''
 			召唤暴躁史莱姆
@@ -148,7 +148,7 @@ Items: {
 	}
 
 	MysticYellowJelly: {
-		DisplayName: 神奇黄果冻
+		DisplayName: 神奇黄色果冻
 		Tooltip:
 			'''
 			召唤神秘青蛙
