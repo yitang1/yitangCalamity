@@ -18,6 +18,11 @@ Buffs: {
 		DisplayName: 心律和谐
 		Description: 你心灵纯净
 	}
+
+	CalamityPerComb: {
+		DisplayName: 灾厄药剂包 I
+		Description: 获得一些灾厄Mod的增益
+	}
 }
 
 Items: {
@@ -52,6 +57,17 @@ Items: {
 			增加2.5点生命再生速度
 			最大生命值提高25%
 			扩大红心的拾取范围
+			'''
+	}
+
+	CalamityPerCombination: {
+		DisplayName: 灾厄药剂包 I
+		Tooltip:
+			'''
+			获得一些灾厄Mod的增益：
+			弹跳助力、钙质补充、硫磺皮肤
+			胜利之战、亚利姆之力、心律和谐
+			血腥雕像、腐化雕像、腐朽雕像
 			'''
 	}
 

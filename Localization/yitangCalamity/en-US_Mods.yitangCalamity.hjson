@@ -13,6 +13,11 @@ Buffs: {
 		DisplayName: Cadence
 		Description: ""
 	}
+
+	CalamityPerComb: {
+		DisplayName: Calamity Per Comb
+		Description: ""
+	}
 }
 
 Items: {
@@ -28,6 +33,11 @@ Items: {
 
 	CadencePotion: {
 		DisplayName: Cadence Potion
+		Tooltip: ""
+	}
+
+	CalamityPerCombination: {
+		DisplayName: Calamity Per Combination
 		Tooltip: ""
 	}
 
