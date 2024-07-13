@@ -39,6 +39,11 @@ Buffs: {
 		Description: 你正像一颗小太阳一样发出光芒
 	}
 
+	Fortitude: {
+		DisplayName: 刚毅
+		Description: 你无法被击退
+	}
+
 	CalamityPerComb: {
 		DisplayName: 灾厄药剂包 I
 		Description: 获得一些灾厄Mod的增益
@@ -128,6 +133,15 @@ Items: {
 	SunshinePotion: {
 		DisplayName: 阳光药剂
 		Tooltip: 极大地增强光照半径
+	}
+
+	FortitudePotion: {
+		DisplayName: 刚毅药剂
+		Tooltip:
+			'''
+			极大地免疫击退
+			效果等价替代于钴护盾
+			'''
 	}
 
 	CalamityPerCombination: {

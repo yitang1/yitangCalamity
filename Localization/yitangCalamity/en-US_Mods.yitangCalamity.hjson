@@ -34,6 +34,11 @@ Buffs: {
 		Description: ""
 	}
 
+	Fortitude: {
+		DisplayName: Fortitude Buff
+		Description: ""
+	}
+
 	CalamityPerComb: {
 		DisplayName: Calamity Comb I
 		Description: ""
@@ -83,6 +88,11 @@ Items: {
 
 	SunshinePotion: {
 		DisplayName: Sunshine Potion
+		Tooltip: ""
+	}
+
+	FortitudePotion: {
+		DisplayName: Fortitude Potion
 		Tooltip: ""
 	}
 
