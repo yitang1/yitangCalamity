@@ -8,7 +8,7 @@ using yitangCalamity.Content.Buffs.Potions;
 
 namespace yitangCalamity.Content.Items.Potions
 {
-	public class RevivifyPotion : ModItem
+	public class TitanScalePotion : ModItem
 	{
 		public override void SetStaticDefaults()
 		{
@@ -17,34 +17,33 @@ namespace yitangCalamity.Content.Items.Potions
 
 		public override void SetDefaults()
 		{
-			Item.width = 28;
-			Item.height = 36;
+			Item.width = 24;
+			Item.height = 34;
 			Item.useTurn = true;
 			Item.maxStack = 9999;
-			Item.rare = ItemRarityID.LightRed;
+			Item.rare = ItemRarityID.Yellow;
 			Item.useAnimation = 17;
 			Item.useTime = 17;
 			Item.useStyle = 2;
 			Item.UseSound = new SoundStyle?(SoundID.Item3);
 			Item.consumable = true;
-			Item.buffType = ModContent.BuffType<Revivify>();
-			Item.buffTime = 18000;
+			Item.buffType = ModContent.BuffType<TitanScale>();
+			Item.buffTime = 21600;
 			Item.value = Item.buyPrice(0, 2, 0, 0);
 		}
 
 		public override void AddRecipes()
 		{
-			CreateRecipe(5)
-				.AddIngredient<StarblightSoot>(20)
-				.AddIngredient(ItemID.HolyWater, 5)
-				.AddIngredient(ItemID.CrystalShard, 5)
-				.AddIngredient<EssenceofSunlight>(3)
+			CreateRecipe()
+				.AddIngredient(ItemID.TitanPotion)
+				.AddIngredient(ItemID.BeetleHusk)
 				.AddTile(TileID.AlchemyTable)
 				.Register();
 
 			CreateRecipe()
-				.AddIngredient(ItemID.HolyWater)
-				.AddIngredient<BloodOrb>(20)
+				.AddIngredient(ItemID.BottledWater)
+				.AddIngredient<BloodOrb>(10)
+				.AddIngredient(ItemID.BeetleHusk)
 				.AddTile(TileID.AlchemyTable)
 				.Register();
 		}

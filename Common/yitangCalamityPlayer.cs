@@ -48,7 +48,7 @@ namespace yitangCalamity.Common
 				目的是为了平衡，线性公式的情况下，无论玩家的最大生命值是多少，增加的量始终是statLifeMax的25%，
 				而非线性公式，增加的生命值是基于当前生命值的一个比例，但这个比例会因为向下取整的操作而逐渐减小。
 				最终这会导致在低生命值时增加的百分比较高，而在高生命值时增加的百分比较低，
-				随着玩家的最大生命值越来越高，这个药水提高的最大生命值反而会越小，这也就是所谓的像原版那样的平衡。*/
+				即随着玩家的最大生命值越来越高，这个药水提高的最大生命值反而会越小，这也就是所谓的像原版那样的平衡。*/
 				Player.statLifeMax2 += Player.statLifeMax / 5 / 20 * 25;
             }
             triumph = false;
@@ -205,13 +205,13 @@ namespace yitangCalamity.Common
         {
             Player.yitangCalamity().titanBoost = 600;
 
-            if (Player.whoAmI != Main.myPlayer)
-                return;
+			//if (Player.whoAmI != Main.myPlayer)
+			//	return;
 
-            //NPCDebuffs(target, item.CountsAsClass<MagicDamageClass>(),
-            //    item.CountsAsClass<SummonDamageClass>(),
-            //    item.CountsAsClass<SummonMeleeSpeedDamageClass>());
-        }
+			//NPCDebuffs(target, item.CountsAsClass<MagicDamageClass>(),
+			//	item.CountsAsClass<SummonDamageClass>(),
+			//	item.CountsAsClass<SummonMeleeSpeedDamageClass>());
+		}
 
         public override void OnHitNPCWithProj(Projectile proj, NPC target, NPC.HitInfo hit, int damageDone)
         {
@@ -220,8 +220,8 @@ namespace yitangCalamity.Common
                 titanBoost = 600;
             }
 
-            if (Player.whoAmI != Main.myPlayer)
-                return;
+            //if (Player.whoAmI != Main.myPlayer)
+            //    return;
 
             //if (!proj.npcProj && !proj.trap && proj.friendly)
             //{
@@ -261,6 +261,11 @@ namespace yitangCalamity.Common
                     Player.endurance += 0.1f;
                 }
             }
+			else
+			{
+				titanBoost = 0;
+			}
+
             if (titanBoost > 0)
             {
                 titanBoost--;

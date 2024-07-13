@@ -24,6 +24,11 @@ Buffs: {
 		Description: 受伤时，会按比例恢复一部分生命值
 	}
 
+	TitanScale: {
+		DisplayName: 泰坦之鳞
+		Description: 你感觉你所向披靡
+	}
+
 	CalamityPerComb: {
 		DisplayName: 灾厄药剂包 I
 		Description: 获得一些灾厄Mod的增益
@@ -71,6 +76,18 @@ Items: {
 			'''
 			让敌人在攻击你时治疗你
 			治疗量为所受伤害的1/15
+			'''
+	}
+
+	TitanScalePotion: {
+		DisplayName: 泰坦之鳞药水
+		Tooltip:
+			'''
+			提高击退力，增加5点防御
+			伤害减免提高5%
+			使用真近战武器命中敌人后：
+			10秒内会增加25点防御力
+			同时伤害减免提高10%
 			'''
 	}
 
