@@ -365,13 +365,13 @@ namespace yitangCalamity.Common
                         int additionalTime = 0;
                         for (int i = 0; i < Player.MaxBuffs; i++)
                         {
-                            if (Player.buffType[i] == 21)
+                            if (Player.buffType[i] == BuffID.PotionSickness)
                             {
                                 additionalTime = Player.buffTime[i];
                             }
                         }
                         float seconds = 30f + (float)Math.Ceiling(additionalTime / 60.0);
-                        Player.AddBuff(21, CalamityUtils.SecondsToFrames(seconds), true, false);
+                        Player.AddBuff(BuffID.PotionSickness, CalamityUtils.SecondsToFrames(seconds), true, false);
                     }
                 }
                 return false;

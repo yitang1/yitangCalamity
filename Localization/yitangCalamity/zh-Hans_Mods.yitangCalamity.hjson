@@ -29,6 +29,11 @@ Buffs: {
 		Description: 你感觉你所向披靡
 	}
 
+	DraconicSurgeBuff: {
+		DisplayName: 龙魂加持
+		Description: 神龙的力量顺着你的血流灌注全身
+	}
+
 	CalamityPerComb: {
 		DisplayName: 灾厄药剂包 I
 		Description: 获得一些灾厄Mod的增益
@@ -93,6 +98,20 @@ Items: {
 			使用真近战武器命中敌人后：
 			10秒内会增加25点防御力
 			同时伤害减免提高10%
+			'''
+	}
+
+	DraconicElixir: {
+		DisplayName: 龙魂秘药
+		Tooltip:
+			'''
+			增加16点防御
+			翅膀的飞行时间提高20%
+			始源林海无敌效果在触发时
+			会为你恢复一半的生命值
+			如果你触发过以上治疗效果
+			在60秒内你无法再次使用本药水
+			并会获得30秒的耐药性减益
 			'''
 	}
 

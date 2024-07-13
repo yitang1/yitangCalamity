@@ -24,6 +24,11 @@ Buffs: {
 		Description: ""
 	}
 
+	DraconicSurgeBuff: {
+		DisplayName: Draconic Surge Buff
+		Description: ""
+	}
+
 	CalamityPerComb: {
 		DisplayName: Calamity Comb I
 		Description: ""
@@ -58,6 +63,11 @@ Items: {
 
 	TitanScalePotion: {
 		DisplayName: Titan Scale Potion
+		Tooltip: ""
+	}
+
+	DraconicElixir: {
+		DisplayName: Draconic Elixir
 		Tooltip: ""
 	}
 
