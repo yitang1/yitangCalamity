@@ -40,7 +40,16 @@ namespace yitangCalamity.Common
         {
             if (cadence)
             {
-                Player.statLifeMax2 += Player.statLifeMax / 5 / 20 * 25;
+				/*同样是提升最大生命值的25%，但是有两个公式可以实现：
+				线性提升：Player.statLifeMax2 += (int)(Player.statLifeMax * 0.25);
+				非线性提升：Player.statLifeMax2 += Player.statLifeMax / 5 / 20 * 25;
+
+				这里的公式最终采用了和原版Terraria的生命力药水相似的非线性公式去计算，而不是固定地去乘以25%。
+				目的是为了平衡，线性公式的情况下，无论玩家的最大生命值是多少，增加的量始终是statLifeMax的25%，
+				而非线性公式，增加的生命值是基于当前生命值的一个比例，但这个比例会因为向下取整的操作而逐渐减小。
+				最终这会导致在低生命值时增加的百分比较高，而在高生命值时增加的百分比较低，
+				随着玩家的最大生命值越来越高，这个药水提高的最大生命值反而会越小，这也就是所谓的像原版那样的平衡。*/
+				Player.statLifeMax2 += Player.statLifeMax / 5 / 20 * 25;
             }
             triumph = false;
             contactDamageReduction = 0.0;
@@ -147,9 +156,9 @@ namespace yitangCalamity.Common
         {
             if (revivify)
             {
-                int revivify = (int)(info.Damage / 15.0);
-                Player.statLife += revivify;
-                Player.HealEffect(revivify, true);
+                int revivifyNum = (int)(info.Damage / 15.0);
+                Player.statLife += revivifyNum;
+                Player.HealEffect(revivifyNum, true);
             }
         }
 
