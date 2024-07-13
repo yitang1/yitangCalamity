@@ -74,10 +74,10 @@ namespace yitangCalamity.Common
             longInvincible = false;
             blurring = false;
             ninjaSkill = false;
-            if (!Main.mapFullscreen)
-            {
-                delay = 0;
-            }
+            //if (!Main.mapFullscreen)
+            //{
+            //    delay = 0;
+            //}
             //GlobalTeleporter = false;
             //GlobalTeleporterUp = false;
             //holyMinions = false;
@@ -471,7 +471,7 @@ namespace yitangCalamity.Common
         public bool longInvincible;
         public bool blurring;
         public bool ninjaSkill;
-        public int delay = 0;
+        //public int delay = 0;
         //public bool GlobalTeleporter = false;
         //public bool GlobalTeleporterUp = false;
         //public bool holyMinions = false;

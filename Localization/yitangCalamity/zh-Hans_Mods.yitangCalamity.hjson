@@ -54,6 +54,11 @@ Buffs: {
 		Description: 敌人看不清你
 	}
 
+	NinjaSkill: {
+		DisplayName: 忍者
+		Description: 现在，你是个真正的忍者了！
+	}
+
 	CalamityPerComb: {
 		DisplayName: 灾厄药剂包 I
 		Description: 获得一些灾厄Mod的增益
@@ -171,6 +176,15 @@ Items: {
 			在增益期间内，每过12秒
 			有25%的几率激活一次神圣闪避
 			神圣闪避会持续15秒
+			'''
+	}
+
+	NinjaPotion: {
+		DisplayName: 忍者药剂
+		Tooltip:
+			'''
+			伤害和暴击率提高5%
+			获得猛虎攀爬装备和黑腰带的能力
 			'''
 	}
 

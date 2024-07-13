@@ -49,6 +49,11 @@ Buffs: {
 		Description: ""
 	}
 
+	NinjaSkill: {
+		DisplayName: NinjaSkill Buff
+		Description: ""
+	}
+
 	CalamityPerComb: {
 		DisplayName: Calamity Comb I
 		Description: ""
@@ -113,6 +118,11 @@ Items: {
 
 	BlurringPotion: {
 		DisplayName: Blurring Potion
+		Tooltip: ""
+	}
+
+	NinjaPotion: {
+		DisplayName: Ninja Potion
 		Tooltip: ""
 	}
 
