@@ -27,9 +27,11 @@ namespace yitangCalamity.Global.GlobalBuffs
                 }
             }
 
-			if (player.HasBuff<CirrusPurpleCandleBuff>() && ytCalamityConfig.Instance.FuckCalamityAll1)
+			if (player.HasBuff<CirrusPurpleCandleBuff>()
+				&& (!player.HasBuff<CalamityHardComb>() || !player.HasBuff<CalamityPostComb>())
+				&& ytCalamityConfig.Instance.FuckCalamityAll1)
 			{
-				/*现在这个originalCandle应该是已经拥有蜡烛buff后计算过的难度系数，
+				/*现在这个DefenseEffectiveness应该是已经拥有蜡烛buff后计算过的难度系数，
 				player.DefenseEffectiveness的值就是classCandleNum或expertCandleNum或masterCandleNum的值。
 				经典是0.5 + 0.1 = 0.6，专家是0.75 + 0.1 = 0.85，大师是1 + 0.1 = 1.1。*/
 				if (!Main.expertMode)

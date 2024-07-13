@@ -327,14 +327,11 @@ namespace yitangCalamity.Common
             if (blurring)
             {
                 Player.onHitDodge = true;
-                if (Player.onHitDodge && Player.shadowDodgeTimer == 0 && Main.rand.Next(4) == 0)
+                if (Player.onHitDodge && ShadowDodgeCooldown <= 0)
                 {
-                    if (!Player.shadowDodge)
-                    {
-                        Player.shadowDodgeTimer = 720;
-                    }
-                    Player.AddBuff(BuffID.ShadowDodge, 900, true);
-                }
+					Player.AddBuff(BuffID.ShadowDodge, 900, true);
+					ShadowDodgeCooldown = 2100;
+				}
             }
             if (ninjaSkill)
             {
@@ -379,75 +376,83 @@ namespace yitangCalamity.Common
             return true;
         }
 
-        //public override void ProcessTriggers(TriggersSet triggersSet)
-        //{
-        //    if (GlobalTeleporter || GlobalTeleporterUp)
-        //    {
-        //        if (Main.mapFullscreen)
-        //        {
-        //            delay++;
-        //            if (delay > 19 && Main.mouseRight && Main.keyState.IsKeyUp(Microsoft.Xna.Framework.Input.Keys.LeftControl))
-        //            {
-        //                bool allow = true;
-        //                for (int v = 0; v < 200; ++v)
-        //                {
-        //                    NPC npc = Main.npc[v];
-        //                    if (npc.active && npc.boss)
-        //                    {
-        //                        allow = false;
-        //                        break;
-        //                    }
-        //                }
-        //                if (allow)
-        //                {
-        //                    int mapWidth = Main.maxTilesX * 16;
-        //                    int mapHeight = Main.maxTilesY * 16;
-        //                    Vector2 cursorPosition = new Vector2(Main.mouseX, Main.mouseY);
+		//public override void ProcessTriggers(TriggersSet triggersSet)
+		//{
+		//    if (GlobalTeleporter || GlobalTeleporterUp)
+		//    {
+		//        if (Main.mapFullscreen)
+		//        {
+		//            delay++;
+		//            if (delay > 19 && Main.mouseRight && Main.keyState.IsKeyUp(Microsoft.Xna.Framework.Input.Keys.LeftControl))
+		//            {
+		//                bool allow = true;
+		//                for (int v = 0; v < 200; ++v)
+		//                {
+		//                    NPC npc = Main.npc[v];
+		//                    if (npc.active && npc.boss)
+		//                    {
+		//                        allow = false;
+		//                        break;
+		//                    }
+		//                }
+		//                if (allow)
+		//                {
+		//                    int mapWidth = Main.maxTilesX * 16;
+		//                    int mapHeight = Main.maxTilesY * 16;
+		//                    Vector2 cursorPosition = new Vector2(Main.mouseX, Main.mouseY);
 
-        //                    cursorPosition.X -= Main.screenWidth / 2;
-        //                    cursorPosition.Y -= Main.screenHeight / 2;
+		//                    cursorPosition.X -= Main.screenWidth / 2;
+		//                    cursorPosition.Y -= Main.screenHeight / 2;
 
-        //                    Vector2 mapPosition = Main.mapFullscreenPos;
-        //                    Vector2 cursorWorldPosition = mapPosition;
+		//                    Vector2 mapPosition = Main.mapFullscreenPos;
+		//                    Vector2 cursorWorldPosition = mapPosition;
 
-        //                    cursorPosition /= 16;
-        //                    cursorPosition *= 16 / Main.mapFullscreenScale;
-        //                    cursorWorldPosition += cursorPosition;
-        //                    cursorWorldPosition *= 16;
+		//                    cursorPosition /= 16;
+		//                    cursorPosition *= 16 / Main.mapFullscreenScale;
+		//                    cursorWorldPosition += cursorPosition;
+		//                    cursorWorldPosition *= 16;
 
-        //                    cursorWorldPosition.Y -= Player.height;
-        //                    if (cursorWorldPosition.X < 0) cursorWorldPosition.X = 0;
-        //                    else if (cursorWorldPosition.X + Player.width > mapWidth) cursorWorldPosition.X = mapWidth - Player.width;
-        //                    if (cursorWorldPosition.Y < 0) cursorWorldPosition.Y = 0;
-        //                    else if (cursorWorldPosition.Y + Player.height > mapHeight) cursorWorldPosition.Y = mapHeight - Player.height;
+		//                    cursorWorldPosition.Y -= Player.height;
+		//                    if (cursorWorldPosition.X < 0) cursorWorldPosition.X = 0;
+		//                    else if (cursorWorldPosition.X + Player.width > mapWidth) cursorWorldPosition.X = mapWidth - Player.width;
+		//                    if (cursorWorldPosition.Y < 0) cursorWorldPosition.Y = 0;
+		//                    else if (cursorWorldPosition.Y + Player.height > mapHeight) cursorWorldPosition.Y = mapHeight - Player.height;
 
-        //                    Player.Teleport(cursorWorldPosition, 0, 0);
-        //                    NetMessage.SendData(65, -1, -1, null, 0, Player.whoAmI, cursorWorldPosition.X, cursorWorldPosition.Y, 1, 0, 0);
-        //                    Main.mapFullscreen = false;
+		//                    Player.Teleport(cursorWorldPosition, 0, 0);
+		//                    NetMessage.SendData(65, -1, -1, null, 0, Player.whoAmI, cursorWorldPosition.X, cursorWorldPosition.Y, 1, 0, 0);
+		//                    Main.mapFullscreen = false;
 
-        //                    for (int index = 0; index < 120; ++index)
-        //                        Main.dust[Dust.NewDust(Player.position, Player.width, Player.height, 15, Main.rand.NextFloat(-10f, 10f), Main.rand.NextFloat(-10f, 10f), 150, Color.Cyan, 1.2f)].velocity *= 0.75f;
+		//                    for (int index = 0; index < 120; ++index)
+		//                        Main.dust[Dust.NewDust(Player.position, Player.width, Player.height, 15, Main.rand.NextFloat(-10f, 10f), Main.rand.NextFloat(-10f, 10f), 150, Color.Cyan, 1.2f)].velocity *= 0.75f;
 
-        //                    if (GlobalTeleporter)
-        //                    {
-        //                        Item[] inventory = Player.inventory;
-        //                        for (int k = 0; k < inventory.Length; k++)
-        //                        {
-        //                            if (inventory[k].type == ModContent.ItemType<GlobalTeleporter>())
-        //                            {
-        //                                inventory[k].stack--;
-        //                                break;
-        //                            }
-        //                        }
-        //                    }
-        //                    delay = 0;
-        //                }
-        //            }
-        //        }
-        //    }
-        //}
+		//                    if (GlobalTeleporter)
+		//                    {
+		//                        Item[] inventory = Player.inventory;
+		//                        for (int k = 0; k < inventory.Length; k++)
+		//                        {
+		//                            if (inventory[k].type == ModContent.ItemType<GlobalTeleporter>())
+		//                            {
+		//                                inventory[k].stack--;
+		//                                break;
+		//                            }
+		//                        }
+		//                    }
+		//                    delay = 0;
+		//                }
+		//            }
+		//        }
+		//    }
+		//}
 
-        public bool triumph;
+		public override void PreUpdate()
+		{
+			if (ShadowDodgeCooldown > 0)
+			{
+				ShadowDodgeCooldown--;
+			}
+		}
+
+		public bool triumph;
         public double contactDamageReduction;
         public bool cadence;
         public bool yPower;
@@ -470,7 +475,8 @@ namespace yitangCalamity.Common
         public bool fortitude;
         public bool longInvincible;
         public bool blurring;
-        public bool ninjaSkill;
+		public int ShadowDodgeCooldown;
+		public bool ninjaSkill;
         //public int delay = 0;
         //public bool GlobalTeleporter = false;
         //public bool GlobalTeleporterUp = false;
