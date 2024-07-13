@@ -44,6 +44,11 @@ Buffs: {
 		Description: ""
 	}
 
+	Blurring: {
+		DisplayName: Blurring Buff
+		Description: ""
+	}
+
 	CalamityPerComb: {
 		DisplayName: Calamity Comb I
 		Description: ""
@@ -103,6 +108,11 @@ Items: {
 
 	InvincibilityPotion: {
 		DisplayName: Invincibility Potion
+		Tooltip: ""
+	}
+
+	BlurringPotion: {
+		DisplayName: Blurring Potion
 		Tooltip: ""
 	}
 

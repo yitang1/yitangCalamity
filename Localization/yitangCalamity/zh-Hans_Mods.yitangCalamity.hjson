@@ -49,6 +49,11 @@ Buffs: {
 		Description: 你受伤后的无敌时间延长了0.66秒
 	}
 
+	Blurring: {
+		DisplayName: 模糊
+		Description: 敌人看不清你
+	}
+
 	CalamityPerComb: {
 		DisplayName: 灾厄药剂包 I
 		Description: 获得一些灾厄Mod的增益
@@ -155,6 +160,17 @@ Items: {
 			'''
 			延长受伤后的无敌时间
 			效果等价替代于十字项链
+			'''
+	}
+
+	BlurringPotion: {
+		DisplayName: 模糊药剂
+		Tooltip:
+			'''
+			获得模糊增益
+			在增益期间内，每过12秒
+			有25%的几率激活一次神圣闪避
+			神圣闪避会持续15秒
 			'''
 	}
 
