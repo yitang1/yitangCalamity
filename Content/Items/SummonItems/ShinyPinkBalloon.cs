@@ -34,7 +34,7 @@ namespace yitangCalamity.Content.Items.SummonItems
 
 		public override bool? UseItem(Player player)
 		{
-			Vector2 spawnPosition = player.Center - Vector2.UnitY * 350f;
+			Vector2 spawnPosition = player.Center - Vector2.UnitY * 300f;
 			NPC.NewNPC(player.GetSource_ItemUse(Item), (int)spawnPosition.X, (int)spawnPosition.Y, NPCID.BoundTownSlimePurple);
 			return true;
 		}
