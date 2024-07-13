@@ -34,6 +34,11 @@ Buffs: {
 		Description: 神龙的力量顺着你的血流灌注全身
 	}
 
+	Sunshine: {
+		DisplayName: 阳光普照
+		Description: 你正像一颗小太阳一样发出光芒
+	}
+
 	CalamityPerComb: {
 		DisplayName: 灾厄药剂包 I
 		Description: 获得一些灾厄Mod的增益
@@ -118,6 +123,11 @@ Items: {
 			在60秒内你无法再次使用本药水
 			并会获得30秒的耐药性减益
 			'''
+	}
+
+	SunshinePotion: {
+		DisplayName: 阳光药剂
+		Tooltip: 极大地增强光照半径
 	}
 
 	CalamityPerCombination: {

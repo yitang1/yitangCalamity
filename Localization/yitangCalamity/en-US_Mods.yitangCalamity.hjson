@@ -29,6 +29,11 @@ Buffs: {
 		Description: ""
 	}
 
+	Sunshine: {
+		DisplayName: Sunshine Buff
+		Description: ""
+	}
+
 	CalamityPerComb: {
 		DisplayName: Calamity Comb I
 		Description: ""
@@ -73,6 +78,11 @@ Items: {
 
 	DraconicElixir: {
 		DisplayName: Draconic Elixir
+		Tooltip: ""
+	}
+
+	SunshinePotion: {
+		DisplayName: Sunshine Potion
 		Tooltip: ""
 	}
 
