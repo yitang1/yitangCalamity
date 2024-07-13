@@ -25,7 +25,12 @@ Buffs: {
 	}
 
 	CalamityPerComb: {
-		DisplayName: Calamity Per Comb
+		DisplayName: Calamity Comb I
+		Description: ""
+	}
+
+	CalamityHardComb: {
+		DisplayName: Calamity Comb II
 		Description: ""
 	}
 }
@@ -57,7 +62,12 @@ Items: {
 	}
 
 	CalamityPerCombination: {
-		DisplayName: Calamity Per Combination
+		DisplayName: Calamity Combination I
+		Tooltip: ""
+	}
+
+	CalamityHardCombination: {
+		DisplayName: Calamity Combination II
 		Tooltip: ""
 	}
 

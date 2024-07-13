@@ -22,14 +22,14 @@ namespace yitangCalamity.Content.Buffs.Potions
         public override void Update(Player player, ref int buffIndex)
         {
             CalamityPlayer calamityPlayer = player.Calamity();
-            yitangCalamityPlayer ytCNPlayer = player.yitangCalamity();
+            yitangCalamityPlayer ytCalamityPlayer = player.yitangCalamity();
 
             calamityPlayer.bounding = true;
             calamityPlayer.calcium = true;
             calamityPlayer.sulphurskin = true;
-            ytCNPlayer.triumph = true;
-            ytCNPlayer.yPower = true;
-            ytCNPlayer.cadence = true;
+            ytCalamityPlayer.triumph = true;
+            ytCalamityPlayer.yPower = true;
+            ytCalamityPlayer.cadence = true;
 
             calamityPlayer.crimEffigy = true;
             calamityPlayer.corrEffigy = true;
