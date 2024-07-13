@@ -28,7 +28,7 @@ namespace yitangCalamity.Content.Items.Potions
 			Item.UseSound = new SoundStyle?(SoundID.Item3);
 			Item.consumable = true;
 			Item.buffType = ModContent.BuffType<TitanScale>();
-			Item.buffTime = 21600;
+			Item.buffTime = 28800;
 			Item.value = Item.buyPrice(0, 2, 0, 0);
 		}
 

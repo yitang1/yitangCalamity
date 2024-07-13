@@ -26,7 +26,7 @@ namespace yitangCalamity.Content.Items.Potions
             Item.value = Item.buyPrice(0, 2, 0, 0);
             Item.rare = ItemRarityID.Yellow;
             Item.buffType = ModContent.BuffType<NinjaSkill>();
-            Item.buffTime = 36000;
+            Item.buffTime = 28800;
         }
 
         public override void AddRecipes()

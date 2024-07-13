@@ -26,7 +26,7 @@ namespace yitangCalamity.Content.Items.Potions
             Item.value = Item.buyPrice(0, 2, 0, 0);
             Item.rare = ItemRarityID.LightRed;
             Item.buffType = ModContent.BuffType<LongInvincible>();
-            Item.buffTime = 28800;
+            Item.buffTime = 18000;
         }
 
         public override void AddRecipes()
