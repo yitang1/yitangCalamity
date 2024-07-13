@@ -43,6 +43,11 @@ Buffs: {
 		DisplayName: 灾厄药剂包 II
 		Description: 获得一部分灾厄Mod的增益
 	}
+
+	CalamityPostComb: {
+		DisplayName: 灾厄药剂包 III
+		Description: 获得大部分灾厄Mod的增益
+	}
 }
 
 Items: {
@@ -137,6 +142,20 @@ Items: {
 			翱翔、光合作用、Fabsol伏特加
 			重力复原、重振精神、泰坦之鳞
 			敏捷、活力、执念、恶毒
+			'''
+	}
+
+	CalamityPostCombination: {
+		DisplayName: 灾厄药剂包 III
+		Tooltip:
+			'''
+			获得大部分灾厄Mod的增益：
+			弹跳助力、钙质补充、硫磺皮肤
+			胜利之战、亚利姆之力、心律和谐
+			血腥雕像、腐化雕像、腐朽雕像
+			翱翔、光合作用、Fabsol伏特加
+			重力复原、重振精神、泰坦之鳞
+			敏捷、活力、执念、恶毒、龙魂加持
 			'''
 	}
 
