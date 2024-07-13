@@ -39,6 +39,11 @@ Buffs: {
 		Description: ""
 	}
 
+	LongInvincible: {
+		DisplayName: LongInvincible Buff
+		Description: ""
+	}
+
 	CalamityPerComb: {
 		DisplayName: Calamity Comb I
 		Description: ""
@@ -93,6 +98,11 @@ Items: {
 
 	FortitudePotion: {
 		DisplayName: Fortitude Potion
+		Tooltip: ""
+	}
+
+	InvincibilityPotion: {
+		DisplayName: Invincibility Potion
 		Tooltip: ""
 	}
 

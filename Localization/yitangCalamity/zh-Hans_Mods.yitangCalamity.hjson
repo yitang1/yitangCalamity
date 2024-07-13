@@ -44,6 +44,11 @@ Buffs: {
 		Description: 你无法被击退
 	}
 
+	LongInvincible: {
+		DisplayName: 无敌延长
+		Description: 你受伤后的无敌时间延长了0.66秒
+	}
+
 	CalamityPerComb: {
 		DisplayName: 灾厄药剂包 I
 		Description: 获得一些灾厄Mod的增益
@@ -141,6 +146,15 @@ Items: {
 			'''
 			极大地免疫击退
 			效果等价替代于钴护盾
+			'''
+	}
+
+	InvincibilityPotion: {
+		DisplayName: 无敌延长药剂
+		Tooltip:
+			'''
+			延长受伤后的无敌时间
+			效果等价替代于十字项链
 			'''
 	}
 
