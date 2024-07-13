@@ -68,6 +68,11 @@ Buffs: {
 		DisplayName: Calamity Comb III
 		Description: ""
 	}
+
+	AlchemistComb: {
+		DisplayName: Alchemist Comb
+		Description: ""
+	}
 }
 
 Items: {
@@ -138,6 +143,11 @@ Items: {
 
 	CalamityPostCombination: {
 		DisplayName: Calamity Combination III
+		Tooltip: ""
+	}
+
+	AlchemistCombination: {
+		DisplayName: Alchemist Combination
 		Tooltip: ""
 	}
 

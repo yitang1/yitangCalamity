@@ -73,6 +73,11 @@ Buffs: {
 		DisplayName: 灾厄药剂包 III
 		Description: 获得大部分灾厄Mod的增益
 	}
+
+	AlchemistComb: {
+		DisplayName: 炼金药剂包
+		Description: 获得一些炼金术士Mod的增益
+	}
 }
 
 Items: {
@@ -224,6 +229,16 @@ Items: {
 			翱翔、光合作用、Fabsol伏特加
 			重力复原、重振精神、泰坦之鳞
 			敏捷、活力、执念、恶毒、龙魂加持
+			'''
+	}
+
+	AlchemistCombination: {
+		DisplayName: 炼金药剂包
+		Tooltip:
+			'''
+			获得一些炼金术士Mod的增益：
+			阳光普照、刚毅
+			无敌延长、模糊、忍者
 			'''
 	}
 
