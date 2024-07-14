@@ -26,7 +26,7 @@ Buffs: {
 
 	PenumbraBuff: {
 		DisplayName: 半影
-		Description: 潜行值恢复速度提升
+		Description: 你的脚步如影随形
 	}
 
 	ArmorShattering: {
@@ -37,6 +37,11 @@ Buffs: {
 	TitanScale: {
 		DisplayName: 泰坦之鳞
 		Description: 你感觉你所向披靡
+	}
+
+	ProfanedRageBuff: {
+		DisplayName: 渎神之怒
+		Description: 亵渎之力焚烧着你的血液
 	}
 
 	DraconicSurgeBuff: {
@@ -167,6 +172,11 @@ Items: {
 			10秒内会增加25点防御力
 			同时伤害减免提高10%
 			'''
+	}
+
+	ProfanedRagePotion: {
+		DisplayName: 渎神之怒药水
+		Tooltip: 所有暴击率提高12%
 	}
 
 	DraconicElixir: {

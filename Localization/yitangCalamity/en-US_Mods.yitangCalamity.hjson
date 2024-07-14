@@ -34,6 +34,11 @@ Buffs: {
 		Description: ""
 	}
 
+	ProfanedRagePotion: {
+		DisplayName: Profaned Rage Potion
+		Description: ""
+	}
+
 	DraconicSurgeBuff: {
 		DisplayName: Draconic Surge Buff
 		Description: ""
@@ -118,6 +123,11 @@ Items: {
 
 	TitanScalePotion: {
 		DisplayName: Titan Scale Potion
+		Tooltip: ""
+	}
+
+	ProfanedRageBuff: {
+		DisplayName: Profaned Rage Buff
 		Tooltip: ""
 	}
 

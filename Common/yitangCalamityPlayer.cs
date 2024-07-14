@@ -60,6 +60,7 @@ namespace yitangCalamity.Common
 			penumbra = false;
 			armorShattering = false;
             tScale = false;
+			profanedRage = false;
             draconicSurge = false;
             sunshine = false;
             fortitude = false;
@@ -96,6 +97,7 @@ namespace yitangCalamity.Common
 			armorShattering = false;
             tScale = false;
             titanBoost = 0;
+			profanedRage = false;
             draconicSurge = false;
             sunshine = false;
             fortitude = false;
@@ -351,6 +353,11 @@ namespace yitangCalamity.Common
                     Player.ClearBuff(ModContent.BuffType<DraconicSurgeBuff>());
                 }
             }
+
+			if (profanedRage)
+			{
+				Player.GetCritChance(DamageClass.Generic) += 12;
+			}
         }
 
         public override void UpdateEquips()
@@ -501,9 +508,16 @@ namespace yitangCalamity.Common
         public bool armorShattering;
         public bool tScale;
         public int titanBoost;
+        public bool profanedRage;
         public bool draconicSurge;
-        //public bool magicHat;
+        public bool sunshine;
+        public bool fortitude;
+        public bool longInvincible;
+        public bool blurring;
+		public int ShadowDodgeCooldown;
+		public bool ninjaSkill;
         //public bool ExoChair;
+        //public bool magicHat;
         //public bool babywaterclone;
         //public bool cloudmini;
         //public bool rarebrimling;
@@ -513,12 +527,6 @@ namespace yitangCalamity.Common
         //public bool starReacher;
         //public bool sacredCross;
         //public bool starAdventurer;
-        public bool sunshine;
-        public bool fortitude;
-        public bool longInvincible;
-        public bool blurring;
-		public int ShadowDodgeCooldown;
-		public bool ninjaSkill;
         //public int delay = 0;
         //public bool GlobalTeleporter = false;
         //public bool GlobalTeleporterUp = false;
