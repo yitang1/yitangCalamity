@@ -31,6 +31,7 @@ using yitangCalamity.Content.Buffs.Potions;
 using yitangCalamity.Content.Items.Potions;
 //using yitangCalamity.Content.Items.Accessories;
 using yitangCalamity.Global.GlobalItems.FuckCalamity;
+using CalamityMod.Items.Weapons.Rogue;
 
 namespace yitangCalamity.Common
 {
@@ -56,15 +57,15 @@ namespace yitangCalamity.Common
             cadence = false;
             yPower = false;
             revivify = false;
+			penumbra = false;
             tScale = false;
-            magicHat = false;
-            //ExoChair = false;
             draconicSurge = false;
-            babywaterclone = false;
-            cloudmini = false;
-            rarebrimling = false;
-            raresandmini = false;
-            sandmini = false;
+            //magicHat = false;
+            //babywaterclone = false;
+            //cloudmini = false;
+            //rarebrimling = false;
+            //raresandmini = false;
+            //sandmini = false;
             //betterPStone = 1f;
             //starReacher = false;
             //sacredCross = false;
@@ -74,6 +75,7 @@ namespace yitangCalamity.Common
             longInvincible = false;
             blurring = false;
             ninjaSkill = false;
+            //ExoChair = false;
             //if (!Main.mapFullscreen)
             //{
             //    delay = 0;
@@ -89,15 +91,16 @@ namespace yitangCalamity.Common
             triumph = false;
             yPower = false;
             revivify = false;
+			penumbra = false;
             tScale = false;
             titanBoost = 0;
-            //ExoChair = false;
             draconicSurge = false;
             sunshine = false;
             fortitude = false;
             longInvincible = false;
             blurring = false;
             ninjaSkill = false;
+            //ExoChair = false;
         }
 
         public override void UpdateLifeRegen()
@@ -244,10 +247,26 @@ namespace yitangCalamity.Common
 
         public override void PostUpdateMiscEffects()
         {
+			CalamityPlayer calamityPlayer = Player.Calamity();
+
 			if (cadence)
 			{
 				//生命拾心的药水效果
 				Player.lifeMagnet = true;
+			}
+
+			if (penumbra)
+			{
+				if (Main.eclipse || calamityPlayer.umbraphileSet)
+				{
+					calamityPlayer.stealthGenStandstill += 0.2f;
+					calamityPlayer.stealthGenMoving += 0.2f;
+				}
+				else
+				{
+					calamityPlayer.stealthGenStandstill += 0.15f;
+					calamityPlayer.stealthGenMoving += 0.15f;
+				}
 			}
 
 			if (tScale)
@@ -457,16 +476,17 @@ namespace yitangCalamity.Common
         public bool cadence;
         public bool yPower;
         public bool revivify;
+        public bool penumbra;
         public bool tScale;
         public int titanBoost;
-        public bool magicHat;
-        //public bool ExoChair;
         public bool draconicSurge;
-        public bool babywaterclone;
-        public bool cloudmini;
-        public bool rarebrimling;
-        public bool raresandmini;
-        public bool sandmini;
+        //public bool magicHat;
+        //public bool ExoChair;
+        //public bool babywaterclone;
+        //public bool cloudmini;
+        //public bool rarebrimling;
+        //public bool raresandmini;
+        //public bool sandmini;
         //public float betterPStone;
         //public bool starReacher;
         //public bool sacredCross;

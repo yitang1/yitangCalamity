@@ -24,6 +24,11 @@ Buffs: {
 		Description: 受伤时，会按比例恢复一部分生命值
 	}
 
+	PenumbraBuff: {
+		DisplayName: 半影
+		Description: 潜行值恢复速度提升
+	}
+
 	TitanScale: {
 		DisplayName: 泰坦之鳞
 		Description: 你感觉你所向披靡
@@ -121,6 +126,17 @@ Items: {
 			'''
 			让敌人在攻击你时治疗你
 			治疗量为所受伤害的1/15
+			'''
+	}
+
+	PenumbraPotion: {
+		DisplayName: 半影药水
+		Tooltip:
+			'''
+			在你静止或移动时
+			盗贼潜行值恢复速度会提高15%
+			在日食期间或穿戴全套日影盔甲时
+			盗贼潜行值恢复速度会提高至20%
 			'''
 	}
 

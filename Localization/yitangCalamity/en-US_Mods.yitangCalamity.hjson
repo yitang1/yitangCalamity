@@ -19,6 +19,11 @@ Buffs: {
 		Description: ""
 	}
 
+	PenumbraBuff: {
+		DisplayName: Penumbra Buff
+		Description: ""
+	}
+
 	TitanScale: {
 		DisplayName: Titan Scale
 		Description: ""
@@ -93,6 +98,11 @@ Items: {
 
 	RevivifyPotion: {
 		DisplayName: Revivify Potion
+		Tooltip: ""
+	}
+
+	PenumbraPotion: {
+		DisplayName: Penumbra Potion
 		Tooltip: ""
 	}
 
