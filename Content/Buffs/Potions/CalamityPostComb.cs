@@ -38,7 +38,9 @@ namespace yitangCalamity.Content.Buffs.Potions
             calamityPlayer.fabsolVodka = true;
             calamityPlayer.gravityNormalizer = true;
             ytCalamityPlayer.revivify = true;
-            ytCalamityPlayer.tScale = true;
+			ytCalamityPlayer.penumbra = true;
+			ytCalamityPlayer.armorShattering = true;
+			ytCalamityPlayer.tScale = true;
 
             calamityPlayer.crimEffigy = true;
             calamityPlayer.corrEffigy = true;
@@ -55,6 +57,7 @@ namespace yitangCalamity.Content.Buffs.Potions
 			player.DefenseEffectiveness *= num / original;
 			//黄色的恶念蜡烛Buff在本Mod里有一个克隆版效果(和灾厄的唯一区别就是玩家身上不会有buff图标)
 
+			ytCalamityPlayer.profanedRage = true;
 			//calamityPlayer.ceaselessHunger = true;
 			ytCalamityPlayer.draconicSurge = true;
 

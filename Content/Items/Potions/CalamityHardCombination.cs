@@ -45,6 +45,8 @@ namespace yitangCalamity.Content.Items.Potions
                 .AddIngredient<FabsolsVodka>(30)
                 .AddIngredient<GravityNormalizerPotion>(30)
                 .AddIngredient<RevivifyPotion>(30)
+                .AddIngredient<PenumbraPotion>(30)
+                .AddIngredient<ShatteringPotion>(30)
                 .AddIngredient<TitanScalePotion>(30)
 
                 .AddIngredient<WeightlessCandle>()

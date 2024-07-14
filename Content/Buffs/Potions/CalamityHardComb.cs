@@ -38,6 +38,8 @@ namespace yitangCalamity.Content.Buffs.Potions
             calamityPlayer.fabsolVodka = true;
             calamityPlayer.gravityNormalizer = true;
             ytCalamityPlayer.revivify = true;
+            ytCalamityPlayer.penumbra = true;
+            ytCalamityPlayer.armorShattering = true;
             ytCalamityPlayer.tScale = true;
 
             calamityPlayer.crimEffigy = true;

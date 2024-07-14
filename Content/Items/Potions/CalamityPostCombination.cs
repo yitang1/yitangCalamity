@@ -37,6 +37,7 @@ namespace yitangCalamity.Content.Items.Potions
         {
             CreateRecipe(30)
                 .AddIngredient<CalamityHardCombination>(30)
+                .AddIngredient<ProfanedRagePotion>(30)
                 //.AddIngredient<CeaselessHungerPotion>(30)
                 .AddIngredient<DraconicElixir>(30)
                 .AddTile(TileID.AlchemyTable)
