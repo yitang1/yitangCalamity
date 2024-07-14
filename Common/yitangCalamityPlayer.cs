@@ -58,8 +58,15 @@ namespace yitangCalamity.Common
             yPower = false;
             revivify = false;
 			penumbra = false;
+			armorShattering = false;
             tScale = false;
             draconicSurge = false;
+            sunshine = false;
+            fortitude = false;
+            longInvincible = false;
+            blurring = false;
+            ninjaSkill = false;
+            //ExoChair = false;
             //magicHat = false;
             //babywaterclone = false;
             //cloudmini = false;
@@ -70,12 +77,6 @@ namespace yitangCalamity.Common
             //starReacher = false;
             //sacredCross = false;
             //starAdventurer = false;
-            sunshine = false;
-            fortitude = false;
-            longInvincible = false;
-            blurring = false;
-            ninjaSkill = false;
-            //ExoChair = false;
             //if (!Main.mapFullscreen)
             //{
             //    delay = 0;
@@ -92,6 +93,7 @@ namespace yitangCalamity.Common
             yPower = false;
             revivify = false;
 			penumbra = false;
+			armorShattering = false;
             tScale = false;
             titanBoost = 0;
             draconicSurge = false;
@@ -208,12 +210,15 @@ namespace yitangCalamity.Common
         {
             Player.yitangCalamity().titanBoost = 600;
 
-			//if (Player.whoAmI != Main.myPlayer)
-			//	return;
+			if (Player.whoAmI != Main.myPlayer)
+				return;
 
-			//NPCDebuffs(target, item.CountsAsClass<MagicDamageClass>(),
-			//	item.CountsAsClass<SummonDamageClass>(),
-			//	item.CountsAsClass<SummonMeleeSpeedDamageClass>());
+			NPCDebuffs(target, item.CountsAsClass<MeleeDamageClass>(),
+				item.CountsAsClass<RangedDamageClass>(),
+				item.CountsAsClass<MagicDamageClass>(),
+				item.CountsAsClass<SummonDamageClass>(),
+				item.CountsAsClass<ThrowingDamageClass>(),
+				item.CountsAsClass<SummonMeleeSpeedDamageClass>());
 		}
 
         public override void OnHitNPCWithProj(Projectile proj, NPC target, NPC.HitInfo hit, int damageDone)
@@ -223,36 +228,65 @@ namespace yitangCalamity.Common
                 titanBoost = 600;
             }
 
-            //if (Player.whoAmI != Main.myPlayer)
-            //    return;
+			if (Player.whoAmI != Main.myPlayer)
+				return;
 
-            //if (!proj.npcProj && !proj.trap && proj.friendly)
-            //{
-            //    NPCDebuffs(target, proj.CountsAsClass<MagicDamageClass>(),
-            //        proj.CountsAsClass<SummonDamageClass>(),
-            //        proj.CountsAsClass<SummonMeleeSpeedDamageClass>(), true, proj.noEnchantments);
-            //}
-        }
+			if (!proj.npcProj && !proj.trap && proj.friendly)
+			{
+				NPCDebuffs(target, proj.CountsAsClass<MeleeDamageClass>(),
+					proj.CountsAsClass<RangedDamageClass>(),
+					proj.CountsAsClass<MagicDamageClass>(),
+					proj.CountsAsClass<SummonDamageClass>(),
+					proj.CountsAsClass<ThrowingDamageClass>(),
+					proj.CountsAsClass<SummonMeleeSpeedDamageClass>(), true, proj.noEnchantments);
+			}
+		}
 
-        //public void NPCDebuffs(NPC target, bool magic, bool summon, bool whip, bool proj = false, bool noFlask = false)
-        //{
-        //    if (summon)
-        //    {
-        //        if (holyMinions)
-        //        {
-        //            target.AddBuff(ModContent.BuffType<HolyFlames>(), 180);
-        //        }
-        //    }
-        //}
+		public void NPCDebuffs(NPC target, bool melee, bool ranged, bool magic, bool summon, bool rogue, bool whip, bool proj = false, bool noFlask = false)
+		{
+			if (armorShattering)
+			{
+				CalamityUtils.Inflict246DebuffsNPC(target, ModContent.BuffType<ArmorCrunch>(), 2f);
+			}
 
-        public override void PostUpdateMiscEffects()
+			//if (summon)
+			//{
+			//	if (holyMinions)
+			//	{
+			//		target.AddBuff(ModContent.BuffType<HolyFlames>(), 180);
+			//	}
+			//}
+		}
+
+		public override void PostUpdateMiscEffects()
         {
 			CalamityPlayer calamityPlayer = Player.Calamity();
+
+			if (yPower)
+			{
+				Player.GetDamage(DamageClass.Generic) += 0.05f;
+				Player.GetCritChance(DamageClass.Generic) += 2f;
+				Player.endurance += 0.04f;
+				Player.statDefense += 10;
+				Player.pickSpeed -= 0.1f;
+				Player.GetKnockback(DamageClass.Summon) += 1f;
+				Player.GetAttackSpeed(DamageClass.Melee) += 0.075f;
+				Player.GetAttackSpeed(DamageClass.SummonMeleeSpeed) += 0.075f;
+				Player.moveSpeed += 0.075f;
+			}
 
 			if (cadence)
 			{
 				//生命拾心的药水效果
 				Player.lifeMagnet = true;
+			}
+
+			if (ninjaSkill)
+			{
+				Player.GetDamage(DamageClass.Generic) += 0.05f;
+				Player.GetCritChance(DamageClass.Generic) += 5;
+				Player.blackBelt = true;
+				Player.spikedBoots = 2;
 			}
 
 			if (penumbra)
@@ -267,6 +301,12 @@ namespace yitangCalamity.Common
 					calamityPlayer.stealthGenStandstill += 0.15f;
 					calamityPlayer.stealthGenMoving += 0.15f;
 				}
+			}
+
+			if (armorShattering)
+			{
+				Player.GetDamage(DamageClass.Generic) += 0.08f;
+				Player.GetCritChance(DamageClass.Generic) += 8;
 			}
 
 			if (tScale)
@@ -319,18 +359,6 @@ namespace yitangCalamity.Common
             //Player.restorationDelayTime = (int)(Player.restorationDelayTime - Player.restorationDelayTime * (double)betterPStone);
             //Player.mushroomDelayTime = (int)(Player.mushroomDelayTime - Player.mushroomDelayTime * (double)betterPStone);
 
-            if (yPower)
-            {
-                Player.GetDamage(DamageClass.Generic) += 0.05f;
-                Player.GetCritChance(DamageClass.Generic) += 2f;
-                Player.endurance += 0.04f;
-                Player.statDefense += 10;
-                Player.pickSpeed -= 0.1f;
-                Player.GetKnockback(DamageClass.Summon) += 1f;
-                Player.GetAttackSpeed(DamageClass.Melee) += 0.075f;
-                Player.GetAttackSpeed(DamageClass.SummonMeleeSpeed) += 0.075f;
-                Player.moveSpeed += 0.075f;
-            }
             if (sunshine)
             {
                 Lighting.AddLight((int)(Player.position.X + (double)(Player.width / 2)) / 16, (int)(Player.position.Y + (double)(Player.height / 2)) / 16, 3f, 3f, 3f);
@@ -351,13 +379,6 @@ namespace yitangCalamity.Common
 					Player.AddBuff(BuffID.ShadowDodge, 900, true);
 					ShadowDodgeCooldown = 2100;
 				}
-            }
-            if (ninjaSkill)
-            {
-                Player.GetDamage(DamageClass.Generic) += 0.05f;
-                Player.GetCritChance(DamageClass.Generic) += 5;
-                Player.blackBelt = true;
-                Player.spikedBoots = 2;
             }
         }
 
@@ -477,6 +498,7 @@ namespace yitangCalamity.Common
         public bool yPower;
         public bool revivify;
         public bool penumbra;
+        public bool armorShattering;
         public bool tScale;
         public int titanBoost;
         public bool draconicSurge;

@@ -24,6 +24,11 @@ Buffs: {
 		Description: ""
 	}
 
+	ArmorShattering: {
+		DisplayName: Armor Shattering
+		Description: ""
+	}
+
 	TitanScale: {
 		DisplayName: Titan Scale
 		Description: ""
@@ -103,6 +108,11 @@ Items: {
 
 	PenumbraPotion: {
 		DisplayName: Penumbra Potion
+		Tooltip: ""
+	}
+
+	ShatteringPotion: {
+		DisplayName: Shattering Potion
 		Tooltip: ""
 	}
 
