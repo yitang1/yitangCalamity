@@ -40,9 +40,11 @@ namespace yitangCalamity.Content.Items.Potions
                 .AddIngredient<BoundingPotion>(30)
                 .AddIngredient<CalciumPotion>(30)
                 .AddIngredient<SulphurskinPotion>(30)
+                .AddIngredient<ShadowPotion>(30)
                 .AddIngredient<TriumphPotion>(30)
-                .AddIngredient<YharimsStimulants>(30)
+                .AddIngredient<TeslaPotion>(30)
                 .AddIngredient<CadencePotion>(30)
+                .AddIngredient<YharimsStimulants>(30)
 
                 .AddIngredient<CrimsonEffigy>()
                 .AddIngredient<CorruptionEffigy>()

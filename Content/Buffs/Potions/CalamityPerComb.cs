@@ -27,9 +27,11 @@ namespace yitangCalamity.Content.Buffs.Potions
             calamityPlayer.bounding = true;
             calamityPlayer.calcium = true;
             calamityPlayer.sulphurskin = true;
+            calamityPlayer.shadow = true;
             ytCalamityPlayer.triumph = true;
-            ytCalamityPlayer.yPower = true;
+            ytCalamityPlayer.teslaPotion = true;
             ytCalamityPlayer.cadence = true;
+            ytCalamityPlayer.yPower = true;
 
             calamityPlayer.crimEffigy = true;
             calamityPlayer.corrEffigy = true;

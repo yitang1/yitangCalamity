@@ -39,9 +39,9 @@ Buffs: {
 		Description: 你感觉你所向披靡
 	}
 
-	ProfanedRageBuff: {
-		DisplayName: 渎神之怒
-		Description: 亵渎之力焚烧着你的血液
+	ProfanedRagePotion: {
+		// DisplayName: Profaned Rage Potion
+		// Description: ""
 	}
 
 	DraconicSurgeBuff: {
@@ -92,6 +92,11 @@ Buffs: {
 	AlchemistComb: {
 		DisplayName: 炼金药剂包
 		Description: 获得一些炼金术士Mod的增益
+	}
+
+	ProfanedRageBuff: {
+		DisplayName: 渎神之怒
+		Description: 亵渎之火焚烧着你的血液
 	}
 }
 
@@ -146,7 +151,7 @@ Items: {
 			在你静止或移动时
 			盗贼潜行值恢复速度会提高15%
 			在日食期间或穿戴全套日影盔甲时
-			盗贼潜行值恢复速度会提高至20%
+			潜行值恢复速度会提高至20%
 			'''
 	}
 
@@ -174,9 +179,9 @@ Items: {
 			'''
 	}
 
-	ProfanedRagePotion: {
-		DisplayName: 渎神之怒药水
-		Tooltip: 所有暴击率提高12%
+	ProfanedRageBuff: {
+		// DisplayName: Profaned Rage Buff
+		// Tooltip: ""
 	}
 
 	DraconicElixir: {
@@ -240,7 +245,8 @@ Items: {
 			'''
 			获得一些灾厄Mod的增益：
 			弹跳助力、钙质补充、硫磺皮肤
-			胜利之战、亚利姆之力、心律和谐
+			匿影、胜利之战、特斯拉
+			心律和谐、亚利姆之力
 			血腥雕像、腐化雕像、腐朽雕像
 			'''
 	}
@@ -251,10 +257,11 @@ Items: {
 			'''
 			获得一部分灾厄Mod的增益：
 			弹跳助力、钙质补充、硫磺皮肤
-			胜利之战、亚利姆之力、心律和谐
+			匿影、胜利之战、特斯拉
+			心律和谐、亚利姆之力
 			血腥雕像、腐化雕像、腐朽雕像
 			翱翔、光合作用、Fabsol伏特加
-			重力复原、重振精神、半影
+			重振精神、半影、重力复原
 			护甲粉碎、泰坦之鳞
 			敏捷、活力、执念、恶毒
 			'''
@@ -266,10 +273,11 @@ Items: {
 			'''
 			获得大部分灾厄Mod的增益：
 			弹跳助力、钙质补充、硫磺皮肤
-			胜利之战、亚利姆之力、心律和谐
+			匿影、胜利之战、特斯拉
+			心律和谐、亚利姆之力
 			血腥雕像、腐化雕像、腐朽雕像
 			翱翔、光合作用、Fabsol伏特加
-			重力复原、重振精神、半影
+			重振精神、半影、重力复原
 			护甲粉碎、泰坦之鳞
 			敏捷、活力、执念、恶毒
 			渎神之怒、龙魂加持
@@ -387,6 +395,11 @@ Items: {
 			启用或禁用下雨
 			不消耗
 			'''
+	}
+
+	ProfanedRagePotion: {
+		DisplayName: 渎神之怒药水
+		Tooltip: 所有暴击率提高12%
 	}
 }
 

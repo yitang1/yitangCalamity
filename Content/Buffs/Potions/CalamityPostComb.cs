@@ -26,14 +26,16 @@ namespace yitangCalamity.Content.Buffs.Potions
             CalamityPlayer calamityPlayer = player.Calamity();
             yitangCalamityPlayer ytCalamityPlayer = player.yitangCalamity();
 
-            calamityPlayer.bounding = true;
-            calamityPlayer.calcium = true;
-            calamityPlayer.sulphurskin = true;
-            ytCalamityPlayer.triumph = true;
-            ytCalamityPlayer.yPower = true;
-            ytCalamityPlayer.cadence = true;
+			calamityPlayer.bounding = true;
+			calamityPlayer.calcium = true;
+			calamityPlayer.sulphurskin = true;
+			calamityPlayer.shadow = true;
+			ytCalamityPlayer.triumph = true;
+			ytCalamityPlayer.teslaPotion = true;
+			ytCalamityPlayer.cadence = true;
+			ytCalamityPlayer.yPower = true;
 
-            calamityPlayer.soaring = true;
+			calamityPlayer.soaring = true;
             calamityPlayer.photosynthesis = true;
             calamityPlayer.fabsolVodka = true;
             calamityPlayer.gravityNormalizer = true;

@@ -55,6 +55,7 @@ namespace yitangCalamity.Common
             triumph = false;
             contactDamageReduction = 0.0;
             cadence = false;
+			teslaPotion = false;
             yPower = false;
             revivify = false;
 			penumbra = false;
@@ -90,6 +91,7 @@ namespace yitangCalamity.Common
         public override void UpdateDead()
         {
             cadence = false;
+			teslaPotion = false;
             triumph = false;
             yPower = false;
             revivify = false;
@@ -194,10 +196,9 @@ namespace yitangCalamity.Common
             {
 				/*分子(npc.life)越小，整体分数的值(npc.life / (double)npc.lifeMax)就越小
 				所以1.0减去这个分数得到的值，反而就会越大
-				因此这个公式意思是 敌怪血量越少，contactDamageReduction的值越大*/
+				因此这个公式的意思是：敌怪血量越少，contactDamageReduction的值越大*/
 				contactDamageReduction += 0.15 * (1.0 - npc.life / (double)npc.lifeMax);
             }
-
 			if (contactDamageReduction > 0.0)
 			{
 				//用1去除以这个值，使其伤害减免百分比将永远不会超过100%
@@ -249,6 +250,15 @@ namespace yitangCalamity.Common
 			if (armorShattering)
 			{
 				CalamityUtils.Inflict246DebuffsNPC(target, ModContent.BuffType<ArmorCrunch>(), 2f);
+			}
+
+			if (teslaPotion)
+			{
+				if (Main.rand.NextBool(10))
+				{
+					target.AddBuff(BuffID.Electrified, 120);
+					target.AddBuff(ModContent.BuffType<GalvanicCorrosion>(), 120);
+				}
 			}
 
 			//if (summon)
@@ -502,6 +512,7 @@ namespace yitangCalamity.Common
 		public bool triumph;
         public double contactDamageReduction;
         public bool cadence;
+        public bool teslaPotion;
         public bool yPower;
         public bool revivify;
         public bool penumbra;

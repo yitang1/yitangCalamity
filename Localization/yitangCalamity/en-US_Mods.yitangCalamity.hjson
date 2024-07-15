@@ -88,6 +88,11 @@ Buffs: {
 		DisplayName: Alchemist Comb
 		Description: ""
 	}
+
+	ProfanedRageBuff: {
+		DisplayName: Profaned Rage Buff
+		Description: Mods.yitangCalamity.Buffs.ProfanedRageBuff.Description
+	}
 }
 
 Items: {
@@ -253,6 +258,11 @@ Items: {
 
 	RainMagic: {
 		DisplayName: Rain Magic
+		Tooltip: ""
+	}
+
+	ProfanedRagePotion: {
+		DisplayName: Profaned Rage Potion
 		Tooltip: ""
 	}
 }
