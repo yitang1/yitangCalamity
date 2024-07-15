@@ -120,7 +120,7 @@ namespace yitangCalamity.NPCs
             dialog.Add("要试试这药水吗？它应该会强化翅膀。");
             dialog.Add("我不认为那是洞穴探险药水……");
             dialog.Add("我得到了来自谜语大学的学位。");
-            dialog.Add("有一个传说中的悠悠球被称为萨斯卡德。");
+            dialog.Add("你知道吗，有一个传说中的悠悠球被称为萨斯卡德。");
             dialog.Add("哇哦，面包屑和海狸唾液！");
             dialog.Add("嗨，咳咳……那不是狱火药水！");
             dialog.Add("你有在附近看到双子魔眼吗？");
@@ -164,7 +164,7 @@ namespace yitangCalamity.NPCs
             Condition DownedDesertScourge = new Condition("DesertScourge", () => DownedBossSystem.downedDesertScourge);
             Condition DownedPerfs = new Condition("Perfs", () => DownedBossSystem.downedPerforator);
             Condition DownedHiveMind = new Condition("HiveMind", () => DownedBossSystem.downedHiveMind);
-            Condition DownedPerfsHiveMind = new Condition("PerfsHiveMind", () => DownedBossSystem.downedPerforator || DownedBossSystem.downedHiveMind);
+            Condition DownedPerfOrMind = new Condition("PerfOrMind", () => DownedBossSystem.downedPerforator || DownedBossSystem.downedHiveMind);
             Condition DownedSlimeGod = new Condition("SlimeGod", () => DownedBossSystem.downedSlimeGod);
             
             Condition DownedCryogen = new Condition("Cryogen", () => DownedBossSystem.downedCryogen);
@@ -236,21 +236,28 @@ namespace yitangCalamity.NPCs
 			modPotions.Add(CustomPrice(ItemType<FlaskOfCrumbling>(), buyPrice(0, 2, 0, 0)), new Condition[] { Condition.Hardmode })
 				.Add(CustomPrice(ItemType<FlaskOfBrimstone>(), buyPrice(0, 3, 0, 0)), new Condition[] { DownedCloneCalamitas })
 				.Add(CustomPrice(ItemType<FlaskOfHolyFlames>(), buyPrice(0, 4, 0, 0)), new Condition[] { Condition.DownedMoonLord })
+				.Add(CustomPrice(ItemType<AnechoicCoating>(), buyPrice(0, 1, 10, 0)), Array.Empty<Condition>())
+				.Add(CustomPrice(ItemType<PotionofOmniscience>(), buyPrice(0, 1, 10, 0)), Array.Empty<Condition>())
 				.Add(CustomPrice(ItemType<BoundingPotion>(), buyPrice(0, 1, 20, 0)), Array.Empty<Condition>())
 				.Add(CustomPrice(ItemType<CalciumPotion>(), buyPrice(0, 1, 20, 0)), Array.Empty<Condition>())
 				.Add(CustomPrice(ItemType<SulphurskinPotion>(), buyPrice(0, 1, 20, 0)), Array.Empty<Condition>())
+				.Add(CustomPrice(ItemType<ShadowPotion>(), buyPrice(0, 1, 20, 0)), Array.Empty<Condition>())
 				.Add(CustomPrice(ItemType<TriumphPotion>(), buyPrice(0, 1, 20, 0)), new Condition[] { DownedDesertScourge })
-				.Add(CustomPrice(ItemType<CadencePotion>(), buyPrice(0, 1, 20, 0)), new Condition[] { Condition.DownedSkeletron })
-				.Add(CustomPrice(ItemType<YharimsStimulants>(), buyPrice(0, 1, 20, 0)), new Condition[] { Condition.DownedSkeletron })
-				.Add(CustomPrice(ItemType<RevivifyPotion>(), buyPrice(0, 1, 50, 0)), new Condition[] { Condition.Hardmode })
-				.Add(CustomPrice(ItemType<PhotosynthesisPotion>(), buyPrice(0, 1, 50, 0)), new Condition[] { Condition.Hardmode })
+				.Add(CustomPrice(ItemType<TeslaPotion>(), buyPrice(0, 1, 30, 0)), new Condition[] { DownedPerfOrMind })
+				.Add(CustomPrice(ItemType<CadencePotion>(), buyPrice(0, 1, 30, 0)), new Condition[] { Condition.DownedSkeletron })
+				.Add(CustomPrice(ItemType<YharimsStimulants>(), buyPrice(0, 1, 30, 0)), new Condition[] { Condition.DownedSkeletron })
 				.Add(CustomPrice(ItemType<SoaringPotion>(), buyPrice(0, 1, 50, 0)), new Condition[] { Condition.Hardmode })
+				.Add(CustomPrice(ItemType<PhotosynthesisPotion>(), buyPrice(0, 1, 50, 0)), new Condition[] { Condition.Hardmode })
 				.Add(CustomPrice(ItemType<FabsolsVodka>(), buyPrice(0, 1, 50, 0)), new Condition[] { Condition.Hardmode })
-				.Add(CustomPrice(ItemType<AstralInjection>(), buyPrice(0, 1, 50, 0)), new Condition[] { DownedAureus })
-				.Add(CustomPrice(ItemType<GravityNormalizerPotion>(), buyPrice(0, 1, 50, 0)), new Condition[] { DownedAureus })
-				.Add(CustomPrice(ItemType<TitanScalePotion>(), buyPrice(0, 1, 50, 0)), new Condition[] { Condition.DownedGolem })
-				.Add(CustomPrice(ItemType<CeaselessHungerPotion>(), buyPrice(0, 3, 0, 0)), new Condition[] { DownedCeaselessVoid })
-                .Add(CustomPrice(ItemType<DraconicElixir>(), buyPrice(0, 2, 0, 0)), new Condition[] { DownedYharon })
+				.Add(CustomPrice(ItemType<RevivifyPotion>(), buyPrice(0, 1, 50, 0)), new Condition[] { Condition.Hardmode })
+				.Add(CustomPrice(ItemType<PenumbraPotion>(), buyPrice(0, 1, 60, 0)), new Condition[] { Condition.DownedPlantera })
+				.Add(CustomPrice(ItemType<GravityNormalizerPotion>(), buyPrice(0, 1, 60, 0)), new Condition[] { DownedAureus })
+				.Add(CustomPrice(ItemType<AstralInjection>(), buyPrice(0, 1, 60, 0)), new Condition[] { DownedAureus })
+				.Add(CustomPrice(ItemType<ShatteringPotion>(), buyPrice(0, 1, 70, 0)), new Condition[] { Condition.DownedGolem })
+				.Add(CustomPrice(ItemType<TitanScalePotion>(), buyPrice(0, 1, 70, 0)), new Condition[] { Condition.DownedGolem })
+				.Add(CustomPrice(ItemType<ProfanedRagePotion>(), buyPrice(0, 2, 0, 0)), new Condition[] { Condition.DownedMoonLord })
+				.Add(CustomPrice(ItemType<CeaselessHungerPotion>(), buyPrice(0, 2, 50, 0)), new Condition[] { DownedCeaselessVoid })
+                .Add(CustomPrice(ItemType<DraconicElixir>(), buyPrice(0, 3, 0, 0)), new Condition[] { DownedYharon })
 				//源自炼金术士Mod的部分药水
 				.Add(CustomPrice(ItemType<SunshinePotion>(), buyPrice(0, 1, 0, 0)), Array.Empty<Condition>())
 				.Add(CustomPrice(ItemType<FortitudePotion>(), buyPrice(0, 1, 50, 0)), Array.Empty<Condition>())
