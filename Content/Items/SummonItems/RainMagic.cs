@@ -1,9 +1,9 @@
-using Microsoft.Xna.Framework;
 using Terraria;
 using Terraria.ModLoader;
 using Terraria.ID;
 using Terraria.Chat;
 using Terraria.Localization;
+using Microsoft.Xna.Framework;
 
 namespace yitangCalamity.Content.Items.SummonItems
 {
@@ -29,16 +29,13 @@ namespace yitangCalamity.Content.Items.SummonItems
 
         public override bool? UseItem(Player player)
         {
-            if (Main.netMode != NetmodeID.MultiplayerClient)
+            if (Main.raining)
             {
-                if (Main.raining)
-                {
-                    RainOff();
-                }
-                else if (!Main.raining && !Main.slimeRain)
-                {
-                    RainOn();
-                }
+                RainOff();
+            }
+            else if (!Main.raining && !Main.slimeRain)
+            {
+                RainOn();
             }
             return true;
         }
