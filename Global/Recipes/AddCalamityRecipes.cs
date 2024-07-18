@@ -610,9 +610,9 @@ namespace yitangCalamity.Global.Recipes
 				.Register();
 			//侧翼
 			Recipe.Create(ItemType<Wingman>())
-				.AddIngredient(ItemID.LaserDrill)
+				.AddIngredient(ItemID.LaserRifle)
 				.AddIngredient(ItemID.JimsDrone, 2)
-				.AddIngredient(ItemID.MartianConduitPlating, 20)
+				.AddIngredient(ItemID.MartianConduitPlating, 10)
 				.AddTile(TileID.MythrilAnvil)
 				.Register();
 			#endregion
