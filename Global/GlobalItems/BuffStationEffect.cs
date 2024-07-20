@@ -5,6 +5,7 @@ using CalamityMod.Items.Placeables.Furniture;
 using CalamityMod.Buffs.Placeables;
 using yitangCalamity.Content.Buffs.Potions;
 using yitangCalamity.Global.Config;
+using yitangCalamity.Content.Buffs.Others;
 
 namespace yitangCalamity.Global.GlobalItems
 {
@@ -67,7 +68,14 @@ namespace yitangCalamity.Global.GlobalItems
                 //恢复蜡烛↓
                 if (item.type == ModContent.ItemType<ResilientCandle>())
                 {
-                    player.AddBuff(ModContent.BuffType<CirrusPurpleCandleBuff>(), 2, true, false);
+					if (ytCalamityConfig.Instance.FuckCalamityAll1)
+					{
+						player.AddBuff(ModContent.BuffType<PurpleCandleBuffNew>(), 2, true, false);
+					}
+					else if (!ytCalamityConfig.Instance.FuckCalamityAll1)
+					{
+						player.AddBuff(ModContent.BuffType<CirrusPurpleCandleBuff>(), 2, true, false);
+					}
                     return;
                 }
                 //恶念蜡烛↓
