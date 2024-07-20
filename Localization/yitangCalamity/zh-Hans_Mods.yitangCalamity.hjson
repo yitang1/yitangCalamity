@@ -93,6 +93,11 @@ Buffs: {
 		DisplayName: 炼金药剂包
 		Description: 获得一些炼金术士Mod的增益
 	}
+
+	PurpleCandleBuffNew: {
+		DisplayName: 执念
+		Description: 暴风骤雨也无法熄灭这不灭的火
+	}
 }
 
 Items: {
@@ -385,6 +390,76 @@ Items: {
 			不消耗
 			'''
 	}
+
+	WorldControlUnit: {
+		DisplayName: 模拟控制单元
+		Tooltip:
+			'''
+			左键可进行昼夜切换
+			光标在物品栏中对其右键时
+			可控制下雨(沙漠中控制沙尘暴)
+			“独家产品，由安吉拉设计”
+			'''
+	}
+
+	GlobalTeleporter: {
+		DisplayName: 世界传送装置
+		Tooltip:
+			'''
+			将你传送到地图中的任意位置
+			在全屏地图界面点击右键传送
+			Boss存活时无法使用
+			使用后会破坏
+			“噢，蔚蓝的正义，深红的爱！
+			为了被命运吞没的人而战。
+			我向光明宣誓，
+			邪恶的坏蛋不能阻挡我们，
+			爱之力量守护我们！”
+			'''
+	}
+
+	GlobalTeleporterUp: {
+		DisplayName: 改良世界传送装置
+		Tooltip:
+			'''
+			将你传送到地图中的任意位置
+			在全屏地图界面点击右键传送
+			Boss存活时无法使用
+			使用后不会破坏
+			“噢，蔚蓝的正义，深红的爱！
+			为了被命运吞没的人而战。
+			我向光明宣誓，
+			邪恶的坏蛋不能阻挡我们，
+			爱之力量守护我们！”
+			'''
+	}
+
+	StarterBag: {
+		DisplayName: 旅行背包
+		Tooltip:
+			'''
+			获得一些冒险旅途中的基础物资
+			如果同时加载了其他模组
+			也能获得模组里的物品
+			联动的模组有：
+			Calamity Mod(灾厄)
+			Fargo's Mutant Mod (Fargo突变)
+			Fargo's Souls Mod (Fargo魂石)
+			Luiafk Reburn (懒人Mod)
+			Quality of Life (更好的体验)
+			Amulet Of Many Minions(仆从护身符)
+			{$CommonItemTooltip.RightClickToOpen}
+			'''
+	}
+
+	ThrownShimmerWater: {
+		DisplayName: 微光水瓶
+		Tooltip:
+			'''
+			投掷微光水瓶，能够穿过物块和液体
+			被水瓶击中的生物会进行微光转化
+			'''
+	}
 }
 
 Commons: {
@@ -537,6 +612,11 @@ NPCs: {
 	}
 }
 
+Projectiles: {
+	LocatorProjectile.DisplayName: 稀有生物箭头
+	ShimmerWater.DisplayName: 微光水瓶
+}
+
 Configs: {
 	ytCalamityConfig: {
 		DisplayName: yitangCalamity模组配置
@@ -544,11 +624,12 @@ Configs: {
 		Headers: {
 			FuckCalamityAll: 回调相关
 			ytCNPCs: NPC相关
-			ytCRecipes: 配方相关
+			ytCItems: 物品相关
+			ytCOthers: 其他选项
 		}
 
 		FuckCalamityAll1: {
-			Label: 回调灾厄Mod的一些改动 I
+			Label: "[i:EmpressFlightBooster] 回调灾厄Mod的一些改动 I"
 			Tooltip:
 				'''
 				列表清单：
@@ -558,12 +639,15 @@ Configs: {
 				   放在物品栏、存钱罐、保险箱、护卫熔炉、虚空袋内永久生效
 				4.醉仙女蜡烛的四个增益能够同时生效
 				5.醉仙女的恢复蜡烛能够额外格挡15%的伤害
-				6. ……
+				6.猛爪手套系列饰品的近战攻速能够再次叠加(当前版本暂未实现)
+				7.核子之源系列饰品的仆从栏位能够再次叠加(当前版本暂未实现)
+				8.核子之源及其下级能够再次造成神圣之火减益(当前版本暂未实现)
+				9. ……
 				'''
 		}
 
 		FuckCalamityAll2: {
-			Label: 回调灾厄Mod的一些改动 II
+			Label: "[i:BrainOfConfusion] 回调灾厄Mod的一些改动 II"
 			Tooltip:
 				'''
 				列表清单：
@@ -682,6 +766,56 @@ Configs: {
 				   移除泰拉系列武器合成配方内的生命碎片
 				   移除永夜系列武器合成配方内的纯净凝胶
 				'''
+		}
+
+		ytCOldPotion: {
+			Label: "[i:yitangCalamity/ProfanedRagePotion] 禁用：药水效果的叠加"
+			Tooltip:
+				'''
+				启用此选项后
+				一些灾厄旧版的药水，不再与其下级药水的效果叠加：
+				韵律药水、渎神之怒药水、粉碎药水
+				'''
+		}
+
+		ytCGloveAccessory: {
+			Label: "[i:CalamityMod/ElementalGauntlet] 禁用：猛爪手套系列饰品的攻速叠加"
+			Tooltip:
+				'''
+				[c/f54c4c:当前版本尚未实现]
+				启用此选项后
+				猛爪手套系列饰品的近战攻速不再叠加
+				'''
+		}
+
+		ytCSumAccessory: {
+			Label: "[i:CalamityMod/Nucleogenesis] 禁用：核子之源系列的仆从栏位叠加"
+			Tooltip:
+				'''
+				[c/f54c4c:当前版本尚未实现]
+				启用此选项后
+				核子之源系列饰品的仆从栏位不再叠加
+				'''
+		}
+
+		LifeformAnalyzer: {
+			Label: "[i:LifeformAnalyzer] 稀有生物指向箭头"
+			Tooltip:
+				'''
+				启用此选项后
+				附近若出现生命体分析机会检测到的生物
+				玩家身边就会出现指向其位置的箭头
+				'''
+		}
+
+		LocatorRange: {
+			Label: "[i:REK] 箭头指向范围"
+			Tooltip: 箭头能检测并指向的最大范围
+		}
+
+		DisabledLocatorNpcs: {
+			Label: "[i:RedHusk] 稀有生物箭头黑名单"
+			Tooltip: 箭头不会指向名单内选中的生物
 		}
 	}
 }

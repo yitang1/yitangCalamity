@@ -10,7 +10,7 @@ tModLoader: {
 	SavingModdedWorldData: 正在保存世界数据
 	ModDependentsTooltip:
 		'''
-		被以下模组引用：
+		以下模组依赖着此Mod：
 		{0}
 		'''
 	ModsDisableAndDependents: 禁用

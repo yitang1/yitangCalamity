@@ -88,6 +88,11 @@ Buffs: {
 		DisplayName: Alchemist Comb
 		Description: ""
 	}
+
+	PurpleCandleBuffNew: {
+		DisplayName: Purple Candle Buff New
+		Description: Mods.yitangCalamity.Buffs.PurpleCandleBuffNew.Description
+	}
 }
 
 Items: {
@@ -255,6 +260,31 @@ Items: {
 		DisplayName: Rain Magic
 		Tooltip: ""
 	}
+
+	WorldControlUnit: {
+		DisplayName: World Control Unit
+		Tooltip: ""
+	}
+
+	GlobalTeleporter: {
+		DisplayName: Global Teleporter
+		Tooltip: ""
+	}
+
+	GlobalTeleporterUp: {
+		DisplayName: Global Teleporter Up
+		Tooltip: ""
+	}
+
+	StarterBag: {
+		DisplayName: Starter Bag
+		Tooltip: ""
+	}
+
+	ThrownShimmerWater: {
+		DisplayName: Thrown Shimmer Water
+		Tooltip: ""
+	}
 }
 
 Commons: {
@@ -407,14 +437,20 @@ NPCs: {
 	}
 }
 
+Projectiles: {
+	LocatorProjectile.DisplayName: Locator Projectile
+	ShimmerWater.DisplayName: Shimmer Water
+}
+
 Configs: {
 	ytCalamityConfig: {
 		DisplayName: yitang C Config
 
 		Headers: {
 			FuckCalamityAll: Fuck Calamity All
-			ytCNPCs: yt C NPCs Header
-			ytCRecipes: yt C Recipes Header
+			ytCNPCs: NPCs Header
+			ytCItems: Items Header
+			ytCOthers: Others Header
 		}
 
 		FuckCalamityAll1: {
@@ -478,7 +514,37 @@ Configs: {
 		}
 
 		ytCRecipes: {
-			Label: yt C Recipes
+			Label: Recipes
+			Tooltip: ""
+		}
+
+		ytCOldPotion: {
+			Label: Old Potion
+			Tooltip: ""
+		}
+
+		ytCGloveAccessory: {
+			Label: Glove Accessory
+			Tooltip: ""
+		}
+
+		ytCSumAccessory: {
+			Label: Summon Accessory
+			Tooltip: ""
+		}
+
+		LifeformAnalyzer: {
+			Label: Lifeform Analyzer
+			Tooltip: ""
+		}
+
+		LocatorRange: {
+			Label: Locator Range
+			Tooltip: ""
+		}
+
+		DisabledLocatorNpcs: {
+			Label: Disabled Locator Npcs
 			Tooltip: ""
 		}
 	}
