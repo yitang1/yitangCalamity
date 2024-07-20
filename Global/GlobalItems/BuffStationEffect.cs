@@ -6,6 +6,8 @@ using CalamityMod.Buffs.Placeables;
 using yitangCalamity.Content.Buffs.Potions;
 using yitangCalamity.Global.Config;
 using yitangCalamity.Content.Buffs.Others;
+using yitangCalamity.Common;
+using yitangCalamity.Content.Items.Others;
 
 namespace yitangCalamity.Global.GlobalItems
 {
@@ -30,7 +32,21 @@ namespace yitangCalamity.Global.GlobalItems
             {
                 return;
             }
-            if (item.stack >= 1 && (!player.HasBuff<CalamityHardComb>() || !player.HasBuff<CalamityPostComb>()))
+
+			if (item.stack >= 1)
+			{
+				//世界传送装置球
+				if (item.type == ModContent.ItemType<GlobalTeleporter>())
+				{
+					player.yitangCalamity().GlobalTeleporter = true;
+				}
+				if (item.type == ModContent.ItemType<GlobalTeleporterUp>())
+				{
+					player.yitangCalamity().GlobalTeleporterUp = true;
+				}
+			}
+
+			if (item.stack >= 1 && (!player.HasBuff<CalamityHardComb>() || !player.HasBuff<CalamityPostComb>()))
             {
                 if (!player.HasBuff<CalamityPerComb>())
                 {

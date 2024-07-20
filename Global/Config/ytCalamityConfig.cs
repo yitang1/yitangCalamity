@@ -83,6 +83,7 @@ namespace yitangCalamity.Global.Config
 		//[Range(0, 1000)]
 		//[DefaultValue(100)]
 		//public int Scale;
+
 		[DefaultValue(true)]
 		public bool LifeformAnalyzer { get; set; }
 

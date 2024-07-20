@@ -5,6 +5,7 @@ using Terraria;
 using Terraria.ModLoader;
 using yitangCalamity.Global.GlobalItems;
 using yitangCalamity.Global.Config;
+using yitangCalamity.Common;
 
 namespace yitangCalamity.Global.Players
 {
@@ -26,8 +27,8 @@ namespace yitangCalamity.Global.Players
 			{
 				return;
 			}
-            //猪猪存钱罐↓
-            Item[] item = Player.bank.item;
+			//猪猪存钱罐↓
+			Item[] item = Player.bank.item;
             for (int i = 0; i < item.Length; i++)
             {
                 BuffStationEffect.GetUnlimitedBuff(item[i], Player);

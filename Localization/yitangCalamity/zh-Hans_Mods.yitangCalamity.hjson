@@ -407,7 +407,7 @@ Items: {
 		Tooltip:
 			'''
 			将你传送到地图中的任意位置
-			在全屏地图界面点击右键传送
+			在全屏地图界面右键点击传送
 			Boss存活时无法使用
 			使用后会破坏
 			“噢，蔚蓝的正义，深红的爱！
@@ -423,7 +423,7 @@ Items: {
 		Tooltip:
 			'''
 			将你传送到地图中的任意位置
-			在全屏地图界面点击右键传送
+			在全屏地图界面右键点击传送
 			Boss存活时无法使用
 			使用后不会破坏
 			“噢，蔚蓝的正义，深红的爱！
@@ -659,8 +659,6 @@ Configs: {
 			Label: "[i:yitangCalamity/StarMerchantIcon] 添加NPC：星际商人"
 			Tooltip:
 				'''
-				启用此选项后
-				会在游戏中添加一名城镇NPC
 				此NPC会售卖各种[c/FFB453:原版材料和模组材料]
 				生成条件为：世界中至少有[c/F2E635:3]名城镇NPC存在
 				'''
@@ -670,8 +668,6 @@ Configs: {
 			Label: "[i:yitangCalamity/BuilderIcon] 添加NPC：建筑师"
 			Tooltip:
 				'''
-				启用此选项后
-				会在游戏中添加一名城镇NPC
 				此NPC会售卖各种[c/FFB453:原版物块和模组物块]
 				生成条件为：世界中至少有[c/F2E635:3]名城镇NPC存在
 				'''
@@ -681,9 +677,7 @@ Configs: {
 			Label: "[i:yitangCalamity/BrewerIcon] 添加NPC：药剂师"
 			Tooltip:
 				'''
-				启用此选项后
-				会在游戏中添加一名城镇NPC
-				此NPC会售卖各种[c/FFB453:原版和模组的药水]
+				此NPC会售卖各种[c/FFB453:原版药水和模组药水]
 				生成条件为：世界中至少有[c/F2E635:4]名城镇NPC存在
 				'''
 		}
@@ -692,9 +686,8 @@ Configs: {
 			Label: "[i:yitangCalamity/AngelaIcon] 添加NPC：安吉拉"
 			Tooltip:
 				'''
-				启用此选项后
-				会在游戏中添加一名城镇NPC
-				此NPC会售卖[c/FFB453:原版和模组的Boss宝藏袋、敌怪和Boss的召唤物品]
+				此NPC会售卖[c/FFB453:原版和模组的Boss宝藏袋、]
+				[c/FFB453:以及敌怪和Boss的召唤物品]
 				生成条件为：世界中至少有[c/F2E635:5]名城镇NPC存在
 				'''
 		}
@@ -703,9 +696,7 @@ Configs: {
 			Label: "[i:yitangCalamity/MinerIcon] 添加NPC：矿工"
 			Tooltip:
 				'''
-				启用此选项后
-				会在游戏中添加一名城镇NPC
-				此NPC会售卖[c/FFB453:矿物和宝箱]
+				此NPC会售卖各种[c/FFB453:矿物和宝箱]
 				生成条件为：玩家的物品栏中有[i:IronOre][c/F2E635:铁矿]或[i:LeadOre][c/F2E635:铅矿]
 				'''
 		}
@@ -714,9 +705,7 @@ Configs: {
 			Label: "[i:yitangCalamity/HarpyIcon] 添加NPC：哈比"
 			Tooltip:
 				'''
-				启用此选项后
-				会在游戏中添加一名城镇NPC
-				此NPC会售卖[c/FFB453:植物、小动物和渔获]
+				此NPC会售卖各种[c/FFB453:植物、小动物和渔获]
 				生成条件为：玩家的物品栏中有[i:Bass][c/F2E635:鲈鱼]
 				'''
 		}
@@ -725,9 +714,7 @@ Configs: {
 			Label: "[i:yitangCalamity/TinkererIcon] 添加NPC：工匠"
 			Tooltip:
 				'''
-				启用此选项后
-				会在游戏中添加一名城镇NPC
-				此NPC会售卖[c/FFB453:饰品和增益站]
+				此NPC会售卖各种[c/FFB453:饰品、增益站和制作站]
 				生成条件为：击败[i:GoblinBattleStandard][c/F2E635:哥布林入侵]后
 				'''
 		}
@@ -756,12 +743,12 @@ Configs: {
 			Label: "[i:Zenith] 配方调整和修改"
 			Tooltip:
 				'''
-				启用此选项后，会调整和修改一些Mod内的配方
-				灾厄Mod (CalamityMod)：
+				启用此选项后，会额外调整和修改一些Mod内的配方：
+				灾厄Mod (Calamity Mod)
 				   移除永夜刃合成配方内的纯净凝胶
 				   移除天顶剑合成配方内的圣金源锭
 
-				更多天顶武器Mod (MoreZenithItems)：
+				更多天顶武器Mod (MoreZenithItems)
 				   移除天顶系列武器合成配方内的圣金源锭
 				   移除泰拉系列武器合成配方内的生命碎片
 				   移除永夜系列武器合成配方内的纯净凝胶
@@ -773,7 +760,7 @@ Configs: {
 			Tooltip:
 				'''
 				启用此选项后
-				一些灾厄旧版的药水，不再与其下级药水的效果叠加：
+				一些旧版本灾厄的药水，不再与其下级药水的效果叠加：
 				韵律药水、渎神之怒药水、粉碎药水
 				'''
 		}

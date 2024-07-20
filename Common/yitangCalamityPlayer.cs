@@ -511,20 +511,28 @@ namespace yitangCalamity.Common
 							for (int index = 0; index < 120; ++index)
 								Main.dust[Dust.NewDust(Player.position, Player.width, Player.height, 15, Main.rand.NextFloat(-10f, 10f), Main.rand.NextFloat(-10f, 10f), 150, Color.Cyan, 1.2f)].velocity *= 0.75f;
 
-							if (GlobalTeleporter)
-							{
-								Item[] inventory = Player.inventory;
-								for (int n = 0; n < inventory.Length; n++)
-								{
-									if (inventory[n].type == ModContent.ItemType<GlobalTeleporter>())
-									{
-										inventory[n].stack--;
-										break;
-									}
-								}
-							}
+							ConsumeGlobalTeleporter(Player.inventory);
+							ConsumeGlobalTeleporter(Player.bank.item);
+							ConsumeGlobalTeleporter(Player.bank2.item);
+							ConsumeGlobalTeleporter(Player.bank3.item);
+							ConsumeGlobalTeleporter(Player.bank4.item);
+
 							delay = 0;
 						}
+					}
+				}
+			}
+		}
+		public void ConsumeGlobalTeleporter(Item[] storageSpace)
+		{
+			if (GlobalTeleporter)
+			{
+				for (int i = 0; i < storageSpace.Length; i++)
+				{
+					if (storageSpace[i].type == ModContent.ItemType<GlobalTeleporter>() && storageSpace[i].stack < 225)
+					{
+						storageSpace[i].stack--;
+						break;
 					}
 				}
 			}
