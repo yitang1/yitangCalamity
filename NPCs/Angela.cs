@@ -40,7 +40,7 @@ namespace yitangCalamity.NPCs
 			NPCID.Sets.NPCBestiaryDrawModifiers drawModifiers = new NPCID.Sets.NPCBestiaryDrawModifiers()
 			{
 				Velocity = -1f,
-				Direction = new int?(-1)
+				Direction = -1
 			};
 			NPCID.Sets.NPCBestiaryDrawOffset.Add(base.Type, drawModifiers);
 			NPC.Happiness
@@ -285,9 +285,9 @@ namespace yitangCalamity.NPCs
 			#region 源自炼金术士Mod的物品
 			//炼金术士Mod的物品
 			treasureBags
-				//.Add(CustomPrice(ItemType<GlobalTeleporter>(), buyPrice(0, 1, 50, 0)), new Condition[] { Condition.Hardmode })
-				//.Add(CustomPrice(ItemType<GlobalTeleporterUp>(), buyPrice(0, 25, 0, 0)), new Condition[] { Condition.DownedMoonLord })
-				//.Add(CustomPrice(ItemType<WorldControlUnit>(), buyPrice(0, 5, 0, 0)), new Condition[] { Condition.Hardmode })
+				.Add(CustomPrice(ItemType<GlobalTeleporter>(), buyPrice(0, 10, 0, 0)), new Condition[] { Condition.Hardmode })
+				.Add(CustomPrice(ItemType<GlobalTeleporterUp>(), buyPrice(1, 0, 0, 0)), new Condition[] { Condition.DownedMoonLord })
+				.Add(CustomPrice(ItemType<WorldControlUnit>(), buyPrice(0, 5, 0, 0)), new Condition[] { Condition.Hardmode })
 			#endregion
 
 			#region 原版Boss宝藏袋
