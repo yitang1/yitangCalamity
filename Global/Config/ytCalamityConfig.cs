@@ -7,7 +7,7 @@ namespace yitangCalamity.Global.Config
 {
 	public class ytCalamityConfig : ModConfig
 	{
-		public override ConfigScope Mode => ConfigScope.ServerSide;
+		public override ConfigScope Mode => ConfigScope.ClientSide;
 
         public static ytCalamityConfig Instance;
 
@@ -53,12 +53,21 @@ namespace yitangCalamity.Global.Config
 		[ReloadRequired]
 		public bool ytCritterInvincible { get; set; }
 
-		[Header("ytCRecipes")]
+		[Header("ytCItems")]
         [ReloadRequired]
         [DefaultValue(false)]
         public bool ytCRecipes { get; set; }
 
-		//[Header("MobHealth")]
+        [DefaultValue(false)]
+        public bool ytCOldPotion { get; set; }
+
+        [DefaultValue(false)]
+        public bool ytCGloveAccessory { get; }
+
+        [DefaultValue(false)]
+        public bool ytCSumAccessory { get; }
+
+		[Header("ytCOthers")]
 		//[Increment(0.5f)]
 		//[Range(1, 10f)]
 		//[DefaultValue(0f)]
@@ -74,15 +83,19 @@ namespace yitangCalamity.Global.Config
 		//[Range(0, 1000)]
 		//[DefaultValue(100)]
 		//public int Scale;
+		[DefaultValue(true)]
+		public bool LifeformAnalyzer { get; set; }
 
-		//[Header("Arrow")]
-		//[DefaultValue(true)]
-		//public bool LifeformAnalyzer;
+		[Range(40, 4000)]
+		[DefaultValue(4000)]
+		public int LocatorRange { get; set; }
 
-		//[Range(40, 4000)]
-		//[DefaultValue(4000)]
-		//public int LocatorRange;
+		private HashSet<NPCDefinition> disabledLocatorNpcs = new HashSet<NPCDefinition>();
 
-		//public HashSet<NPCDefinition> DisabledLocatorNpcs = new HashSet<NPCDefinition>();
+		public HashSet<NPCDefinition> DisabledLocatorNpcs
+		{
+			get { return disabledLocatorNpcs; }
+			set { disabledLocatorNpcs = value; }
+		}
 	}
 }

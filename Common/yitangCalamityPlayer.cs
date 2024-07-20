@@ -31,7 +31,6 @@ using yitangCalamity.Content.Buffs.Potions;
 using yitangCalamity.Content.Items.Potions;
 //using yitangCalamity.Content.Items.Accessories;
 using yitangCalamity.Global.GlobalItems.FuckCalamity;
-using CalamityMod.Items.Weapons.Rogue;
 
 namespace yitangCalamity.Common
 {
@@ -68,25 +67,26 @@ namespace yitangCalamity.Common
             longInvincible = false;
             blurring = false;
             ninjaSkill = false;
-            //ExoChair = false;
-            //magicHat = false;
-            //babywaterclone = false;
-            //cloudmini = false;
-            //rarebrimling = false;
-            //raresandmini = false;
-            //sandmini = false;
-            //betterPStone = 1f;
-            //starReacher = false;
-            //sacredCross = false;
-            //starAdventurer = false;
-            //if (!Main.mapFullscreen)
-            //{
-            //    delay = 0;
-            //}
-            //GlobalTeleporter = false;
-            //GlobalTeleporterUp = false;
-            //holyMinions = false;
-        }
+			purpleCandle = false;
+			GlobalTeleporter = false;
+			GlobalTeleporterUp = false;
+			if (!Main.mapFullscreen)
+			{
+				delay = 0;
+			}
+			//ExoChair = false;
+			//magicHat = false;
+			//babywaterclone = false;
+			//cloudmini = false;
+			//rarebrimling = false;
+			//raresandmini = false;
+			//sandmini = false;
+			//betterPStone = 1f;
+			//starReacher = false;
+			//sacredCross = false;
+			//starAdventurer = false;
+			//holyMinions = false;
+		}
 
         public override void UpdateDead()
         {
@@ -106,6 +106,7 @@ namespace yitangCalamity.Common
             longInvincible = false;
             blurring = false;
             ninjaSkill = false;
+			purpleCandle = false;
             //ExoChair = false;
         }
 
@@ -291,6 +292,18 @@ namespace yitangCalamity.Common
 			{
 				//生命拾心的药水效果
 				Player.lifeMagnet = true;
+
+				if (ytCalamityConfig.Instance.ytCOldPotion)
+				{
+					if (Player.FindBuffIndex(BuffID.Regeneration) > -1)
+					{
+						Player.ClearBuff(BuffID.Regeneration);
+					}
+					if (Player.FindBuffIndex(BuffID.Lifeforce) > -1)
+					{
+						Player.ClearBuff(BuffID.Lifeforce);
+					}
+				}
 			}
 
 			if (ninjaSkill)
@@ -319,6 +332,14 @@ namespace yitangCalamity.Common
 			{
 				Player.GetDamage(DamageClass.Generic) += 0.08f;
 				Player.GetCritChance(DamageClass.Generic) += 8;
+
+				if (ytCalamityConfig.Instance.ytCOldPotion)
+				{
+					if (Player.FindBuffIndex(ModContent.BuffType<WeaponImbueCrumbling>()) > -1)
+					{
+						Player.ClearBuff(ModContent.BuffType<WeaponImbueCrumbling>());
+					}
+				}
 			}
 
 			if (tScale)
@@ -367,6 +388,14 @@ namespace yitangCalamity.Common
 			if (profanedRage)
 			{
 				Player.GetCritChance(DamageClass.Generic) += 12;
+
+				if (ytCalamityConfig.Instance.ytCOldPotion)
+				{
+					if (Player.FindBuffIndex(BuffID.Rage) > -1)
+					{
+						Player.ClearBuff(BuffID.Rage);
+					}
+				}
 			}
         }
 
@@ -433,73 +462,73 @@ namespace yitangCalamity.Common
             return true;
         }
 
-		//public override void ProcessTriggers(TriggersSet triggersSet)
-		//{
-		//    if (GlobalTeleporter || GlobalTeleporterUp)
-		//    {
-		//        if (Main.mapFullscreen)
-		//        {
-		//            delay++;
-		//            if (delay > 19 && Main.mouseRight && Main.keyState.IsKeyUp(Microsoft.Xna.Framework.Input.Keys.LeftControl))
-		//            {
-		//                bool allow = true;
-		//                for (int v = 0; v < 200; ++v)
-		//                {
-		//                    NPC npc = Main.npc[v];
-		//                    if (npc.active && npc.boss)
-		//                    {
-		//                        allow = false;
-		//                        break;
-		//                    }
-		//                }
-		//                if (allow)
-		//                {
-		//                    int mapWidth = Main.maxTilesX * 16;
-		//                    int mapHeight = Main.maxTilesY * 16;
-		//                    Vector2 cursorPosition = new Vector2(Main.mouseX, Main.mouseY);
+		public override void ProcessTriggers(TriggersSet triggersSet)
+		{
+			if (GlobalTeleporter || GlobalTeleporterUp)
+			{
+				if (Main.mapFullscreen)
+				{
+					delay++;
+					if (delay > 19 && Main.mouseRight && Main.keyState.IsKeyUp(Microsoft.Xna.Framework.Input.Keys.LeftControl))
+					{
+						bool allow = true;
+						for (int m = 0; m < Main.maxNPCs; ++m)
+						{
+							NPC npc = Main.npc[m];
+							if (npc.active && npc.boss)
+							{
+								allow = false;
+								break;
+							}
+						}
+						if (allow)
+						{
+							int mapWidth = Main.maxTilesX * 16;
+							int mapHeight = Main.maxTilesY * 16;
+							Vector2 cursorPosition = new Vector2(Main.mouseX, Main.mouseY);
 
-		//                    cursorPosition.X -= Main.screenWidth / 2;
-		//                    cursorPosition.Y -= Main.screenHeight / 2;
+							cursorPosition.X -= Main.screenWidth / 2;
+							cursorPosition.Y -= Main.screenHeight / 2;
 
-		//                    Vector2 mapPosition = Main.mapFullscreenPos;
-		//                    Vector2 cursorWorldPosition = mapPosition;
+							Vector2 mapPosition = Main.mapFullscreenPos;
+							Vector2 cursorWorldPosition = mapPosition;
 
-		//                    cursorPosition /= 16;
-		//                    cursorPosition *= 16 / Main.mapFullscreenScale;
-		//                    cursorWorldPosition += cursorPosition;
-		//                    cursorWorldPosition *= 16;
+							cursorPosition /= 16;
+							cursorPosition *= 16 / Main.mapFullscreenScale;
+							cursorWorldPosition += cursorPosition;
+							cursorWorldPosition *= 16;
 
-		//                    cursorWorldPosition.Y -= Player.height;
-		//                    if (cursorWorldPosition.X < 0) cursorWorldPosition.X = 0;
-		//                    else if (cursorWorldPosition.X + Player.width > mapWidth) cursorWorldPosition.X = mapWidth - Player.width;
-		//                    if (cursorWorldPosition.Y < 0) cursorWorldPosition.Y = 0;
-		//                    else if (cursorWorldPosition.Y + Player.height > mapHeight) cursorWorldPosition.Y = mapHeight - Player.height;
+							cursorWorldPosition.Y -= Player.height;
+							if (cursorWorldPosition.X < 0) cursorWorldPosition.X = 0;
+							else if (cursorWorldPosition.X + Player.width > mapWidth) cursorWorldPosition.X = mapWidth - Player.width;
+							if (cursorWorldPosition.Y < 0) cursorWorldPosition.Y = 0;
+							else if (cursorWorldPosition.Y + Player.height > mapHeight) cursorWorldPosition.Y = mapHeight - Player.height;
 
-		//                    Player.Teleport(cursorWorldPosition, 0, 0);
-		//                    NetMessage.SendData(65, -1, -1, null, 0, Player.whoAmI, cursorWorldPosition.X, cursorWorldPosition.Y, 1, 0, 0);
-		//                    Main.mapFullscreen = false;
+							Player.Teleport(cursorWorldPosition, 0, 0);
+							NetMessage.SendData(65, -1, -1, null, 0, Player.whoAmI, cursorWorldPosition.X, cursorWorldPosition.Y, 1, 0, 0);
+							Main.mapFullscreen = false;
 
-		//                    for (int index = 0; index < 120; ++index)
-		//                        Main.dust[Dust.NewDust(Player.position, Player.width, Player.height, 15, Main.rand.NextFloat(-10f, 10f), Main.rand.NextFloat(-10f, 10f), 150, Color.Cyan, 1.2f)].velocity *= 0.75f;
+							for (int index = 0; index < 120; ++index)
+								Main.dust[Dust.NewDust(Player.position, Player.width, Player.height, 15, Main.rand.NextFloat(-10f, 10f), Main.rand.NextFloat(-10f, 10f), 150, Color.Cyan, 1.2f)].velocity *= 0.75f;
 
-		//                    if (GlobalTeleporter)
-		//                    {
-		//                        Item[] inventory = Player.inventory;
-		//                        for (int k = 0; k < inventory.Length; k++)
-		//                        {
-		//                            if (inventory[k].type == ModContent.ItemType<GlobalTeleporter>())
-		//                            {
-		//                                inventory[k].stack--;
-		//                                break;
-		//                            }
-		//                        }
-		//                    }
-		//                    delay = 0;
-		//                }
-		//            }
-		//        }
-		//    }
-		//}
+							if (GlobalTeleporter)
+							{
+								Item[] inventory = Player.inventory;
+								for (int n = 0; n < inventory.Length; n++)
+								{
+									if (inventory[n].type == ModContent.ItemType<GlobalTeleporter>())
+									{
+										inventory[n].stack--;
+										break;
+									}
+								}
+							}
+							delay = 0;
+						}
+					}
+				}
+			}
+		}
 
 		public override void PreUpdate()
 		{
@@ -527,20 +556,21 @@ namespace yitangCalamity.Common
         public bool blurring;
 		public int ShadowDodgeCooldown;
 		public bool ninjaSkill;
-        //public bool ExoChair;
-        //public bool magicHat;
-        //public bool babywaterclone;
-        //public bool cloudmini;
-        //public bool rarebrimling;
-        //public bool raresandmini;
-        //public bool sandmini;
-        //public float betterPStone;
-        //public bool starReacher;
-        //public bool sacredCross;
-        //public bool starAdventurer;
-        //public int delay = 0;
-        //public bool GlobalTeleporter = false;
-        //public bool GlobalTeleporterUp = false;
-        //public bool holyMinions = false;
-    }
+		public bool purpleCandle;
+		public bool GlobalTeleporter = false;
+		public bool GlobalTeleporterUp = false;
+		public int delay = 0;
+		//public bool ExoChair;
+		//public bool magicHat;
+		//public bool babywaterclone;
+		//public bool cloudmini;
+		//public bool rarebrimling;
+		//public bool raresandmini;
+		//public bool sandmini;
+		//public float betterPStone;
+		//public bool starReacher;
+		//public bool sacredCross;
+		//public bool starAdventurer;
+		//public bool holyMinions = false;
+	}
 }
