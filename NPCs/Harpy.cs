@@ -57,7 +57,7 @@ namespace yitangCalamity.NPCs
         public override void SetBestiary(BestiaryDatabase database, BestiaryEntry bestiaryEntry)
         {
             bestiaryEntry.Info.Add(BestiaryDatabaseNPCsPopulator.CommonTags.SpawnConditions.Biomes.Surface);
-            bestiaryEntry.Info.Add(new FlavorTextBestiaryInfoElement("因为一次意外的头部受伤，导致这个名叫哈比的鸟妖不再是敌人。她将出售以前她在大自然里遇到的各种小动物、植物和渔获。"));
+            bestiaryEntry.Info.Add(new FlavorTextBestiaryInfoElement("因翅膀受伤从天空掉落后被人类所救，之后由于无法再次飞翔，这个名叫哈比的鸟妖便一直生活在了地面上。她将出售以前她在大自然里遇到的各种小动物、植物和渔获。"));
         }
 
         public override void SetDefaults()
@@ -114,7 +114,7 @@ namespace yitangCalamity.NPCs
                     return "之前我在海里捕鱼的时候，老是会捞上来垃圾，到底是谁在往水里乱扔东西呀？";
                 }
             }
-            switch (Main.rand.Next(7))
+            switch (Main.rand.Next(8))
             {
                 case 0:
                     return "离开天空后，回归大自然，于是我开始尝试去接触植物和小动物。";
@@ -128,7 +128,9 @@ namespace yitangCalamity.NPCs
                     return "俗话说得好，授人以鱼不如授人以渔。所以我去抓了很多，要看一看嘛。";
                 case 5:
                     return "之前我在海里捕鱼的时候，老是会捞上来垃圾，到底是谁在往水里乱扔东西呀？";
-                default:
+                case 6:
+                    return "你去过硫磺海吗？我敢打赌，那片大海以前绝对不是现在这个样子……把环境变成那样，如此恶劣的行为！真的很讨厌呢。";
+				default:
                     return "飞翔的感觉很有趣，也很棒……但有时我也会幻想拥有一双手臂。";
             }
         }
