@@ -11,16 +11,16 @@ namespace yitangCalamity.Global.Players
 	public class InventoryPlayer : ModPlayer
 	{
 		//新手礼包
-		//public override IEnumerable<Item> AddStartingItems(bool mediumCoreDeath)
-		//{
-		//	return new Item[]
-		//	{
-		//		new Item(ModContent.ItemType<StarterBag>(), 1, 0)
-		//	};
-		//}
+		public override IEnumerable<Item> AddStartingItems(bool mediumCoreDeath)
+		{
+			return new Item[]
+			{
+				new Item(ModContent.ItemType<StarterBag>())
+			};
+		}
 
-        //物品栏增益无限生效
-        public override void PostUpdateBuffs()
+		//物品栏增益无限生效
+		public override void PostUpdateBuffs()
 		{
 			if (!ytCalamityConfig.Instance.FuckCalamityAll1)
 			{
