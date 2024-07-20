@@ -41,8 +41,9 @@ namespace yitangCalamity.NPCs
 
             NPCID.Sets.NPCBestiaryDrawModifiers drawModifiers = new NPCID.Sets.NPCBestiaryDrawModifiers()
             {
-                Velocity = 1f,
-            };
+                Velocity = -1f,
+				Direction = -1
+			};
             NPC.Happiness
                 .SetBiomeAffection<ForestBiome>(AffectionLevel.Like)
                 .SetBiomeAffection<HallowBiome>(AffectionLevel.Love)
