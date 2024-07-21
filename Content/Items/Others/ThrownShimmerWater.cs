@@ -9,12 +9,14 @@ namespace yitangCalamity.Content.Items.Others
 {
     public class ThrownShimmerWater : ModItem
     {
-        public override void SetDefaults()
+		public const int Number = 1;
+
+		public override void SetDefaults()
         {
             Item.width = 18;
             Item.height = 20;
             Item.consumable = true;
-            Item.damage = 1;
+            Item.damage = Number;
             Item.maxStack = 9999;
             Item.rare = ItemRarityID.Orange;
             Item.value = Item.buyPrice(0, 0, 50, 0);
