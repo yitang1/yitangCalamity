@@ -1,6 +1,6 @@
 displayName = yitangCalamity
 author = yitang
-version = 0.0.0.4
+version = 0.0.0.5
 modReferences = CalamityMod
 weakReferences =
 homepage = https://github.com/yitang1/yitangCalamity
