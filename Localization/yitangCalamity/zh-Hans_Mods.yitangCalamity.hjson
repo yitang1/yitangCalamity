@@ -442,12 +442,12 @@ Items: {
 			如果同时加载了其他模组
 			也能获得模组里的物品
 			兼容的模组有：
-			Calamity Mod(灾厄)
+			Calamity Mod (灾厄)
 			Fargo's Mutant Mod (Fargo突变)
 			Fargo's Souls Mod (Fargo魂石)
 			Luiafk Reburn (懒人Mod)
 			Quality of Life (更好的体验)
-			Amulet Of Many Minions(仆从护身符)
+			Amulet Of Many Minions (仆从护身符)
 			{$CommonItemTooltip.RightClickToOpen}
 			'''
 	}
