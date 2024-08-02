@@ -1,0 +1,561 @@
+Buffs: {
+	TriumphBuff: {
+		DisplayName: Triumph Buff
+		Description: ""
+	}
+
+	YharimPower: {
+		DisplayName: Yharim Power
+		Description: ""
+	}
+
+	Cadence: {
+		DisplayName: Cadence
+		Description: ""
+	}
+
+	Revivify: {
+		DisplayName: Revivify
+		Description: ""
+	}
+
+	PenumbraBuff: {
+		DisplayName: Penumbra Buff
+		Description: ""
+	}
+
+	ArmorShattering: {
+		DisplayName: Armor Shattering
+		Description: ""
+	}
+
+	TitanScale: {
+		DisplayName: Titan Scale
+		Description: ""
+	}
+
+	ProfanedRageBuff: {
+		DisplayName: Profaned Rage Buff
+		Description: ""
+	}
+
+	DraconicSurgeBuff: {
+		DisplayName: Draconic Surge Buff
+		Description: ""
+	}
+
+	Sunshine: {
+		DisplayName: Sunshine Buff
+		Description: ""
+	}
+
+	Fortitude: {
+		DisplayName: Fortitude Buff
+		Description: ""
+	}
+
+	LongInvincible: {
+		DisplayName: LongInvincible Buff
+		Description: ""
+	}
+
+	Blurring: {
+		DisplayName: Blurring Buff
+		Description: ""
+	}
+
+	NinjaSkill: {
+		DisplayName: NinjaSkill Buff
+		Description: ""
+	}
+
+	CalamityPerComb: {
+		DisplayName: Calamity Comb I
+		Description: ""
+	}
+
+	CalamityHardComb: {
+		DisplayName: Calamity Comb II
+		Description: ""
+	}
+
+	CalamityPostComb: {
+		DisplayName: Calamity Comb III
+		Description: ""
+	}
+
+	AlchemistComb: {
+		DisplayName: Alchemist Comb
+		Description: ""
+	}
+
+	PurpleCandleBuffNew: {
+		DisplayName: Purple Candle Buff New
+		Description: Mods.yitangCalamity.Buffs.PurpleCandleBuffNew.Description
+	}
+}
+
+Items: {
+	TriumphPotion: {
+		DisplayName: Triumph Potion
+		Tooltip: ""
+	}
+
+	YharimsStimulants: {
+		DisplayName: Yharims Stimulants
+		Tooltip: ""
+	}
+
+	CadencePotion: {
+		DisplayName: Cadence Potion
+		Tooltip: ""
+	}
+
+	RevivifyPotion: {
+		DisplayName: Revivify Potion
+		Tooltip: ""
+	}
+
+	PenumbraPotion: {
+		DisplayName: Penumbra Potion
+		Tooltip: ""
+	}
+
+	ShatteringPotion: {
+		DisplayName: Shattering Potion
+		Tooltip: ""
+	}
+
+	TitanScalePotion: {
+		DisplayName: Titan Scale Potion
+		Tooltip: ""
+	}
+
+	ProfanedRagePotion: {
+		DisplayName: Profaned Rage Potion
+		Tooltip: ""
+	}
+
+	DraconicElixir: {
+		DisplayName: Draconic Elixir
+		Tooltip: ""
+	}
+
+	SunshinePotion: {
+		DisplayName: Sunshine Potion
+		Tooltip: ""
+	}
+
+	FortitudePotion: {
+		DisplayName: Fortitude Potion
+		Tooltip: ""
+	}
+
+	InvincibilityPotion: {
+		DisplayName: Invincibility Potion
+		Tooltip: ""
+	}
+
+	BlurringPotion: {
+		DisplayName: Blurring Potion
+		Tooltip: ""
+	}
+
+	NinjaPotion: {
+		DisplayName: Ninja Potion
+		Tooltip: ""
+	}
+
+	CalamityPerCombination: {
+		DisplayName: Calamity Combination I
+		Tooltip: ""
+	}
+
+	CalamityHardCombination: {
+		DisplayName: Calamity Combination II
+		Tooltip: ""
+	}
+
+	CalamityPostCombination: {
+		DisplayName: Calamity Combination III
+		Tooltip: ""
+	}
+
+	AlchemistCombination: {
+		DisplayName: Alchemist Combination
+		Tooltip: ""
+	}
+
+	ProfanedGuardianPlush: {
+		DisplayName: Profaned Guardian Plush
+		Tooltip: ""
+	}
+
+	RedBait: {
+		DisplayName: Red Bait
+		Tooltip: ""
+	}
+
+	SubnauticalPlate: {
+		DisplayName: Subnautical Plate
+		Tooltip: ""
+	}
+
+	StarMerchantIcon: {
+		DisplayName: Star Merchant Icon
+		Tooltip: ""
+	}
+
+	BuilderIcon: {
+		DisplayName: Builder Icon
+		Tooltip: ""
+	}
+
+	BrewerIcon: {
+		DisplayName: Brewer Icon
+		Tooltip: ""
+	}
+
+	AngelaIcon: {
+		DisplayName: Angela Icon
+		Tooltip: ""
+	}
+
+	MinerIcon: {
+		DisplayName: Miner Icon
+		Tooltip: ""
+	}
+
+	HarpyIcon: {
+		DisplayName: Harpy Icon
+		Tooltip: ""
+	}
+
+	TinkererIcon: {
+		DisplayName: Tinkerer Icon
+		Tooltip: ""
+	}
+
+	AnglerHeadIcon: {
+		DisplayName: Angler Icon
+		Tooltip: ""
+	}
+
+	MysticRedJelly: {
+		DisplayName: Mystic Red Jelly
+		Tooltip: ""
+	}
+
+	MysticYellowJelly: {
+		DisplayName: Mystic Yellow Jelly
+		Tooltip: ""
+	}
+
+	ShinyPinkBalloon: {
+		DisplayName: Shiny Pink Balloon
+		Tooltip: ""
+	}
+
+	RainMagic: {
+		DisplayName: Rain Magic
+		Tooltip: ""
+	}
+
+	WorldControlUnit: {
+		DisplayName: World Control Unit
+		Tooltip: ""
+	}
+
+	GlobalTeleporter: {
+		DisplayName: Global Teleporter
+		Tooltip: ""
+	}
+
+	GlobalTeleporterUp: {
+		DisplayName: Global Teleporter Up
+		Tooltip: ""
+	}
+
+	StarterBag: {
+		DisplayName: Starter Bag
+		Tooltip: ""
+	}
+
+	ThrownShimmerWater: {
+		DisplayName: Thrown Shimmer Water
+		Tooltip: ""
+	}
+
+	Food01: {
+		DisplayName: Food 01
+		Tooltip: ""
+	}
+
+	FoodText: {
+		DisplayName: Food Text
+		Tooltip: ""
+	}
+}
+
+Commons: {
+	Tips: {
+		SummonMinionSlot: MinionSlot: [c/22CC22:{CurrentM}/{TotalM}]
+		SummonMinionSlotFull: MinionSlot: [c/22CC22:{CurrentM}/{TotalM}]
+		SummonSentrieSlot: SentrieSlot: [c/CC2222:{CurrentS}/{TotalS}]
+		SummonSentrieSlotFull: SentrieSlot: [c/CC2222:{CurrentS}/{TotalS}]
+	}
+}
+
+NPCs: {
+	StarMerchant: {
+		DisplayName: 星际商人
+
+		TownNPCMood: {
+			Content: 现在我感觉不错，很放松。
+			NoHome: 我讨厌没有家的孤独的感觉，这就像一个人置身宇宙之中。
+			FarFromHome: 我离家太远了，或许是时候结束旅行，回去好好休息了。
+			LoveSpace: 我非常喜欢有这么大的空间，这样能在夜晚把星空一览无余！
+			DislikeCrowded: 为什么感觉周围的人越来越多了。
+			HateCrowded: 我讨厌这么拥挤，虽然只要我一直仰望星空就可以暂时缓解这种不适感。
+			LoveBiome: 我非常喜欢这里，有时候我会想是不是有一个星球全是这种生物群落。
+			LikeBiome: 在这个宁静的地方，可以慢悠悠地感受自然和星空。
+			DislikeBiome: 这里，唔，太冷了，让我无法去思考和感受自己喜欢的东西……
+			LoveNPC: 我有时候会很好奇，为什么{NPCName}总是有那么多的活力呢，不过我并不讨厌就是了。
+			LikeNPC: 我挺喜欢{NPCName}的认真和细心。
+			LikeNPC_Princess: 我很喜欢{NPCName}，能找到拥有共同兴趣和话题的朋友，然后互相交谈，这实在是美好至极。
+			Princess_LovesNPC: "{NPCName}的经历很像童话书里的故事，很想再去听她讲一讲！"
+		}
+	}
+
+	Builder: {
+		DisplayName: 建筑师
+
+		TownNPCMood: {
+			Content: 嗯，我感觉很好！
+			NoHome: 作为一名建筑师，我特别不喜欢没有房子。
+			FarFromHome: 我离家也太远了，我可是建筑师啊。
+			LoveSpace: 我非常喜欢有这么大的空间，或许可以狠狠地建房子。
+			DislikeCrowded: 我不喜欢这么拥挤，因为我还没有建足够多的房子。
+			HateCrowded: 我讨厌这么拥挤，刚建好的房子都要挤炸了。
+			LoveBiome: 在这里有这么多颜色，这么多建筑材料，完美。
+			LikeBiome: 很安静的地方，我喜欢。
+			DislikeBiome: 我讨厌寒冷的感觉，我需要一个更暖和的地方。
+			LoveNPC: "{NPCName}知道如何制作出每一种颜色。这太棒了。"
+			LikeNPC: "{NPCName}可能只是一个烦人的哥布林，但他明白如何建造，所以我尊重他这一点。"
+			LikeNPC_Princess: 改天我要找个时间再去拜访一下{NPCName}，她真的很懂我！
+			Princess_LovesNPC: "{NPCName}总是知道一些我不知道的建筑方面的知识！"
+		}
+	}
+
+	Brewer: {
+		DisplayName: 药剂师
+
+		TownNPCMood: {
+			Content: 现在的话，我感觉挺好的。
+			NoHome: 你有多余的房子吗？在露天的户外制作药水真的很不舒服。
+			FarFromHome: 你知道的，我不能在离家这么远的地方制作药水。
+			LoveSpace: 这里很安静，我喜欢。
+			DislikeCrowded: 周围有一点吵……
+			HateCrowded: 因为周围噪音太大，我无法把注意力集中在我的药水上！
+			LoveBiome: 我非常喜欢{BiomeName}。
+			LikeBiome: "{BiomeName}是个种草药的好地方！"
+			DislikeBiome: 这里太冷了……我的手都冻僵了。
+			LikeNPC: 我很喜欢{NPCName}，因为她那里有很多药水的原材料。
+			LikeNPC_Princess: "{NPCName}具有很棒的园艺才能，我很喜欢她。"
+			Princess_LovesNPC: 我真的非常喜欢和{NPCName}一起种植草药和研究药水！
+		}
+	}
+
+	Angela: {
+		DisplayName: 安吉拉
+
+		TownNPCMood: {
+			Content: 我感觉很好，主管。
+			NoHome: 我需要一个避难所……我不喜欢无家可归的感觉。
+			FarFromHome: 我想我的房子就在那边……除非您正打算带我去什么地方？
+			LoveSpace: 我非常喜欢有这么大的、和平又宁静的空间。
+			DislikeCrowded: 主管，我觉得这里已经变得有点拥挤了……
+			HateCrowded: 好拥挤，主管……可以让我到其他地方吗？
+			LoveBiome: 出乎意料地，我的电路在这里运行地非常好，我很喜欢雪地。
+			LikeBiome: 哇，大海，这是我一直想来看的地方，谢谢您。
+			DislikeBiome: 我讨厌地下。您知道吗？您肯定知道吧……对吗？
+			LoveNPC: "{NPCName}作为一个半机械人，可能是唯一能够理解我的人。"
+			LikeNPC: "{NPCName}是能和我一起讨论工程技术的人之一。"
+			LikeNPC_Princess: 我很喜欢{NPCName}，这个女孩……真的对任何人都很温柔呢。
+			Princess_LovesNPC: 我超喜欢和{NPCName}待在一起，感觉真的很让人平静和放松！
+		}
+	}
+
+	Miner: {
+		DisplayName: 矿工
+
+		TownNPCMood: {
+			Content: 这让我回到了过去的美好时光。
+			NoHome: 所以，我该去哪里休息？
+			FarFromHome: 我好像挖得太远了……
+			DislikeCrowded: 人有点多，我总是会撞到别人。
+			HateCrowded: 这里太拥挤了，我甚至都不能离开这里！
+			LoveSpace: 这里有足够的空间来放置我的所有工具。
+			LikeBiome: 这里有这么多的矿石可以开采。
+			DislikeBiome: 我该怎么在这里采矿？
+			LoveNPC: 和{NPCName}在一起让我玩得非常开心！
+			LikeNPC: "{NPCName}有点古怪，但他为我做了一些有用的小玩意儿。"
+			LikeNPC_Princess: 每次在长时间的采矿后，{NPCName}都会帮我打扫卫生。
+			Princess_LovesNPC: "{NPCName}总是会开采到一些闪闪发光的矿石，真漂亮！"
+		}
+	}
+
+	Harpy: {
+		DisplayName: 哈比
+
+		TownNPCMood: {
+			Content: 我很满足。
+			NoHome: 我能自己找个窝当做家吗？
+			FarFromHome: 我迷路了，能带我回到我的鸟巢里吗？
+			LoveSpace: 我非常喜欢这么大的空间，如此开阔，可以让我一直翱翔。
+			DislikeCrowded: 我不喜欢这么拥挤。
+			HateCrowded: 周围有那么多人，这让我感到害怕！
+			LikeBiome: 我很喜欢待在{BiomeName}。
+			DislikeBiome: 我不喜欢这里，因为没有开阔的空间可让我飞翔。
+			LoveNPC: 我非常喜欢{NPCName}，她简直就像是大自然的化身。
+			LikeNPC: 我喜欢{NPCName}，嗯，大概。
+			DislikeNPC: "{NPCName}总是把个人利益置于环境之上，我不喜欢他！"
+			HateNPC: 我讨厌{NPCName}，他总是会乱炸和搞破坏！
+			LikeNPC_Princess: "{NPCName}总是鼓励和支持我的一切努力。"
+			Princess_LovesNPC: 如果用喷气背包的话，我是不是就可以和{NPCName}一起飞翔了！
+		}
+	}
+
+	Tinkerer: {
+		DisplayName: 工匠
+
+		TownNPCMood: {
+			Content: 我感觉很好！
+			NoHome: 制作配饰需要足够的耐心。如果没有房子，我是做不到的。
+			FarFromHome: 我离家太远了，这会让我感到孤独。
+			LoveSpace: 我非常喜欢有这么大的空间，能让人感到自由自在。
+			DislikeCrowded: 周围有点拥挤，说实话，我不喜欢这样。
+			HateCrowded: 我讨厌这么拥挤，这会扰乱我的思考。
+			LoveBiome: 我和我姐姐习惯住在寒冷的地方，所以在这里我完全没问题。
+			LikeBiome: 有点黑，但我完全可以住在这里。
+			DislikeBiome: 我讨厌炎热的天气和沙子，所以No，我不会住在这里。
+			LoveNPC: "{NPCName}终于来了吗？我有很多话要说，姐姐！"
+			LikeNPC_Princess: 我很喜欢{NPCName}，她能够理解饰品这种装备的美妙之处。
+			DislikeNPC: 别让{NPCName}在我附近，他衣服上的沙子总是堵住我制作配饰的机械装置！
+			Princess_LovesNPC: 在{NPCName}那里总是会有各种新奇有趣的配饰，真想再去看一看！
+		}
+	}
+}
+
+Projectiles: {
+	LocatorProjectile.DisplayName: Locator Projectile
+	ShimmerWater.DisplayName: Shimmer Water
+}
+
+Configs: {
+	ytCalamityConfig: {
+		DisplayName: yitang C Config
+
+		Headers: {
+			FuckCalamityAll: Fuck Calamity All
+			ytCNPCs: NPCs Header
+			ytCItems: Items Header
+			ytCOthers: Others Header
+		}
+
+		FuckCalamityAll1: {
+			Label: Fuck Calamity All I
+			Tooltip: ""
+		}
+
+		FuckCalamityAll2: {
+			Label: Fuck Calamity All II
+			Tooltip: ""
+		}
+
+		ytNPCStarMerchant: {
+			Label: yt NPC Star Merchant
+			Tooltip: ""
+		}
+
+		ytNPCBuilder: {
+			Label: yt NPC Builder
+			Tooltip: ""
+		}
+
+		ytNPCBrewer: {
+			Label: yt NPC Brewer
+			Tooltip: ""
+		}
+
+		ytNPCAngela: {
+			Label: yt NPC Angela
+			Tooltip: ""
+		}
+
+		ytNPCMiner: {
+			Label: yt NPC Miner
+			Tooltip: ""
+		}
+
+		ytNPCHarpy: {
+			Label: yt NPC Harpy
+			Tooltip: ""
+		}
+
+		ytNPCTinkerer: {
+			Label: yt NPC Tinkerer
+			Tooltip: ""
+		}
+
+		ytNPCAngler: {
+			Label: yt NPC Angler
+			Tooltip: ""
+		}
+
+		ytNPCInvincible: {
+			Label: yt NPC Invincible
+			Tooltip: ""
+		}
+
+		ytCritterInvincible: {
+			Label: yt Critter Invincible
+			Tooltip: ""
+		}
+
+		ytCRecipes: {
+			Label: Recipes
+			Tooltip: ""
+		}
+
+		ytCOldPotion: {
+			Label: Old Potion
+			Tooltip: ""
+		}
+
+		ytCGloveAccessory: {
+			Label: Glove Accessory
+			Tooltip: ""
+		}
+
+		ytCSumAccessory: {
+			Label: Summon Accessory
+			Tooltip: ""
+		}
+
+		LifeformAnalyzer: {
+			Label: Lifeform Analyzer
+			Tooltip: ""
+		}
+
+		LocatorRange: {
+			Label: Locator Range
+			Tooltip: ""
+		}
+
+		DisabledLocatorNpcs: {
+			Label: Disabled Locator Npcs
+			Tooltip: ""
+		}
+	}
+}
