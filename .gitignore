@@ -3,5 +3,9 @@
 /.vs
 /bin
 *.sln
+/CN
 /Common
+/Content
 /Localization
+/NPCs
+description.txt
