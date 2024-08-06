@@ -18,7 +18,7 @@
    [i:3457]Quality of Life [更好的体验]
    [i:3457]Boss Checklist [Boss列表]
    [i:3456]Recipe Browser [合成表]
-   [i:3456]tmodloader的文本
+   [i:3456]tmodloader汉化缺失的文本
 
 [i:3458]添加合成配方的原版物品：
 [i:29][i:1291][i:2673][i:4961][i:1293][i:1119][i:221][i:18][i:393][i:3095][i:4978][i:2798][i:1579]
