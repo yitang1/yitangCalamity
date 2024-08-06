@@ -1,0 +1,8 @@
+displayName = yitangCalamity
+author = yitang
+version = 0.0.0.6
+modReferences = CalamityMod, ShopExtender
+weakReferences =
+homepage = https://github.com/yitang1/yitangCalamity
+buildIgnore = .git\*, .vs\*, bin\*, obj\*, Properties\*, .editorconfig, .gitignore, README.md, *.csproj, *.sln
+hideCode = true
