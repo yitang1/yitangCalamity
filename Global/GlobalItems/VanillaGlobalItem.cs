@@ -6,6 +6,7 @@ using Terraria.Audio;
 using Terraria.ID;
 using Terraria.Localization;
 using Terraria.ModLoader;
+using CalamityMod.Items.Armor.Wulfrum;
 using yitangCalamity.CN.CalamityCN.Utils;
 using yitangCalamity.Global.Config;
 
@@ -15,8 +16,16 @@ namespace yitangCalamity.Global.GlobalItems.FuckCalamity.FuckCalamityGlobalAcces
 	{
         public override void ModifyTooltips(Item item, List<TooltipLine> tooltips)
         {
-            //仆从召唤杖的工具提示中添加仆从栏位数量的占用情况
-            if (item.DamageType == DamageClass.Summon && !item.sentry)
+			//黑名单，排除一些非武器物品被添加了工具提示
+			List<int> Blacklist = new List<int>();
+			if (ModContent.TryFind<ModItem>("CatalystMod/IntergelacticHeadSummon", out ModItem CatalystSummonHead))
+			{
+				Blacklist.Add(CatalystSummonHead.Type);
+			}
+			Blacklist.Add(ModContent.ItemType<WulfrumFusionCannon>());
+
+			//仆从召唤杖的工具提示中添加仆从栏位数量的占用情况
+			if (item.DamageType == DamageClass.Summon && !item.sentry && !Blacklist.Contains(item.type))
             {
                 string keyM = Language.GetTextValue("Mods.yitangCalamity.Commons.Tips.SummonMinionSlot");
                 if (Main.LocalPlayer.slotsMinions >= Main.LocalPlayer.maxMinions)
